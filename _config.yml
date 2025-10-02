@@ -1,11 +1,13 @@
 title: "MikeGuides Blog"
 url: "https://blog.pricingforprofit.co"
-baseurl: "" 
-plugins: [jekyll-seo-tag, jekyll-sitemap, jekyll-feed]
-logo: /assets/img/og-cover.png
+baseurl: ""
+permalink: /:title/
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
 defaults:
-  - scope:
-      path: ""
-      type: "posts"
+  - scope: { path: "", type: "posts" }
     values:
+      layout: post
       image: /assets/img/og-cover.png
