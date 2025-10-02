@@ -13,10 +13,38 @@
 <meta name="theme-color" content="#2563eb">
 
   <style>
-    :root{ --mg-blue:#2563eb; --mg-green:#22c55e; --mg-bg:#f9fafb; --mg-ink:#0f172a; }
-    body{ font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif; color:var(--mg-ink); background:var(--mg-bg); }
-    .brand{ font-family:Poppins,Inter,sans-serif; }
-  </style>
+  :root{ --mg-blue:#2563eb; --mg-green:#22c55e; --mg-bg:#f9fafb; --mg-ink:#0f172a; }
+  body{ font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif; color:var(--mg-ink); background:var(--mg-bg); }
+  .brand{ font-family:Poppins,Inter,sans-serif; }
+
+  /* -- Post typography -- */
+  .post-content{ line-height:1.8; font-size:1.05rem; color:#0f172a; }
+  .post-content h2{ margin-top:1.75rem; font-weight:800; font-size:1.6rem; }
+  .post-content h3{ margin-top:1.5rem; font-weight:700; font-size:1.25rem; }
+  .post-content p, .post-content ul, .post-content ol, .post-content blockquote, .post-content pre{ margin-top:1rem; }
+  .post-content ul{ list-style:disc; padding-left:1.25rem; }
+  .post-content ol{ list-style:decimal; padding-left:1.25rem; }
+  .post-content a{ text-decoration:underline; text-decoration-thickness:2px; text-underline-offset:3px; color:#0f172a; }
+  .post-content blockquote{
+    border-left:4px solid var(--mg-blue); padding-left:1rem; color:#334155;
+    background:#f8fafc; border-radius:.5rem;
+  }
+  .post-content code{
+    background:rgba(15,23,42,.06); padding:.15rem .35rem; border-radius:.4rem;
+    font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+    font-size:.95em;
+  }
+  .post-content pre{
+    background:#0f172a; color:#e2e8f0; padding:1rem; border-radius:.75rem; overflow:auto;
+  }
+  .post-content pre code{ background:transparent; padding:0; color:inherit; }
+  .post-content img{ border-radius:.75rem; display:block; margin:1rem auto; max-width:100%; height:auto; }
+  .post-content hr{ margin:2rem 0; border:0; height:1px; background:#e2e8f0; }
+  @media (min-width: 768px){
+    .post-content{ font-size:1.1rem; }
+  }
+</style>
+
   <script defer data-domain="blog.pricingforprofit.co" src="https://plausible.io/js/script.js"></script>
 </head>
 <body class="min-h-screen flex flex-col">
