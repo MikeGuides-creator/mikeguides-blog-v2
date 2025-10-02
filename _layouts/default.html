@@ -1,3 +1,35 @@
-{% seo %}
-<script defer data-domain="blog.pricingforprofit.co" src="https://plausible.io/js/script.js"></script>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  {% seo %}
+
+  <!-- Fonts + Tailwind -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    :root{ --mg-blue:#2563eb; --mg-green:#22c55e; --mg-bg:#f9fafb; --mg-ink:#0f172a; }
+    body{ font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif; color:var(--mg-ink); background:var(--mg-bg); }
+    .brand{ font-family:Poppins,Inter,sans-serif; }
+  </style>
+
+  <!-- Plausible (analytics) -->
+  <script defer data-domain="blog.pricingforprofit.co" src="https://plausible.io/js/script.js"></script>
+</head>
+<body class="min-h-screen flex flex-col">
+  {% include header.html %}
+
+  <main class="flex-1">
+    {{ content }}
+  </main>
+
+  {% include footer.html %}
+</body>
+</html>
+
 
