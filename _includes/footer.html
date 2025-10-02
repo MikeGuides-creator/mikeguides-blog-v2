@@ -1,11 +1,8 @@
 <footer class="mt-auto border-t border-slate-200 bg-white/70">
-  <div class="max-w-6xl mx-auto px-6 py-8 text-sm text-slate-500 flex flex-col sm:flex-row items-center justify-between gap-2">
-    <p>© {{ 'now' | date: '%Y' }} MikeGuides. All rights reserved.</p>
-    <div class="flex items-center gap-4">
-      <a href="{{ '/' | relative_url }}" class="hover:text-[var(--mg-blue)]">Home</a>
-      <a href="/feed.xml" class="hover:text-[var(--mg-blue)]">RSS</a>
-      <a href="https://mikeguides.co" class="hover:text-[var(--mg-blue)]">MikeGuides.co</a>
-    </div>
+  <div class="max-w-6xl mx-auto px-6 py-8 text-sm text-slate-500 flex items-center justify-between">
+    <p>© {{ 'now' | date: '%Y' }} MikeGuides</p>
+    <a class="hover:text-[var(--mg-blue)]" href="/feed.xml">RSS</a>
   </div>
 </footer>
+
 
