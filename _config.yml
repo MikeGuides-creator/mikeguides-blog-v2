@@ -1,5 +1,6 @@
 title: "MikeGuides Blog"
-url: "https://blog.mikeguides.co" 
+url: "https://blog.pricingforprofit.co"
+baseurl: "" 
 logo: /assets/img/og-cover.png
 defaults:
   - scope:
