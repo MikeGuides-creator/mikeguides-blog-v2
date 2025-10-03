@@ -1,12 +1,14 @@
 ---
 layout: post
 title: "Business Builder Bundle"
-description: "Get the complete Business Builder Bundle—AI tools, pricing calculators, and guides designed to help entrepreneurs scale profitably and efficiently."
-image: /assets/img/og-cover.png        # reuse the same image for now
+description: "Get the complete Business Builder Bundle—5 powerful AI guides designed to help entrepreneurs automate marketing, master pricing, and scale profitably."
+image: /assets/og/business-builder-bundle.jpg
+image_alt: "Business Builder Bundle cover — 5 guides in 1"
 category: Bundles
-tags: [entrepreneurship, toolkit, automation, growth]
+tags: [entrepreneurship, toolkit, automation, growth, AI]
 last_modified_at: 2025-10-03
 ---
+
 🚀 Build Smarter, Grow Faster
 
 Entrepreneurs today face more challenges than ever—balancing marketing, pricing, planning, and execution while still trying to grow. That’s why we created the Business Builder Bundle: a complete package of five AI-powered guides designed to give you a competitive edge and help you run your business with clarity and confidence.
