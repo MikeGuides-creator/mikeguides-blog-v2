@@ -1,6 +1,10 @@
 ---
-title: "AI Marketing Toolkit: 20-minute quickstart"
-excerpt: "Plan → prompts → draft → publish. A simple loop you can repeat weekly."
+layout: post
+title: "AI Writing Workshop"
+description: "Interactive tool that interviews you and generates tailored prompts so you can create blog posts, articles, and any content faster and smarter."
+image: /assets/og/ai-writing-workshop.jpg   # 1200x630 image you add to repo
+category: Guides
+tags: [AI, writing, prompts, productivity]
 ---
 
 If marketing feels chaotic, run this 20-minute loop:
