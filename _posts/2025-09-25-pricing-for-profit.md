@@ -1,7 +1,12 @@
 ---
+layout: post
 title: "Pricing for Profit"
 description: "Discover the Pricing for Profit guide—learn how to set rates with confidence, boost margins, and grow your business with proven strategies."
+image: /assets/og/pricing-for-profit.jpg    # 1200x630 image you add to repo
+category: Pricing
+tags: [pricing, margins, small-business, strategy]
 ---
+
 Pricing doesn’t have to be complicated. Use this quick flow:
 
 1. **Know your costs.** Materials, time, overhead.
