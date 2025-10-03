@@ -1,6 +1,10 @@
 title: "MikeGuides Blog"
 url: "https://blog.pricingforprofit.co"
 baseurl: ""
+# NEW: helps jekyll-seo-tag fill meta/OG/Twitter
+description: "Actionable guides, tools, and templates to price smarter and grow profitably."
+image: /assets/img/og-cover.png          # site-wide fallback OG image (you already default this below)
+logo: /assets/img/logo.png               # optional; shown in some rich cards if present
 permalink: /:title/
 plugins:
   - jekyll-seo-tag
