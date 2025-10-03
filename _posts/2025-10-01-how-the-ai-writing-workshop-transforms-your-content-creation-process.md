@@ -1,7 +1,9 @@
 ---
 layout: post
-title: "How the AI Writing Workshop Transforms Your Content Creation Process"
-excerpt: "If you're a solo founder or running a small service business, you already know the challenge: consistent marketing content doesn't create itself."
+title: "AI Writing Workshop"
+description: "Interactive tool that interviews you and generates tailored prompts so you can create blog posts, articles, and any content faster and smarter."
+---
+
 ---
 
 If you're a solo founder or running a small service business, you already know the challenge: **consistent marketing content doesn't create itself.** The AI Writing Workshop turns “I should post something” into **a repeatable system** you can run in minutes, not hours.
