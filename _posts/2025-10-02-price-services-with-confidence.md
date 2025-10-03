@@ -1,8 +1,7 @@
 ---
-title: "How to price services with confidence (and stop undercharging)"
-excerpt: "A simple flow: know costs → set margin → choose a package → review quarterly."
+title: "Pricing for Profit"
+description: "Discover the Pricing for Profit guide—learn how to set rates with confidence, boost margins, and grow your business with proven strategies."
 ---
-
 Pricing doesn’t have to be complicated. Use this quick flow:
 
 1. **Know your costs.** Materials, time, overhead.
