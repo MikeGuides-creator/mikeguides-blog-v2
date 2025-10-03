@@ -2,13 +2,10 @@
 layout: post
 title: "AI Writing Workshop"
 description: "Interactive tool that interviews you and generates tailored prompts so you can create blog posts, articles, and any content faster and smarter."
-image: /assets/og/ai-writing-workshop.jpg      # 1200x630 recommended; use your real path
+image: /assets/img/og-cover.png      # reusing your current site image
 category: Guides
 tags: [AI, writing, prompts, productivity]
 last_modified_at: 2025-10-03
-# Optional extras:
-# canonical_url: "https://blog.pricingforprofit.co/ai-writing-workshop/"
-# image_alt: "AI Writing Workshop cover"
 ---
 
 ---
