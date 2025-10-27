@@ -427,3 +427,50 @@ main { background:transparent !important; }
 header{ background:transparent !important; color:#fff !important; position:relative !important; }
 header a{ color:#fff !important; }
 footer{ background:transparent !important; color:#e5e7eb !important; border-top:none !important; }
+
+/* ===== Utilities shim (so Tailwind-like classes work) ===== */
+
+/* base grid + gaps */
+.grid { display: grid !important; }
+.gap-6 { gap: 1.5rem !important; }
+
+/* responsive column utilities used on your page */
+@media (min-width: 640px){        /* sm: */
+  .sm\:grid-cols-2 { grid-template-columns: repeat(2, minmax(0,1fr)) !important; }
+}
+@media (min-width: 768px){        /* md: */
+  .md\:grid-cols-2 { grid-template-columns: repeat(2, minmax(0,1fr)) !important; }
+}
+@media (min-width: 1024px){       /* lg: */
+  .lg\:grid-cols-3 { grid-template-columns: repeat(3, minmax(0,1fr)) !important; }
+}
+
+/* container helpers you're using (for consistent spacing) */
+.max-w-6xl { max-width: 72rem !important; }  /* 1152px */
+.mx-auto { margin-left: auto !important; margin-right: auto !important; }
+.px-6 { padding-left: 1.5rem !important; padding-right: 1.5rem !important; }
+.py-10 { padding-top: 2.5rem !important; padding-bottom: 2.5rem !important; }
+.pt-10 { padding-top: 2.5rem !important; }
+.pb-8 { padding-bottom: 2rem !important; }
+
+/* text colors used in the snippet */
+.text-slate-600 { color: #475569 !important; }
+.text-slate-500 { color: #64748b !important; }
+
+/* buttons (so your blue CTA looks right on cobalt bg) */
+.bg-\[var\(--mg-blue\)\] { background: var(--mg-blue) !important; }
+.text-white { color: #fff !important; }
+
+/* Keep the page cobalt everywhere */
+html { background: #2563eb !important; min-height: 100%; }
+body { background: transparent !important; min-height: 100%; color: #eef2ff; }
+main { background: transparent !important; }
+
+/* Make sure only the post "cards" are white, not entire sections */
+section article {
+  background:#fff;
+  color:#1f2937;
+  border:1px solid #e5e7eb;
+  border-radius: 1rem;
+  box-shadow: 0 10px 25px -10px rgba(2,6,23,.12);
+}
