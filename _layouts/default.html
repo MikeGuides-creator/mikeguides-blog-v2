@@ -1,90 +1,41 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  {% seo %}
+  {% include head.html %}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title }} | MikeGuides Blog</title>
+  <link rel="stylesheet" href="/assets/css/site.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="icon" type="image/svg+xml" href="/assets/img/favicon.svg">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="manifest" href="/site.webmanifest">
-  <meta name="google-site-verification" content="googleec5ffa658ea91833.html">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="google-site-verification" content="bvTPQPXmWccgf3hPBmkc0X8FGIn0ec1MhVfHk7X7III" />
-<meta name="apple-mobile-web-app-title" content="MikeGuides Blog">
-<meta name="theme-color" content="#2563eb">
-  {%- assign page_title = page.title | default: site.title -%}
-{%- assign page_desc  = page.description | default: site.description -%}
-{%- assign page_url   = page.url | absolute_url -%}
-{%- assign page_img   = page.cover_image | default: site.og_image | absolute_url -%}
-
-<!-- Open Graph -->
-<meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}">
-<meta property="og:site_name" content="{{ site.title }}">
-<meta property="og:title" content="{{ page_title }}">
-<meta property="og:description" content="{{ page_desc }}">
-<meta property="og:url" content="{{ page_url }}">
-<meta property="og:image" content="{{ page_img }}">
-<meta property="og:image:alt" content="{{ page_img_alt | default: page_title }}">
-<meta property="og:locale" content="en_US">
-
-<!-- Twitter Card -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="{{ page_title }}">
-<meta name="twitter:description" content="{{ page_desc }}">
-<meta name="twitter:image" content="{{ page_img }}">
-{%- if site.twitter_site %}<meta name="twitter:site" content="@{{ site.twitter_site }}">{% endif -%}
-{%- if site.twitter_creator %}<meta name="twitter:creator" content="@{{ site.twitter_creator }}">{% endif -%}
-
-<!-- Canonical -->
-<link rel="canonical" href="{{ page_url }}">
-<style>
-  :root{ --mg-blue:#2563eb; --mg-green:#22c55e; --mg-bg:#f9fafb; --mg-ink:#0f172a; }
-  body{ font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif; color:var(--mg-ink); background:var(--mg-bg); }
-  .brand{ font-family:Poppins,Inter,sans-serif; }
-
-  /* -- Post typography -- */
-  .post-content{ line-height:1.8; font-size:1.05rem; color:#0f172a; }
-  .post-content h2{ margin-top:1.75rem; font-weight:800; font-size:1.6rem; }
-  .post-content h3{ margin-top:1.5rem; font-weight:700; font-size:1.25rem; }
-  .post-content p, .post-content ul, .post-content ol, .post-content blockquote, .post-content pre{ margin-top:1rem; }
-  .post-content ul{ list-style:disc; padding-left:1.25rem; }
-  .post-content ol{ list-style:decimal; padding-left:1.25rem; }
-  .post-content a{ text-decoration:underline; text-decoration-thickness:2px; text-underline-offset:3px; color:#0f172a; }
-  .post-content blockquote{
-    border-left:4px solid var(--mg-blue); padding-left:1rem; color:#334155;
-    background:#f8fafc; border-radius:.5rem;
-  }
-  .post-content code{
-    background:rgba(15,23,42,.06); padding:.15rem .35rem; border-radius:.4rem;
-    font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
-    font-size:.95em;
-  }
-  .post-content pre{
-    background:#0f172a; color:#e2e8f0; padding:1rem; border-radius:.75rem; overflow:auto;
-  }
-  .post-content pre code{ background:transparent; padding:0; color:inherit; }
-  .post-content img{ border-radius:.75rem; display:block; margin:1rem auto; max-width:100%; height:auto; }
-  .post-content hr{ margin:2rem 0; border:0; height:1px; background:#e2e8f0; }
-  @media (min-width: 768px){
-    .post-content{ font-size:1.1rem; }
-  }
-</style>
-<meta http-equiv="Content-Security-Policy"
-      content="default-src 'self'; script-src 'self' https://plausible.io; connect-src 'self' https://plausible.io https://plausible.events; img-src 'self' data: blob:; style-src 'self' 'unsafe-inline'; font-src 'self'; object-src 'none'; base-uri 'self'; frame-ancestors 'none'; form-action 'self'; upgrade-insecure-requests">
-
-  <script defer data-domain="blog.pricingforprofit.co" src="https://plausible.io/js/script.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@600&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; background:#f9fafb; color:#1f2937; margin:0; }
+    header { background:var(--mg-blue,#2563eb); color:white; padding:1.5rem 1rem; text-align:center; }
+    header a { color:white; text-decoration:none; font-weight:600; font-family:'Poppins',sans-serif; }
+    main { max-width:760px; margin:2rem auto; padding:0 1rem; }
+    footer { margin-top:4rem; background:#f3f4f6; padding:2rem; text-align:center; font-size:.9rem; color:#4b5563; }
+    .cta-banner { background:linear-gradient(90deg,#2563eb,#22c55e); color:white; text-align:center;
+                  padding:1.5rem 1rem; border-radius:1rem; margin:3rem 0; }
+    .cta-banner a { background:white; color:#2563eb; font-weight:600;
+                    border-radius:0.5rem; padding:0.6rem 1.2rem; text-decoration:none; }
+  </style>
 </head>
-<body class="min-h-screen flex flex-col">
-  {% include header.html %}
-  <main class="flex-1">
+<body>
+  <header>
+    <a href="https://mikeguides.co">MikeGuides</a> &nbsp;|&nbsp;
+    <a href="/">Blog Home</a>
+  </header>
+
+  <main>
     {{ content }}
   </main>
-  {% include footer.html %}
+
+  <footer>
+    <div class="cta-banner">
+      <p>🚀 Explore all interactive guides & toolkits at <strong>MikeGuides.co</strong></p>
+      <a href="https://mikeguides.co/products/">Shop Guides</a>
+    </div>
+    <p>© 2025 MikeGuides.co — Smarter tools for smarter business.</p>
+  </footer>
 </body>
 </html>
