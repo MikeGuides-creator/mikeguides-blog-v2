@@ -1,17 +1,19 @@
-<h1 class="brand" style="text-align:center;font-family:'Poppins',sans-serif;font-size:2rem;margin-bottom:2rem;">
+---
+layout: default
+---
+
+<h1 style="text-align:center;font-family:'Poppins',sans-serif;font-size:2rem;margin-bottom:2rem;">
   MikeGuides Blog
 </h1>
 
-<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:1.5rem;">
+<div class="blog-grid">
   {% for post in site.posts %}
-  <a href="{{ post.url }}" style="text-decoration:none;color:inherit;">
-    <article class="blog-card">
+    <a href="{{ post.url }}" class="blog-card">
       {% if post.image %}
         <img src="{{ post.image }}" alt="{{ post.title }}">
       {% endif %}
-      <h2 style="font-family:'Poppins',sans-serif;font-size:1.25rem;margin-bottom:.25rem;">{{ post.title }}</h2>
-      <p style="color:#64748b;font-size:.9rem;">{{ post.description | truncate: 120 }}</p>
-    </article>
-  </a>
+      <h2>{{ post.title }}</h2>
+      <p>{{ post.description | default: site.description | truncate: 120 }}</p>
+    </a>
   {% endfor %}
 </div>
