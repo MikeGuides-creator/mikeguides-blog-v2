@@ -161,3 +161,85 @@ a:hover { opacity:.85; }
 
 /* Footer */
 footer { text-align: center; font-size: .9rem; color: #4b5563; padding: 2rem; }
+
+/* ==== MikeGuides blog fixes (override) ==== */
+
+/* Gradient: yellow (BR) → green → blue → navy (TL) */
+:root{
+  --mg-blue:#2563eb; --mg-green:#22c55e; --mg-yellow:#facc15; --mg-navy:#0b1b4a;
+  --mg-ink:#1f2937;
+}
+html,body{height:100%}
+body{
+  color:var(--mg-ink);
+  background: linear-gradient(to top left,
+    var(--mg-yellow) 0%,
+    var(--mg-green) 35%,
+    var(--mg-blue) 70%,
+    var(--mg-navy) 100%);
+  background-attachment:fixed;
+}
+
+/* Make the GRID an actual grid (was missing display) */
+.blog-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+  gap:1.5rem;
+  padding:.25rem;
+  background:transparent;
+  border:0;
+  box-shadow:none;
+}
+
+/* Ensure only CARDS are white, not the whole grid */
+main > article,
+.cta-banner,
+.post-content,
+.page-card{
+  background:#fff;
+  border:1px solid #e5e7eb;
+  border-radius:1rem;
+  padding:1.25rem;
+  box-shadow:0 10px 25px -10px rgba(2,6,23,.15);
+}
+/* (intentionally NOT applying those styles to .blog-grid) */
+
+/* Card tiles */
+.blog-card{
+  display:block;
+  background:#fff;
+  border:1px solid #e5e7eb;
+  border-radius:1rem;
+  overflow:hidden;
+  text-decoration:none;
+  color:inherit;
+  box-shadow:0 10px 25px -10px rgba(2,6,23,.12);
+  transition:transform .2s ease, box-shadow .2s ease;
+}
+.blog-card:hover{
+  transform:translateY(-2px);
+  box-shadow:0 16px 40px -18px rgba(2,6,23,.20);
+}
+.blog-card img{
+  display:block;
+  width:100%; height:auto;
+  border-radius:.75rem .75rem 0 0;
+  margin:0;
+}
+.blog-card h2{
+  font-family:'Poppins',sans-serif;
+  font-size:1.25rem; margin:.75rem 1rem .25rem; color:var(--mg-ink);
+}
+.blog-card p{ margin:0 1rem 1rem; color:#64748b; font-size:.95rem; line-height:1.6; }
+
+/* Header/footer readable on gradient */
+header{ background:transparent; color:#0f172a; }
+header a{ color:var(--mg-blue); }
+footer{ background:transparent; border-top:none; }
+
+/* Optional: soften the gradient a touch */
+body::before{
+  content:""; position:fixed; inset:0; pointer-events:none; z-index:-1;
+  background:rgba(255,255,255,.75);
+}
+
