@@ -15,6 +15,9 @@ defaults:
     values:
       layout: post
       image: /assets/img/og-cover.png
+      future: false
+show_drafts: false
+
 # Site identity
 title: "MikeGuides Blog"
 description: "Actionable posts on pricing, marketing, and execution — plus free tools and updates."
