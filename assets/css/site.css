@@ -89,6 +89,9 @@ header { background: transparent; color: #0f172a; }
 header a { color: var(--mg-blue); }
 footer { background: transparent; border-top: none; }
 
+a { color: var(--mg-blue); }
+a:hover { opacity:.85; }
+
 /* CTA keeps brand look */
 .cta-banner {
   background: linear-gradient(90deg, var(--mg-blue), var(--mg-green));
