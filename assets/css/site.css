@@ -7,6 +7,28 @@
   --radius-lg: 1rem;
   --radius-md: .75rem;
 }
+:root{
+  --mg-blue:#2563eb;
+  --mg-green:#22c55e;
+  --mg-yellow:#facc15; /* MikeGuides yellow */
+  --mg-navy:#0b1b4a;   /* deep blue */
+  --mg-ink:#1f2937;
+}
+
+html, body { height: 100%; }
+
+body{
+  color: var(--mg-ink);
+  /* start at bottom-right (yellow), sweep to top-left (navy) */
+  background: linear-gradient(
+    to top left,
+    var(--mg-yellow) 0%,
+    var(--mg-green) 35%,
+    var(--mg-blue) 70%,
+    var(--mg-navy) 100%
+  );
+  background-attachment: fixed;
+}
 
 html, body {
   margin: 0;
