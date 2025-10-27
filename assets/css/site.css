@@ -17,28 +17,6 @@
 
 html, body { height: 100%; }
 
-body{
-  color: var(--mg-ink);
-  /* start at bottom-right (yellow), sweep to top-left (navy) */
-  background: linear-gradient(
-    to top left,
-    var(--mg-yellow) 0%,
-    var(--mg-green) 35%,
-    var(--mg-blue) 70%,
-    var(--mg-navy) 100%
-  );
-  background-attachment: fixed;
-}
-
-html, body {
-  margin: 0;
-  padding: 0;
-  background: var(--mg-bg);
-  color: var(--mg-ink);
-  font-family: 'Inter', sans-serif;
-  line-height: 1.7;
-}
-
 /* Headings */
 h1, h2, h3, h4 {
   font-family: 'Poppins', sans-serif;
@@ -70,15 +48,6 @@ main { max-width: 760px; margin: 2rem auto; padding: 0 1rem; }
   --mg-blue:#2563eb;
   --mg-green:#22c55e;
   --mg-ink:#1f2937;
-}
-
-/* Full-page gradient */
-html, body { height: 100%; }
-body {
-  /* smooth diagonal gradient */
-  background: linear-gradient(135deg, rgba(37,99,235,.12), rgba(34,197,94,.12));
-  background-attachment: fixed; /* nice parallax feel */
-  color: var(--mg-ink);
 }
 
 /* Make content sit on clean cards so text stays crisp */
@@ -167,16 +136,6 @@ footer { text-align: center; font-size: .9rem; color: #4b5563; padding: 2rem; }
 :root{
   --mg-blue:#2563eb; --mg-green:#22c55e; --mg-yellow:#facc15; --mg-navy:#0b1b4a;
   --mg-ink:#1f2937;
-}
-html,body{height:100%}
-body{
-  color:var(--mg-ink);
-  background: linear-gradient(to top left,
-    var(--mg-yellow) 0%,
-    var(--mg-green) 35%,
-    var(--mg-blue) 70%,
-    var(--mg-navy) 100%);
-  background-attachment:fixed;
 }
 
 /* Make the GRID an actual grid (was missing display) */
