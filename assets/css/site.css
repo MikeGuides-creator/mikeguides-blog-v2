@@ -242,3 +242,106 @@ body::before{
   background:rgba(255,255,255,.75);
 }
 
+/* ==== MikeGuides Blog: cobalt background + card grid (override) ==== */
+
+/* Brand tokens */
+:root{
+  --mg-blue:#2563eb;
+  --mg-green:#22c55e;
+  --mg-ink:#1f2937;
+}
+
+/* Full-page solid cobalt background */
+html, body { height:100% }
+body{
+  margin:0;
+  background: var(--mg-blue);    /* cobalt everywhere */
+  color:#eef2ff;                  /* light text ON blue by default */
+}
+
+/* Header/Footer readable on blue */
+header{ background:transparent; color:#fff; }
+header a{ color:#fff; }
+footer{ background:transparent; color:#e5e7eb; border-top:none; }
+
+/* Main container stays transparent so the blue shows; cards add their own white */
+main{ max-width:860px; margin:2.5rem auto; padding:0 1rem; background:transparent; }
+
+/* Make the blog list a GRID again */
+.blog-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+  gap:1.5rem;
+  padding:.25rem;
+  background:transparent; /* important */
+  border:0;
+  box-shadow:none;
+}
+
+/* Ensure only CARDS are white tiles (not the whole grid) */
+.blog-card{
+  display:block;
+  background:#fff;
+  color: var(--mg-ink);           /* dark text INSIDE cards */
+  border:1px solid #e5e7eb;
+  border-radius:1rem;
+  overflow:hidden;
+  text-decoration:none;
+  box-shadow:0 10px 25px -10px rgba(2,6,23,.12);
+  transition:transform .2s ease, box-shadow .2s ease;
+}
+.blog-card:hover{
+  transform:translateY(-2px);
+  box-shadow:0 16px 40px -18px rgba(2,6,23,.20);
+}
+.blog-card img{
+  display:block; width:100%; height:auto;
+  border-radius:.75rem .75rem 0 0; margin:0;
+}
+.blog-card h2{
+  font-family:'Poppins',sans-serif;
+  font-size:1.25rem; margin:.75rem 1rem .25rem; color:var(--mg-ink);
+}
+.blog-card p{
+  margin:0 1rem 1rem; color:#64748b; font-size:.95rem; line-height:1.6;
+}
+
+/* Post body cards on blue background */
+main > article,
+.post-content,
+.page-card{
+  background:#fff;
+  color: var(--mg-ink);
+  border:1px solid #e5e7eb;
+  border-radius:1rem;
+  padding:1.25rem;
+  box-shadow:0 10px 25px -10px rgba(2,6,23,.15);
+}
+
+/* CTA band: white card to pop off blue bg */
+.cta-banner{
+  background:#fff;
+  color: var(--mg-ink);
+  border:1px solid #e5e7eb;
+  border-radius:1rem;
+  box-shadow:0 12px 30px -12px rgba(2,6,23,.25);
+}
+.cta-banner a{
+  background: var(--mg-blue);
+  color:#fff;
+  font-weight:600;
+  border-radius:.5rem;
+  padding:.6rem 1.2rem;
+  text-decoration:none;
+}
+.cta-banner a:hover{ opacity:.9 }
+
+/* Links outside cards (on blue bg) should be light */
+a{ color:#fff; }
+a:hover{ opacity:.85; text-decoration:none; }
+
+/* Inside cards, keep link color brand-blue */
+.blog-card a, .post-content a{ color: var(--mg-blue); }
+.blog-card a:hover, .post-content a:hover{ opacity:.85; text-decoration:underline; }
+
+/* Remove any earlier rule that made .blog-grid itself white */
