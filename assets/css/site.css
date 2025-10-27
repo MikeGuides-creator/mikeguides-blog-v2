@@ -33,6 +33,26 @@ header {
 header a { color: white; margin: 0 .5rem; }
 header a:hover { opacity: .9; }
 
+/* Flags in header (larger) */
+header { position: relative; } /* ensure absolute flags anchor to header */
+.mg-flag { position: absolute; top: 10px; }
+.mg-flag-us { left: 10px; }
+.mg-flag-ca { right: 10px; }
+
+/* 6× size (24x16 → 144x96) */
+.mg-flag svg {
+  display: block;
+  width: 144px;  /* was 24 */
+  height: 96px;  /* was 16 */
+  border-radius: 4px;
+  box-shadow: 0 2px 6px rgba(0,0,0,.35);
+}
+
+/* scale down a bit on small screens to avoid overlap */
+@media (max-width: 480px){
+  .mg-flag svg { width: 108px; height: 72px; }
+}
+
 /* Main area */
 main { max-width: 760px; margin: 2rem auto; padding: 0 1rem; }
 
