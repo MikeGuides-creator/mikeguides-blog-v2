@@ -180,6 +180,14 @@ header a{ color:var(--mg-blue); }
 footer{ background:transparent; border-top:none; }
 
 /* ==== MikeGuides Blog: cobalt background + card grid (override) ==== */
+/* Flags in header */
+.mg-flag{ position:absolute; top:10px; }
+.mg-flag-us{ left:10px; }
+.mg-flag-ca{ right:10px; }
+.mg-flag svg{ display:block; width:24px; height:16px; border-radius:2px; box-shadow:0 1px 3px rgba(0,0,0,.25); }
+@media (min-width: 768px){
+  .mg-flag svg{ width:28px; height:18px; }
+}
 
 /* Brand tokens */
 :root{
