@@ -345,3 +345,83 @@ a:hover{ opacity:.85; text-decoration:none; }
 .blog-card a:hover, .post-content a:hover{ opacity:.85; text-decoration:underline; }
 
 /* Remove any earlier rule that made .blog-grid itself white */
+/* ===== HARD OVERRIDES: cobalt bg full-page + real card grid ===== */
+
+/* 1) Make the entire page cobalt (no white layers on top) */
+html{ background:#2563eb !important; }
+body{
+  background: transparent !important;   /* let html's cobalt show everywhere */
+  color:#eef2ff;                         /* light default text on blue */
+}
+
+/* 2) Ensure the main container is transparent (so blue shows) */
+main{ background: transparent !important; }
+
+/* 3) Force the posts container to be a GRID */
+.blog-grid{
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)) !important;
+  gap: 1.5rem !important;
+  padding: .25rem !important;
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  list-style: none !important;   /* just in case it ended up as a <ul> */
+  margin: 0 !important;
+}
+
+/* 4) Make each item a white CARD tile */
+.blog-grid > *{
+  /* the anchor itself is the card in our layout */
+  display: block !important;
+  background: #fff !important;
+  color: #1f2937 !important;
+  border: 1px solid #e5e7eb !important;
+  border-radius: 1rem !important;
+  overflow: hidden !important;
+  text-decoration: none !important;
+  box-shadow: 0 10px 25px -10px rgba(2,6,23,.12) !important;
+  transition: transform .2s ease, box-shadow .2s ease !important;
+}
+.blog-grid > *:hover{
+  transform: translateY(-2px) !important;
+  box-shadow: 0 16px 40px -18px rgba(2,6,23,.20) !important;
+}
+
+/* 5) Image + text inside cards */
+.blog-grid img{
+  display:block !important; width:100% !important; height:auto !important;
+  border-radius: .75rem .75rem 0 0 !important; margin:0 !important;
+}
+.blog-grid h2{
+  font-family:'Poppins',sans-serif !important;
+  font-size:1.25rem !important; margin:.75rem 1rem .25rem !important; color:#1f2937 !important;
+}
+.blog-grid p{
+  margin:0 1rem 1rem !important; color:#64748b !important; font-size:.95rem !important; line-height:1.6 !important;
+}
+
+/* 6) Header/Footer readable on cobalt */
+header{ background: transparent !important; color:#fff !important; }
+header a{ color:#fff !important; }
+footer{ background: transparent !important; color:#e5e7eb !important; border-top:none !important; }
+
+/* 7) CTA band: white card to pop off blue */
+.cta-banner{
+  background:#fff !important; color:#1f2937 !important;
+  border:1px solid #e5e7eb !important; border-radius:1rem !important;
+  box-shadow:0 12px 30px -12px rgba(2,6,23,.25) !important;
+}
+.cta-banner a{
+  background:#2563eb !important; color:#fff !important;
+  font-weight:600 !important; border-radius:.5rem !important;
+  padding:.6rem 1.2rem !important; text-decoration:none !important;
+}
+
+/* 8) Links outside cards (on blue) should be light */
+a{ color:#fff; }
+a:hover{ opacity:.85; text-decoration:none; }
+
+/* Inside cards, keep brand blue */
+.post-content a{ color:#2563eb !important; }
+.post-content a:hover{ opacity:.85 !important; text-decoration:underline !important; }
