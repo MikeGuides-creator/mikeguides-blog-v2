@@ -6,14 +6,16 @@ layout: default
   MikeGuides Blog
 </h1>
 
-<div class="blog-grid">
+<div class="blog-grid"
+     style="display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:1.5rem;align-items:stretch;padding:.25rem;">
   {% for post in site.posts %}
-    <a href="{{ post.url }}" class="blog-card">
+    <a href="{{ post.url }}" class="blog-card" style="display:block;background:#fff;color:#1f2937;border:1px solid #e5e7eb;border-radius:1rem;overflow:hidden;text-decoration:none;box-shadow:0 10px 25px -10px rgba(2,6,23,.12);transition:transform .2s ease, box-shadow .2s ease;">
       {% if post.image %}
-        <img src="{{ post.image }}" alt="{{ post.title }}">
+        <img src="{{ post.image }}" alt="{{ post.title }}" style="display:block;width:100%;height:auto;border-radius:.75rem .75rem 0 0;margin:0;">
       {% endif %}
-      <h2>{{ post.title }}</h2>
-      <p>{{ post.description | default: site.description | truncate: 120 }}</p>
+      <h2 style="font-family:'Poppins',sans-serif;font-size:1.25rem;margin:.75rem 1rem .25rem;color:#1f2937;">{{ post.title }}</h2>
+      <p style="margin:0 1rem 1rem;color:#64748b;font-size:.95rem;line-height:1.6;">{{ post.description | default: site.description | truncate:120 }}</p>
     </a>
   {% endfor %}
 </div>
+
