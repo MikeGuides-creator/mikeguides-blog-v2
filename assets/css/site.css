@@ -367,3 +367,55 @@ html::before{
   content:""; position:fixed; inset:0; pointer-events:none;
   background: radial-gradient(80% 80% at 50% 20%, rgba(0,0,0,0) 60%, rgba(0,0,0,.08) 100%);
 }
+/* ===== FINAL OVERRIDES (use an ID so nothing can override it) ===== */
+html { background:#2563eb !important; }
+body { background:transparent !important; color:#eef2ff !important; }
+main { background:transparent !important; }
+
+/* Grid container (ID wins over any class rules) */
+#mg-posts{
+  display:grid !important;
+  grid-template-columns:repeat(auto-fit,minmax(320px,1fr)) !important;
+  gap:1.5rem !important;
+  padding:.25rem !important;
+  list-style:none !important;
+  margin:0 !important;
+  background:transparent !important;
+  border:0 !important;
+  box-shadow:none !important;
+}
+
+/* Card tiles */
+#mg-posts > a.mg-card{
+  display:block !important;
+  background:#fff !important;
+  color:#1f2937 !important;
+  border:1px solid #e5e7eb !important;
+  border-radius:1rem !important;
+  overflow:hidden !important;
+  text-decoration:none !important;
+  box-shadow:0 10px 25px -10px rgba(2,6,23,.12) !important;
+  transition:transform .2s ease, box-shadow .2s ease !important;
+}
+#mg-posts > a.mg-card:hover{
+  transform:translateY(-2px) !important;
+  box-shadow:0 16px 40px -18px rgba(2,6,23,.20) !important;
+}
+
+/* Card contents */
+#mg-posts img{ display:block !important; width:100% !important; height:auto !important; border-radius:.75rem .75rem 0 0 !important; margin:0 !important; }
+#mg-posts h2{ font-family:'Poppins',sans-serif !important; font-size:1.25rem !important; margin:.75rem 1rem .25rem !important; color:#1f2937 !important; }
+#mg-posts p{ margin:0 1rem 1rem !important; color:#64748b !important; font-size:.95rem !important; line-height:1.6 !important; }
+
+/* CTA band as white card */
+.cta-banner{
+  background:#fff !important; color:#1f2937 !important;
+  border:1px solid #e5e7eb !important; border-radius:1rem !important;
+  box-shadow:0 12px 30px -12px rgba(2,6,23,.25) !important;
+}
+.cta-banner a{ background:#2563eb !important; color:#fff !important; font-weight:600 !important; border-radius:.5rem !important; padding:.6rem 1.2rem !important; text-decoration:none !important; }
+
+/* Header/Footer on cobalt */
+header{ background:transparent !important; color:#fff !important; position:relative !important; }
+header a{ color:#fff !important; }
+footer{ background:transparent !important; color:#e5e7eb !important; border-top:none !important; }
