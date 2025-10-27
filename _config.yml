@@ -15,3 +15,21 @@ defaults:
     values:
       layout: post
       image: /assets/img/og-cover.png
+# Site identity
+title: "MikeGuides Blog"
+description: "Actionable posts on pricing, marketing, and execution — plus free tools and updates."
+url: "https://blog.pricingforprofit.co"   # full origin with https
+baseurl: ""                               # KEEP EMPTY for a root-mapped custom domain
+
+# Defaults (nice to have)
+timezone: America/Chicago
+permalink: /:year/:month/:day/:title.html
+
+# Optional: default OG image (put the file in /assets/images/)
+og_image: "/assets/images/og-blog-default.png"
+
+# Plugins (optional but helpful)
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-last-modified-at
