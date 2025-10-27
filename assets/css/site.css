@@ -494,3 +494,55 @@ section article {
   border-radius: 1rem;
   box-shadow: 0 10px 25px -10px rgba(2,6,23,.12);
 }
+
+/* ===== Typography utilities shim (no Tailwind, but same class names) ===== */
+.font-extrabold { font-weight: 800 !important; }
+.text-2xl { font-size: 1.5rem !important; line-height: 2rem !important; }
+.text-3xl { font-size: 1.875rem !important; line-height: 2.25rem !important; }
+.text-4xl { font-size: 2.25rem !important; line-height: 2.5rem !important; }
+@media (min-width: 640px){ /* sm: */
+  .sm\:text-5xl { font-size: 3rem !important; line-height: 1.1 !important; }
+}
+
+/* Headings use Poppins by brand */
+.brand, h1, h2, h3 { font-family: 'Poppins', Inter, system-ui, -apple-system, Segoe UI, sans-serif !important; }
+
+/* Hero/intro section (the first <section> block) → white on cobalt */
+main > section:first-of-type h1,
+main > section:first-of-type p {
+  color: #fff !important;
+}
+
+/* Post cards: readable, clean typography inside white tiles */
+section article h2, section article h3 {
+  font-family: 'Poppins', Inter, sans-serif !important;
+  margin: .25rem 0 .25rem 0 !important;
+  color: #1f2937 !important;
+}
+section article p { 
+  color: #475569 !important; 
+  font-size: 1rem !important; 
+  line-height: 1.7 !important;
+}
+
+/* Ensure buttons stay white text on brand blue */
+.bg-\[var\(--mg-blue\)\] { background: var(--mg-blue) !important; }
+.text-white { color: #fff !important; }
+
+/* ===== Flags: larger + pinned to header corners ===== */
+header { position: relative !important; }
+.mg-flag { position: absolute; top: 10px; z-index: 10; }
+.mg-flag-us { left: 10px; }
+.mg-flag-ca { right: 10px; }
+
+/* Big flags (about 6–8×). Adjust as you like. */
+.mg-flag svg {
+  display: block;
+  width: 200px !important;       /* bump up from 144px */
+  height: 133px !important;      /* ~3:2 ratio */
+  border-radius: 6px !important;
+  box-shadow: 0 3px 10px rgba(0,0,0,.35) !important;
+}
+@media (max-width: 640px){
+  .mg-flag svg { width: 150px !important; height: 100px !important; }
+}
