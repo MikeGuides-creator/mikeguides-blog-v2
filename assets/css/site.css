@@ -7,13 +7,6 @@
   --radius-lg: 1rem;
   --radius-md: .75rem;
 }
-:root{
-  --mg-blue:#2563eb;
-  --mg-green:#22c55e;
-  --mg-yellow:#facc15; /* MikeGuides yellow */
-  --mg-navy:#0b1b4a;   /* deep blue */
-  --mg-ink:#1f2937;
-}
 
 html, body { height: 100%; }
 
@@ -46,7 +39,6 @@ main { max-width: 760px; margin: 2rem auto; padding: 0 1rem; }
 /* === MikeGuides gradient background === */
 :root{
   --mg-blue:#2563eb;
-  --mg-green:#22c55e;
   --mg-ink:#1f2937;
 }
 
@@ -130,14 +122,6 @@ a:hover { opacity:.85; }
 /* Footer */
 footer { text-align: center; font-size: .9rem; color: #4b5563; padding: 2rem; }
 
-/* ==== MikeGuides blog fixes (override) ==== */
-
-/* Gradient: yellow (BR) → green → blue → navy (TL) */
-:root{
-  --mg-blue:#2563eb; --mg-green:#22c55e; --mg-yellow:#facc15; --mg-navy:#0b1b4a;
-  --mg-ink:#1f2937;
-}
-
 /* Make the GRID an actual grid (was missing display) */
 .blog-grid{
   display:grid;
@@ -194,12 +178,6 @@ main > article,
 header{ background:transparent; color:#0f172a; }
 header a{ color:var(--mg-blue); }
 footer{ background:transparent; border-top:none; }
-
-/* Optional: soften the gradient a touch */
-body::before{
-  content:""; position:fixed; inset:0; pointer-events:none; z-index:-1;
-  background:rgba(255,255,255,.75);
-}
 
 /* ==== MikeGuides Blog: cobalt background + card grid (override) ==== */
 
