@@ -425,3 +425,8 @@ a:hover{ opacity:.85; text-decoration:none; }
 /* Inside cards, keep brand blue */
 .post-content a{ color:#2563eb !important; }
 .post-content a:hover{ opacity:.85 !important; text-decoration:underline !important; }
+
+html::before{
+  content:""; position:fixed; inset:0; pointer-events:none;
+  background: radial-gradient(80% 80% at 50% 20%, rgba(0,0,0,0) 60%, rgba(0,0,0,.08) 100%);
+}
