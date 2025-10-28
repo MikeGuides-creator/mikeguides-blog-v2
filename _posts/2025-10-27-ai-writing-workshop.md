@@ -1,10 +1,9 @@
 ---
 layout: post
-title: "AI Writing Workshop"
-description: "An interactive guide that interviews you, builds tailored prompts, and helps you draft any post faster—with better structure and tone."
-image: "/assets/images/posts/ai-writing-workshop-cover.jpg"
-canonical: "https://blog.pricingforprofit.co/2025/10/27/ai-writing-workshop.html"
-tags: ["AI Writing", "Content", "Workflows"]
+title: "Post Title"
+description: "One-sentence hook for the post."
+image: "/assets/images/posts/post-cover.jpg"   # optional but recommended
+# canonical: "https://blog.pricingforprofit.co/2025/10/27/post-title.html"  # optional
 ---
 
 If you've ever stared at a blank page, this is for you. **AI Writing Workshop** interviews you with quick questions, turns your answers into **tailored prompts**, and helps you draft articles, blog posts, emails, and landing pages—fast.
