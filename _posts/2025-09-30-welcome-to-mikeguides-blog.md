@@ -1,6 +1,9 @@
 ---
-title: "Welcome — what to expect here"
-excerpt: "Short, practical posts that ship work. Pricing, marketing, and the tools we actually use."
+layout: post
+title: "Post Title"
+description: "One-sentence hook for the post."
+image: "/assets/images/posts/post-cover.jpg"   # optional but recommended
+# canonical: "https://blog.pricingforprofit.co/2025/10/27/post-title.html"  # optional
 ---
 
 Welcome to the MikeGuides blog! Here you’ll find short, practical posts about pricing, content, and execution — plus new tool launches, checklists, and updates.
