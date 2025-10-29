@@ -1,10 +1,13 @@
 ---
 layout: post
-title: "AI Writing Workshop"
-description: "Answer a few smart questions and get tailored prompts, outlines, and draft copy—faster publishing with better structure."
-image: "/assets/images/posts/ai-writing-workshop/cover.jpg"
+title: "AI Writing Workshop – Complete Content Creation System"
+description: "A deeper dive into the workshop’s flow—audience, angles, outlines, and iteration."
+image: "/assets/images/posts/ai-writing-workshop-v1/cover.jpg"
 tags: ["AI Writing","Workflows"]
+# To avoid duplicate/competing content, consider hiding from index:
+# noindex: true
 ---
+
 
 If you've ever stared at a blank page, this is for you. **AI Writing Workshop** interviews you with quick questions, turns your answers into **tailored prompts**, and helps you draft articles, blog posts, emails, and landing pages—fast.
 
