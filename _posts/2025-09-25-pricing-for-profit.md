@@ -5,7 +5,7 @@ description: "Discover the Pricing for Profit guide—learn how to set rates wit
 image: /assets/og/pricing-for-profit.jpg    # 1200x630 image you add to repo
 category: Pricing
 tags: [pricing, margins, small-business, strategy]
-last update: 10-29-2025
+last update: 2025-10-29
 ---
 
 Pricing doesn’t have to be complicated. Use this quick flow:
