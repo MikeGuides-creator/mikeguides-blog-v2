@@ -6,7 +6,7 @@ image: /assets/og/chatgpt-mastery-simulator.jpg
 image_alt: "ChatGPT Mastery Simulator cover"
 category: Guides
 tags: [AI, ChatGPT, simulator, prompts, training, productivity]
-last_modified_at: 2025-10-03
+last_modified_at: 2025-10-28
 ---
 🧠 Train with ChatGPT Like a Pro
 
