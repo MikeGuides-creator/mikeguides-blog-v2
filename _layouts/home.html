@@ -1,65 +1,61 @@
-<!-- MikeGuides Blog — SEO Head -->
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+---
+layout: default
+---
 
-{%- assign page_title = page.seo_title | default: page.title | default: site.title | default: "MikeGuides Blog" -%}
-{%- assign page_desc  = page.description | default: site.description | default: "Actionable posts on pricing, marketing, and execution — plus free tools and updates." -%}
-{%- assign canonical  = page.canonical | default: page.url | absolute_url -%}
-{%- assign og_image   = page.image | default: site.og_image | default: "/assets/images/og-blog-default.png" | absolute_url -%}
+{%- assign featured = site.posts | first -%}
 
-<title>{{ page_title }}</title>
-<meta name="description" content="{{ page_desc }}">
-<link rel="canonical" href="{{ canonical }}">
+<!-- Hero / Intro -->
+<section class="max-w-6xl mx-auto px-6 pt-10 pb-8">
+  <h1 class="brand font-extrabold text-4xl sm:text-5xl" style="color:#fff">MikeGuides Blog</h1>
+  <p class="mt-3" style="color:#e2e8f0">Actionable posts on pricing, marketing, and execution — plus free tools and updates.</p>
+</section>
 
-<!-- Open Graph -->
-<meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}">
-<meta property="og:site_name" content="MikeGuides Blog">
-<meta property="og:title" content="{{ page_title }}">
-<meta property="og:description" content="{{ page_desc }}">
-<meta property="og:url" content="{{ canonical }}">
-<meta property="og:image" content="{{ og_image }}">
+<!-- Featured post (latest) -->
+<section class="max-w-6xl mx-auto px-6">
+  <article class="rounded-2xl border border-slate-200 bg-white overflow-hidden shadow-[0_10px_25px_-10px_rgba(2,6,23,.1)]">
+    <div class="grid md:grid-cols-2">
+      <!-- Media -->
+      <div class="card-media">
+        <a href="{{ featured.url }}">
+          <img src="{{ featured.image | default: site.og_image | absolute_url }}"
+               alt="{{ featured.title | escape }}">
+        </a>
+      </div>
+      <!-- Text -->
+      <div class="p-6 lg:p-8">
+        <div class="text-sm text-slate-500">{{ featured.date | date: "%b %d, %Y" }}</div>
+        <h2 class="mt-2 text-3xl font-bold" style="font-family:Poppins,Inter,sans-serif">
+          <a href="{{ featured.url }}" class="hover:text-[var(--mg-blue)]">{{ featured.title }}</a>
+        </h2>
+        <p class="mt-3 text-slate-600">{{ featured.description | default: site.description | truncate: 160 }}</p>
+        <div class="mt-5">
+          <a href="{{ featured.url }}" class="inline-flex items-center justify-center rounded-xl px-5 py-3 font-semibold text-white bg-[var(--mg-blue)] hover:opacity-90">Read the post</a>
+        </div>
+      </div>
+    </div>
+  </article>
+</section>
 
-<!-- Twitter -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="{{ page_title }}">
-<meta name="twitter:description" content="{{ page_desc }}">
-<meta name="twitter:image" content="{{ og_image }}">
-
-<!-- Robots toggle (optional per-page) -->
-{%- if page.noindex == true -%}<meta name="robots" content="noindex, nofollow">{%- endif -%}
-
-<!-- JSON-LD: Organization on non-post pages -->
-{%- if page.layout != 'post' -%}
-<script type="application/ld+json">
-{
-  "@context":"https://schema.org",
-  "@type":"Organization",
-  "name":"MikeGuides",
-  "url":"https://mikeguides.co",
-  "logo":"https://mikeguides.co/assets/images/og-cover-v2.png",
-  "sameAs":["https://mikeguides8.gumroad.com","https://blog.pricingforprofit.co"]
-}
-</script>
-{%- endif -%}
-
-<!-- JSON-LD: BlogPosting for posts -->
-{%- if page.layout == 'post' -%}
-<script type="application/ld+json">
-{
-  "@context":"https://schema.org",
-  "@type":"BlogPosting",
-  "headline": {{ page_title | jsonify }},
-  "description": {{ page_desc | jsonify }},
-  "image": {{ og_image | jsonify }},
-  "author": { "@type": "Organization", "name": "MikeGuides" },
-  "publisher": {
-    "@type": "Organization",
-    "name": "MikeGuides",
-    "logo": { "@type": "ImageObject", "url": "https://mikeguides.co/assets/images/og-cover-v2.png" }
-  },
-  "mainEntityOfPage": {{ canonical | jsonify }},
-  "datePublished": "{{ page.date | date_to_xmlschema }}",
-  "dateModified": "{{ page.last_modified_at | default: page.date | date_to_xmlschema }}"
-}
-</script>
-{%- endif -%}
+<!-- Cards grid -->
+<section class="max-w-6xl mx-auto px-6 py-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+  {%- for post in site.posts offset:1 -%}
+  <article class="rounded-2xl border border-slate-200 bg-white overflow-hidden shadow-[0_10px_25px_-10px_rgba(2,6,23,.1)]">
+    <a href="{{ post.url }}" class="block">
+      <div class="card-media">
+        <img src="{{ post.image | default: site.og_image | absolute_url }}"
+             alt="{{ post.title | escape }}">
+      </div>
+      <div class="p-6">
+        <div class="text-sm text-slate-500">{{ post.date | date: "%b %d, %Y" }}</div>
+        <h3 class="mt-1 text-2xl font-bold" style="font-family:Poppins,Inter,sans-serif">
+          {{ post.title }}
+        </h3>
+        <p class="mt-2 text-slate-600">{{ post.description | default: site.description | truncate: 120 }}</p>
+        <div class="mt-4">
+          <span class="inline-flex items-center justify-center rounded-xl px-4 py-2.5 text-sm font-semibold text-white bg-[var(--mg-blue)] hover:opacity-90">Read more</span>
+        </div>
+      </div>
+    </a>
+  </article>
+  {%- endfor -%}
+</section>
