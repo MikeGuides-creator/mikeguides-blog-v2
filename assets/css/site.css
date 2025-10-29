@@ -496,3 +496,15 @@ section article p {
 .bg-\[var\(--mg-blue\)\] { background: var(--mg-blue) !important; }
 .text-white { color: #fff !important; }
 
+/* Card media with safe cropping */
+.card-media{
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background: #f1f5f9;
+}
+.card-media img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
