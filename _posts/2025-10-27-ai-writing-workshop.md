@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "Post Title"
-description: "One-sentence hook for the post."
-image: "/assets/images/posts/post-cover.jpg"   # optional but recommended
-# canonical: "https://blog.pricingforprofit.co/2025/10/27/post-title.html"  # optional
+title: "AI Writing Workshop"
+description: "Answer a few smart questions and get tailored prompts, outlines, and draft copy—faster publishing with better structure."
+image: "/assets/images/posts/ai-writing-workshop/cover.jpg"
+tags: ["AI Writing","Workflows"]
 ---
 
 If you've ever stared at a blank page, this is for you. **AI Writing Workshop** interviews you with quick questions, turns your answers into **tailored prompts**, and helps you draft articles, blog posts, emails, and landing pages—fast.
