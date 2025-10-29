@@ -1,12 +1,9 @@
 ---
 layout: post
 title: "Business Builder Bundle"
-description: "Get the complete Business Builder Bundle—5 powerful AI guides designed to help entrepreneurs automate marketing, master pricing, and scale profitably."
-image: /assets/og/business-builder-bundle.jpg
-image_alt: "Business Builder Bundle cover — 5 guides in 1"
-category: Bundles
-tags: [entrepreneurship, toolkit, automation, growth, AI]
-last_modified_at: 2025-10-03
+description: "Best value: core guides and tools in one place so you can implement faster and ship more."
+image: "/assets/images/posts/business-builder-bundle/cover.jpg"
+tags: ["Bundles","Execution"]
 ---
 
 🚀 Build Smarter, Grow Faster
