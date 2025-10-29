@@ -6,8 +6,7 @@ image: /assets/og/ai-writing-workshop.jpg
 image_alt: "AI Writing Workshop cover"
 category: Guides
 tags: [AI, content creation, writing, productivity, entrepreneurs]
-last_modified_at: 2025-10-03
----
+last_modified_at: 2025-10-29
 ---
 
 ✍️ Write Smarter, Not Harder
