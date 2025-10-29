@@ -1,12 +1,10 @@
 ---
 layout: post
 title: "AI Marketing Toolkit"
-description: "Automate campaign planning, content creation, and keyword research with the AI Marketing Toolkit. Save hours each week and scale your reach with ease."
-image: /assets/og/ai-marketing-toolkit.jpg
-image_alt: "AI Marketing Toolkit cover"
-category: Guides
+description: "Prompts, templates, and workflows to plan campaigns, write copy, and publish consistently."
+image: "/assets/images/posts/ai-marketing-toolkit/cover.jpg"
 tags: [AI, marketing, toolkit, content, automation]
-last_modified_at: 2025-10-03
+last_modified_at: 2025-10-29
 ---
 
 📢 Smarter Marketing in Less Time
