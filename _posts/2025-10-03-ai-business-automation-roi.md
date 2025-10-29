@@ -1,13 +1,12 @@
 ---
 layout: post
 title: "AI Business Automation – Complete ROI Planning Guide"
-description: "Discover how to integrate AI automation into your business while tracking ROI every step of the way. Save time, reduce costs, and scale profitably."
-image: /assets/og/ai-business-automation-roi.jpg
-image_alt: "AI Business Automation ROI Planning cover"
-category: Guides
+description: "Model time and cost savings, pick the right automations, and prioritize by payback."
+image: "/assets/images/posts/ai-business-automation-roi/cover.jpg"
 tags: [AI, automation, ROI, business, efficiency, planning]
-last_modified_at: 2025-10-03
+last_modified_at: 2025-10-29
 ---
+
 ⚙️ Automate Smarter, Scale Faster
 
 Automation is no longer a luxury—it’s a necessity for modern businesses. But many entrepreneurs make the mistake of chasing shiny AI tools without knowing how (or if) they’ll actually pay off. The AI Business Automation – Complete ROI Planning Guide solves that problem. It’s a practical roadmap to help you identify what to automate, calculate the return, and roll out changes with confidence.
