@@ -1,11 +1,11 @@
 ---
 layout: post
-title: "Pricing for Profit"
-description: "Discover the Pricing for Profit guide—learn how to set rates with confidence, boost margins, and grow your business with proven strategies."
-image: /assets/og/pricing-for-profit.jpg    # 1200x630 image you add to repo
+title: "Pricing for profit"
+description: "Prompts, templates, and workflows…"
+cover_key: "pricingforprofit"
 category: Pricing
 tags: [pricing, margins, small-business, strategy]
-last update: 2025-10-29
+last update: 2025-10-30
 ---
 
 Pricing doesn’t have to be complicated. Use this quick flow:
