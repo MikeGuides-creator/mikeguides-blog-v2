@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "AI Business Automation – Complete ROI Planning Guide"
-description: "Model time and cost savings, pick the right automations, and prioritize by payback."
-image: "/assets/images/posts/ai-business-automation-roi/cover.jpg"
+title: "AI Business Automation"
+description: "Prompts, templates, and workflows to plan campaigns and publish consistently."
+cover_key: "aibusinessautomation.10302025"
 tags: [AI, automation, ROI, business, efficiency, planning]
-last_modified_at: 2025-10-29
+last_modified_at: 2025-10-30
 ---
 
 ⚙️ Automate Smarter, Scale Faster
