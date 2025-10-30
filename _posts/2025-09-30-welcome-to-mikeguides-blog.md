@@ -1,9 +1,8 @@
 ---
 layout: post
-title: "Post Title"
-description: "One-sentence hook for the post."
-image: "/assets/images/posts/post-cover.jpg"   # optional but recommended
-# canonical: "https://blog.pricingforprofit.co/2025/10/27/post-title.html"  # optional
+title: "Welcome to the MikeGuides blog"
+description: "Prompts, templates, and workflows…"
+cover_key: "welcome.image.10302025"
 ---
 
 Welcome to the MikeGuides blog! Here you’ll find short, practical posts about pricing, content, and execution — plus new tool launches, checklists, and updates.
