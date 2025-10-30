@@ -1,12 +1,11 @@
 ---
 layout: post
-title: "AI Writing Workshop – Complete Content Creation System"
-description: "Unlock the power of AI to brainstorm, outline, and generate any content faster with the AI Writing Workshop. A complete system for creators and entrepreneurs."
-image: /assets/og/ai-writing-workshop.jpg
-image_alt: "AI Writing Workshop cover"
+title: "AI Marketing Toolkit"
+description: "Prompts, templates, and workflows…"
+cover_key: "aimarketingtoolkit"
 category: Guides
 tags: [AI, content creation, writing, productivity, entrepreneurs]
-last_modified_at: 2025-10-29
+last_modified_at: 2025-10-30
 ---
 
 ✍️ Write Smarter, Not Harder
