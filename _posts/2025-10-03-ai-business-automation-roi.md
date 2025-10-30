@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "AI Business Automation"
-description: "Prompts, templates, and workflows to plan campaigns and publish consistently."
-cover_key: "aibusinessautomation.10302025"
+description: "Automation is achievable with our guide. Check for yourself. We have a free practice version."
+cover_key: "aibusinessautomation.10312025"
 tags: [AI, automation, ROI, business, efficiency, planning]
 last_modified_at: 2025-10-30
 ---
