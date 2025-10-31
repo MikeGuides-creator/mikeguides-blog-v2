@@ -1,37 +1,17 @@
 title: "MikeGuides Blog"
+description: "Actionable posts on pricing, marketing, and execution — plus free tools and updates."
 url: "https://blog.pricingforprofit.co"
 baseurl: ""
-# NEW: helps jekyll-seo-tag fill meta/OG/Twitter
-description: "Actionable guides, tools, and templates to price smarter and grow profitably."
-og_image: "/assets/images/cover/default.jpg"   # 1200x630 recommended
-cover_version: "..."
-cover_ext: "jpg"
+permalink: /:year/:month/:day/:title:output_ext
 
-permalink: /:title/
-plugins:
-  - jekyll-seo-tag
-  - jekyll-sitemap
-  - jekyll-feed
-  - jekyll-last-modified-at
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: post
+      future: false
 
-# Site identity
-title: "MikeGuides Blog"
-description: "Actionable posts on pricing, marketing, and execution — plus free tools and updates."
-url: "https://blog.pricingforprofit.co"   # full origin with https
-baseurl: ""                               # KEEP EMPTY for a root-mapped custom domain
-
-# Defaults (nice to have)
-timezone: America/Chicago
-permalink: /:year/:month/:day/:title.html
-
-# Optional: default OG image (put the file in /assets/images/)
-og_image: "/assets/images/og-blog-default.png"
-
-# Plugins (optional but helpful)
-plugins:
-  - jekyll-feed
-  - jekyll-sitemap
-  - jekyll-last-modified-at
-
-  if: ${{ success() || failure() }}
-
+show_drafts: false
+# optional global fallback for images:
+og_image: "/assets/images/cover/default.jpg"
