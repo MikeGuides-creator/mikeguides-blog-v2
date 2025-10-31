@@ -4,7 +4,7 @@ baseurl: ""
 # NEW: helps jekyll-seo-tag fill meta/OG/Twitter
 description: "Actionable guides, tools, and templates to price smarter and grow profitably."
 og_image: "/assets/images/cover/default.jpg"   # 1200x630 recommended
-cover_version: "10292025"
+cover_version: "10302025"
 cover_ext: "jpg"
 
 permalink: /:title/
