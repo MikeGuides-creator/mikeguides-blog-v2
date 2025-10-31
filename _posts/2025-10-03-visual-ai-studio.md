@@ -2,7 +2,7 @@
 layout: post
 title: "Complete Visual AI Studio"
 description: "Create on-brand graphics without the guesswork—repeatable prompts, remixing, and export-ready assets."
-cover_key:
+cover_key: "visualaistudio"
 image: /assets/images/cover/visualaistudio.jpg
 tags: [AI, visuals, design, branding, content, creators]
 last_modified_at: 2025-10-30
