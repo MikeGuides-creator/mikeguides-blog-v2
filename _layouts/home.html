@@ -20,7 +20,9 @@ layout: default
           {%- assign feat_img = "/assets/images/cover/" | append: featured.cover_key | append: ".jpg" -%}
         {%- endif -%}
         {%- assign feat_img = feat_img | default: site.og_image | absolute_url -%}
-        <a href="{{ featured.url | relative_url }}"><img src="{{ feat_img }}" alt="{{ featured.title | escape }}"></a>
+        <a href="{{ featured.url | relative_url }}">
+  <img src="{{ featured.image | default: site.og_image | absolute_url }}" alt="{{ featured.title | escape }}">
+</a>
       </div>
       <div class="card-body">
         <div class="card-date">{{ featured.date | date: "%b %d, %Y" }}</div>
