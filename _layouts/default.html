@@ -12,11 +12,18 @@
   <a href="{{ "/" | relative_url }}">Blog Home</a> |
   <a href="https://mikeguides.co/products">Shop Guides</a>
 </header>
-  
+  <script>
+document.addEventListener('error', function(e){
+  const el = e.target;
+  if (el.tagName === 'IMG' && !el.dataset.fallbackTried) {
+    el.dataset.fallbackTried = "1";
+    el.src = "{{ '/assets/images/cover/default.jpg' | relative_url }}";
+  }
+}, true);
+</script>
   <main>
     {{ content }}
   </main>
-
   <footer>
     <div class="cta-banner">
       <p>🚀 Explore interactive guides & toolkits at <strong>MikeGuides.co</strong></p>
