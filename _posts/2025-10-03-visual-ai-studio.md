@@ -2,9 +2,9 @@
 layout: post
 title: "Complete Visual AI Studio"
 description: "Create on-brand graphics without the guesswork—repeatable prompts, remixing, and export-ready assets."
-image: "/assets/images/posts/visual-ai-studio/cover.jpg"
+image: "/assets/images/posts/visualaistudio.10302025.jpg"
 tags: [AI, visuals, design, branding, content, creators]
-last_modified_at: 2025-10-28
+last_modified_at: 2025-10-30
 ---
 
 🎨 Create Graphics Without the Guesswork
