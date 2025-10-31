@@ -508,3 +508,5 @@ section article p {
   object-fit: cover;
   display: block;
 }
+.card-media{ aspect-ratio:1/1; overflow:hidden; background:#f1f5f9; border-bottom:1px solid #eef2f7; }
+.card-media img{ width:100%; height:100%; object-fit:cover; display:block; }
