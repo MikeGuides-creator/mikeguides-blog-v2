@@ -19,6 +19,8 @@
         {%- assign feat_img = feat_img | default: site.og_image | absolute_url -%}
         <a href="{{ featured.url }}">
           <img src="{{ feat_img }}" alt="{{ featured.title | escape }}">
+          <small style="display:block;color:#64748b;padding:.5rem 0">FEATURED IMG → {{ feat_img }}</small>
+          <small style="display:block;color:#64748b;padding:.5rem 0">CARD IMG → {{ card_img }}</small>
         </a>
       </div>
       <!-- Text -->
