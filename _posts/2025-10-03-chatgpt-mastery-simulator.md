@@ -2,11 +2,11 @@
 layout: post
 title: "ChatGPT Mastery Simulator"
 description: "Practice real-world scenarios and prompts with the ChatGPT Mastery Simulator. Learn faster, build confidence, and unlock AI’s full business potential."
-image: /assets/og/chatgpt-mastery-simulator.jpg
-image_alt: "ChatGPT Mastery Simulator cover"
+description: "Prompts, templates, and workflows to plan campaigns and publish consistently."
+cover_key: "chatgptmasterysimulator"
 category: Guides
 tags: [AI, ChatGPT, simulator, prompts, training, productivity]
-last_modified_at: 2025-10-28
+last_modified_at: 2025-10-30
 ---
 
 🧠 Train with ChatGPT Like a Pro
