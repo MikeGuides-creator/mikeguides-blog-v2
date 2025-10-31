@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "AI Marketing Toolkit"
-description: "Prompts, templates, and workflows to plan campaigns, write copy, and publish consistently."
-image: "/assets/images/posts/ai-marketing-toolkit/cover.jpg"
+description: "Prompts, templates, and workflows…"
+cover_key: "aimarketingtoolkit"
 tags: [AI, marketing, toolkit, content, automation]
 last_modified_at: 2025-10-29
 ---
