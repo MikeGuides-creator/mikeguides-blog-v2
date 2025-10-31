@@ -3,7 +3,7 @@ layout: post
 title: "Welcome to the MikeGuides blog"
 description: "Prompts, templates, and workflows…"
 cover_key: "welcome"
-image: /assets/images/cover/welcome.jpg
+image: /assets/images/cover/welcome.1280x720.jpg
 ---
 
 Welcome to the MikeGuides blog! Here you’ll find short, practical posts about pricing, content, and execution — plus new tool launches, checklists, and updates.
