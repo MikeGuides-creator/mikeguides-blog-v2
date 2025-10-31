@@ -1,45 +1,36 @@
+---
+---
 <!DOCTYPE html>
 <html lang="en">
 <head>
   {% include head.html %}
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@600&display=swap">
   <link rel="stylesheet" href="/assets/css/site.css">
-  </head>
+  <title>{{ page.title | default: site.title }}</title>
+</head>
 <body>
   <header>
-  <a href="https://mikeguides.co">MikeGuides</a> |
-  <a href="{{ "/" | relative_url }}">Blog Home</a> |
-  <a href="https://mikeguides.co/products">Shop Guides</a>
-</header>
-  <script>
-document.addEventListener('error', function(e){
-  const el = e.target;
-  if (el.tagName === 'IMG' && !el.dataset.fallbackTried) {
-    el.dataset.fallbackTried = "1";
-    el.src = "{{ '/assets/images/cover/default.jpg' | relative_url }}";
-  }
-}, true);
-</script>
+    <a href="https://mikeguides.co">MikeGuides</a> |
+    <a href="/">Blog Home</a> |
+    <a href="https://mikeguides.co/products">Shop Guides</a>
+  </header>
+
   <main>
     {{ content }}
   </main>
-  <footer>
-    <div class="cta-banner">
-      <p>🚀 Explore interactive guides & toolkits at <strong>MikeGuides.co</strong></p>
-      <a href="https://mikeguides.co/products/">Shop Guides</a>
-    </div>
-    <p>© 2025 MikeGuides.co — Smarter tools for smarter business.</p>
-  </footer>
-  <script>
-document.addEventListener('error', function(e) {
-  const el = e.target;
-  if (el.tagName === 'IMG' && !el.dataset.fallbackTried) {
-    el.dataset.fallbackTried = "1";
-    el.src = "/assets/images/cover/default.jpg";
-  }
-}, true);
-</script>
 
+  <script>
+  // global image fallback (keep)
+  document.addEventListener('error', function(e){
+    const el = e.target;
+    if (el.tagName === 'IMG' && !el.dataset.fallbackTried) {
+      el.dataset.fallbackTried = "1";
+      el.src = "/assets/images/cover/default.jpg";
+    }
+  }, true);
+  </script>
 </body>
 </html>
