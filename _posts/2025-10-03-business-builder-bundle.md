@@ -4,6 +4,7 @@ title: "Business Builder Bundle"
 description: "Prompts, templates, and workflows…"
 cover_key: "bbbundle"
 image: /assets/images/cover/bbbundle.jpg
+featured: true
 tags: ["Bundles","Execution"]
 Last_modified: 2025-10-29
 ---
