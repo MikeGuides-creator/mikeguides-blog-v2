@@ -13,8 +13,8 @@ layout: default
 <section class="featured-wrap">
   <article class="featured-card">
     <div class="featured-grid">
-      <div class="card-media">
-        {%- assign feat_img = featured.image -%}
+      <div class="featured-media">
+{%- assign feat_img = featured.image -%}
         {%- if (feat_img == nil or feat_img == "") and featured.cover_key -%}
           {%- assign feat_img = "/assets/images/cover/" | append: featured.cover_key | append: ".jpg" -%}
         {%- endif -%}
