@@ -3,8 +3,9 @@ layout: post
 title: "AI Marketing Toolkit"
 description: "Prompts, templates, and workflows…"
 cover_key: "aimarketingtoolkit"
+image: "/assets/images/cover/aimarketingtoolkit.10292025.jpg"
 tags: [AI, marketing, toolkit, content, automation]
-last_modified_at: 2025-10-29
+last_modified_at: 2025-10-30
 ---
 
 📢 Smarter Marketing in Less Time
