@@ -3,21 +3,16 @@ url: "https://blog.pricingforprofit.co"
 baseurl: ""
 # NEW: helps jekyll-seo-tag fill meta/OG/Twitter
 description: "Actionable guides, tools, and templates to price smarter and grow profitably."
-cover_version: "10292025"   # the date stamp you’re using
-cover_ext: "jpg"            # or "png" if any are png
+og_image: "/assets/images/cover/default.jpg"   # 1200x630 recommended
+cover_version: "10292025"
+cover_ext: "jpg"
+
 permalink: /:title/
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-feed
   - jekyll-last-modified-at
-defaults:
-  - scope: { path: "", type: "posts" }
-    values:
-      layout: post
-      image: /assets/img/og-cover.png
-      future: false
-show_drafts: false
 
 # Site identity
 title: "MikeGuides Blog"
