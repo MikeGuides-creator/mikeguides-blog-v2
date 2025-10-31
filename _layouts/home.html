@@ -34,28 +34,26 @@ image: /assets/images/cover/bbbundle.jpg
   {%- endfor -%}
 </section>
 
-<!-- Cards grid -->
-<section class="blog-grid">
-  {%- for post in site.posts offset:1 -%}
-  <article class="blog-card">
-    <a href="{{ post.url }}" class="blog-card-link">
+<!-- Featured -->
+<section class="featured-wrap">
+  <article class="featured-card">
+    <div class="featured-grid">
       <div class="card-media">
-        {%- assign card_img = post.image -%}
-        {%- if (card_img == nil or card_img == "") and post.cover_key -%}
-          {%- assign card_img = "/assets/images/cover/" | append: post.cover_key | append: ".jpg" -%}
+        {%- assign feat_img = featured.image -%}
+        {%- if (feat_img == nil or feat_img == "") and featured.cover_key -%}
+          {%- assign feat_img = "/assets/images/cover/" | append: featured.cover_key | append: ".jpg" -%}
         {%- endif -%}
-        {%- assign card_img = card_img | default: site.og_image | absolute_url -%}
-        <img src="{{ card_img }}" alt="{{ post.title | escape }}">
+        {%- assign feat_img = feat_img | default: site.og_image | absolute_url -%}
+        <a href="{{ featured.url }}"><img src="{{ feat_img }}" alt="{{ featured.title | escape }}"></a>
       </div>
       <div class="card-body">
-        <div class="card-date">{{ post.date | date: "%b %d, %Y" }}</div>
-        <h3 class="card-title">{{ post.title }}</h3>
-        <p class="card-desc">{{ post.description | default: site.description | truncate: 120 }}</p>
-        <div class="card-cta">Read more</div>
+        <div class="card-date">{{ featured.date | date: "%b %d, %Y" }}</div>
+        <h2 class="card-title-lg">{{ featured.title }}</h2>
+        <p class="card-desc">{{ featured.description | default: site.description | truncate: 160 }}</p>
+        <a href="{{ featured.url }}" class="card-button">Read the post</a>
       </div>
-    </a>
+    </div>
   </article>
-  {%- endfor -%}
 </section>
 
 <!-- Fallback for any broken images -->
