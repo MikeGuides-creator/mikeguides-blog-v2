@@ -1,7 +1,3 @@
----
-layout: default
----
-
 {%- assign featured = site.posts | first -%}
 
 <!-- Hero / Intro -->
@@ -16,9 +12,13 @@ layout: default
     <div class="grid md:grid-cols-2">
       <!-- Media -->
       <div class="card-media">
+        {%- assign feat_img = featured.image -%}
+        {%- if (feat_img == nil or feat_img == "") and featured.cover_key -%}
+          {%- assign feat_img = "/assets/images/cover/" | append: featured.cover_key | append: "." | append: site.cover_version | append: "." | append: site.cover_ext -%}
+        {%- endif -%}
+        {%- assign feat_img = feat_img | default: site.og_image | absolute_url -%}
         <a href="{{ featured.url }}">
-          <img src="{{ featured.image | default: site.og_image | absolute_url }}"
-               alt="{{ featured.title | escape }}">
+          <img src="{{ feat_img }}" alt="{{ featured.title | escape }}">
         </a>
       </div>
       <!-- Text -->
@@ -42,8 +42,12 @@ layout: default
   <article class="rounded-2xl border border-slate-200 bg-white overflow-hidden shadow-[0_10px_25px_-10px_rgba(2,6,23,.1)]">
     <a href="{{ post.url }}" class="block">
       <div class="card-media">
-        <img src="{{ post.image | default: site.og_image | absolute_url }}"
-             alt="{{ post.title | escape }}">
+        {%- assign card_img = post.image -%}
+        {%- if (card_img == nil or card_img == "") and post.cover_key -%}
+          {%- assign card_img = "/assets/images/cover/" | append: post.cover_key | append: "." | append: site.cover_version | append: "." | append: site.cover_ext -%}
+        {%- endif -%}
+        {%- assign card_img = card_img | default: site.og_image | absolute_url -%}
+        <img src="{{ card_img }}" alt="{{ post.title | escape }}">
       </div>
       <div class="p-6">
         <div class="text-sm text-slate-500">{{ post.date | date: "%b %d, %Y" }}</div>
