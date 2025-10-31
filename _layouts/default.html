@@ -31,5 +31,15 @@ document.addEventListener('error', function(e){
     </div>
     <p>© 2025 MikeGuides.co — Smarter tools for smarter business.</p>
   </footer>
+  <script>
+document.addEventListener('error', function(e) {
+  const el = e.target;
+  if (el.tagName === 'IMG' && !el.dataset.fallbackTried) {
+    el.dataset.fallbackTried = "1";
+    el.src = "/assets/images/cover/default.jpg";
+  }
+}, true);
+</script>
+
 </body>
 </html>
