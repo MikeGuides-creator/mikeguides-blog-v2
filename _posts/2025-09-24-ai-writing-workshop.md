@@ -3,6 +3,7 @@ layout: post
 title: "AI Marketing Toolkit"
 description: "Prompts, templates, and workflows…"
 cover_key: "aimarketingtoolkit"
+image: /assets/images/cover/aiwritingworkshop.jpg
 category: Guides
 tags: [AI, content creation, writing, productivity, entrepreneurs]
 last_modified_at: 2025-10-30
