@@ -36,10 +36,11 @@ layout: default
 </section>
 
 <!-- Cards -->
-<section class="max-w-6xl mx-auto px-6 py-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+<!-- Cards grid -->
+<section class="blog-grid">
   {%- for post in site.posts offset:1 -%}
-  <article class="rounded-2xl border border-slate-200 bg-white overflow-hidden shadow-[0_10px_25px_-10px_rgba(2,6,23,.1)]">
-    <a href="{{ post.url }}" class="block">
+  <article class="blog-card">
+    <a href="{{ post.url }}" class="blog-card-link">
       <div class="card-media">
         {%- assign card_img = post.image -%}
         {%- if (card_img == nil or card_img == "") and post.cover_key -%}
@@ -48,13 +49,11 @@ layout: default
         {%- assign card_img = card_img | default: site.og_image | absolute_url -%}
         <img src="{{ card_img }}" alt="{{ post.title | escape }}">
       </div>
-      <div class="p-6">
-        <div class="text-sm text-slate-500">{{ post.date | date: "%b %d, %Y" }}</div>
-        <h3 class="mt-1 text-2xl font-bold" style="font-family:Poppins,Inter,sans-serif">{{ post.title }}</h3>
-        <p class="mt-2 text-slate-600">{{ post.description | default: site.description | truncate: 120 }}</p>
-        <div class="mt-4">
-          <span class="inline-flex items-center justify-center rounded-xl px-4 py-2.5 text-sm font-semibold text-white bg-[var(--mg-blue)] hover:opacity-90">Read more</span>
-        </div>
+      <div class="card-body">
+        <div class="card-date">{{ post.date | date: "%b %d, %Y" }}</div>
+        <h3 class="card-title">{{ post.title }}</h3>
+        <p class="card-desc">{{ post.description | default: site.description | truncate: 120 }}</p>
+        <div class="card-cta">Read more</div>
       </div>
     </a>
   </article>
