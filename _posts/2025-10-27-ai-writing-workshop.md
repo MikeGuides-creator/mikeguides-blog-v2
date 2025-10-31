@@ -2,7 +2,7 @@
 layout: post
 title: "AI Writing Workshop – Complete Content Creation System"
 description: "A deeper dive into the workshop’s flow—audience, angles, outlines, and iteration."
-image: "/assets/images/posts/aiwritingworkshop.10302025.jpg"
+image: /assets/images/cover/aiwritingworkshop.jpg
 tags: ["AI Writing","Workflows"]
 # To avoid duplicate/competing content, consider hiding from index:
 # noindex: true
