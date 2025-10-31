@@ -17,13 +17,9 @@
     <a href="/">Blog Home</a> |
     <a href="https://mikeguides.co/products">Shop Guides</a>
   </header>
-
-  <main>
-    {{ content }}
-  </main>
+  <main>{{ content }}</main>
 
   <script>
-  // global image fallback (keep)
   document.addEventListener('error', function(e){
     const el = e.target;
     if (el.tagName === 'IMG' && !el.dataset.fallbackTried) {
