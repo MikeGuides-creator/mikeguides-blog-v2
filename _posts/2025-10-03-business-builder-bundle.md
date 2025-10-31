@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Business Builder Bundle"
-description: "Best value: core guides and tools in one place so you can implement faster and ship more."
-image: "/assets/images/posts/business-builder-bundle/cover.jpg"
+description: "Prompts, templates, and workflows…"
+cover_key: "bbbundle.10302025"
 tags: ["Bundles","Execution"]
 Last_modified: 2025-10-29
 ---
