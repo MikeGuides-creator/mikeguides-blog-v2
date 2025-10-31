@@ -1,14 +1,11 @@
 ---
 layout: default
 ---
+<article class="max-w-3xl mx-auto px-6 py-10 prose prose-slate">
+  <header class="mb-6">
+    <h1 class="mb-2" style="font-family:Poppins,Inter,sans-serif">{{ page.title }}</h1>
+    <p class="text-slate-500 text-sm">{{ page.date | date: "%b %d, %Y" }}</p>
+  </header>
 
-<article>
-  <h1 style="font-family:'Poppins',sans-serif;font-size:2.25rem;font-weight:700;margin-bottom:.5rem;">{{ page.title }}</h1>
-  <p style="color:#64748b;font-size:.95rem;margin-top:0;">{{ page.date | date: "%B %d, %Y" }}</p>
-  {% if page.image %}
-    <img src="{{ page.image }}" alt="{{ page.title }}" style="border-radius:1rem;margin:1rem 0;width:100%;height:auto;">
-  {% endif %}
-  <div class="post-content" style="line-height:1.75;font-size:1.05rem;">
-    {{ content }}
-  </div>
+  {{ content }}
 </article>
