@@ -9,6 +9,28 @@ layout: default
   <p class="mt-3" style="color:#e2e8f0">Actionable posts on pricing, marketing, and execution — plus free tools and updates.</p>
 </section>
 
+<!-- Featured -->
+<section class="featured-wrap">
+  <article class="featured-card">
+    <div class="featured-grid">
+      <div class="card-media">
+        {%- assign feat_img = featured.image -%}
+        {%- if (feat_img == nil or feat_img == "") and featured.cover_key -%}
+          {%- assign feat_img = "/assets/images/cover/" | append: featured.cover_key | append: ".jpg" -%}
+        {%- endif -%}
+        {%- assign feat_img = feat_img | default: site.og_image | absolute_url -%}
+        <a href="{{ featured.url }}"><img src="{{ feat_img }}" alt="{{ featured.title | escape }}"></a>
+      </div>
+      <div class="card-body">
+        <div class="card-date">{{ featured.date | date: "%b %d, %Y" }}</div>
+        <h2 class="card-title-lg">{{ featured.title }}</h2>
+        <p class="card-desc">{{ featured.description | default: site.description | truncate: 160 }}</p>
+        <a href="{{ featured.url }}" class="card-button">Read the post</a>
+      </div>
+    </div>
+  </article>
+</section>
+
 <!-- Cards grid -->
 <section class="blog-grid">
   {%- for post in site.posts offset:1 -%}
@@ -31,28 +53,6 @@ layout: default
     </a>
   </article>
   {%- endfor -%}
-</section>
-
-<!-- Featured -->
-<section class="featured-wrap">
-  <article class="featured-card">
-    <div class="featured-grid">
-      <div class="card-media">
-        {%- assign feat_img = featured.image -%}
-        {%- if (feat_img == nil or feat_img == "") and featured.cover_key -%}
-          {%- assign feat_img = "/assets/images/cover/" | append: featured.cover_key | append: ".jpg" -%}
-        {%- endif -%}
-        {%- assign feat_img = feat_img | default: site.og_image | absolute_url -%}
-        <a href="{{ featured.url }}"><img src="{{ feat_img }}" alt="{{ featured.title | escape }}"></a>
-      </div>
-      <div class="card-body">
-        <div class="card-date">{{ featured.date | date: "%b %d, %Y" }}</div>
-        <h2 class="card-title-lg">{{ featured.title }}</h2>
-        <p class="card-desc">{{ featured.description | default: site.description | truncate: 160 }}</p>
-        <a href="{{ featured.url }}" class="card-button">Read the post</a>
-      </div>
-    </div>
-  </article>
 </section>
 
 <!-- Fallback for any broken images -->
