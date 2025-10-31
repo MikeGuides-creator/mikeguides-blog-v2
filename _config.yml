@@ -4,6 +4,10 @@ url: "https://blog.pricingforprofit.co"
 baseurl: ""
 permalink: /:year/:month/:day/:title:output_ext
 
+# Optional: allowed plugin
+plugins:
+  - jekyll-seo-tag
+
 defaults:
   - scope:
       path: ""
@@ -13,5 +17,6 @@ defaults:
       future: false
 
 show_drafts: false
-# optional global fallback for images:
+
+# Global fallback image (your file should exist)
 og_image: "/assets/images/cover/default.jpg"
