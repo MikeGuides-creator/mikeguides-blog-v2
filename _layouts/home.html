@@ -26,9 +26,11 @@ layout: default
       </div>
       <div class="card-body">
         <div class="card-date">{{ featured.date | date: "%b %d, %Y" }}</div>
-        <h2 class="card-title-lg">{{ featured.title }}</h2>
+        <h2 class="card-title-lg">
+  <a href="{{ featured.url | relative_url }}" class="card-link">{{ featured.title }}</a>
+</h2>
         <p class="card-desc">{{ featured.description | default: site.description | truncate: 160 }}</p>
-        <a href="{{ featured.url }}" class="card-button">Read the post</a>
+        <a href="{{ featured.url | relative_url }}" class="card-button">Read the post</a>
       </div>
     </div>
   </article>
