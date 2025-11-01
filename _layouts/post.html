@@ -2,12 +2,19 @@
 layout: default
 ---
 
-{%- assign hero_img = include.hero_img | default: "" -%}
-{%- if hero_img == "" -%}
-  {%- capture hero_img -%}{% include featured-image.html %}{%- endcapture -%}
-{%- endif -%}
+{%- capture hero_img -%}{% include featured-image.html %}{%- endcapture -%}
+<figure class="mx-auto mb-6 overflow-hidden rounded-2xl shadow-[0_10px_25px_-10px_rgba(2,6,23,.1)]">
+  <a href="{{ page.url | relative_url }}" class="block">
+    <img
+      src="{{ hero_img | strip }}"
+      alt="{{ page.title | escape }}"
+      decoding="async"
+      loading="eager"
+      style="display:block;width:100%;height:auto;object-fit:cover;aspect-ratio:16/9;"
+      sizes="(min-width:1024px) 960px, 100vw">
+  </a>
+</figure>
 
-<article class="post">
   <!-- Hero image block -->
   <figure class="mx-auto mb-6 block overflow-hidden rounded-2xl shadow-[0_10px_25px_-10px_rgba(2,6,23,.1)]">
     <a href="{{ page.url | relative_url }}">
