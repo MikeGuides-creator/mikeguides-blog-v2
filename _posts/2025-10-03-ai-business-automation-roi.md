@@ -3,8 +3,8 @@ layout: post
 title: "AI Business Automation"
 description: "Automation is achievable with our guide. Check for yourself. We have a free practice version."
 cover_key: "aibusinessautomation"
-image: /assets/images/cover/aibusinessautomation.jpg
-featured_image: /assets/images/cover/aibusinessautomation/aibusinessautomation.jpg
+image: /assets/images/cover/aibusinessautomation.1280x720jpg
+featured_image: /assets/images/cover/aibusinessautomation/aibusinessautomation.1280x720.jpg
 tags: [AI, automation, ROI, business, efficiency, planning]
 last_modified_at: 2025-11-01
 ---
