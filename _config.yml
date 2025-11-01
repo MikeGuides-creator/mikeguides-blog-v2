@@ -8,13 +8,17 @@ permalink: /:year/:month/:day/:title:output_ext
 plugins:
   - jekyll-seo-tag
 
+# --- Featured image defaults ---
 defaults:
   - scope:
-      path: ""
-      type: "posts"
+      path: ""   # all posts
+      type: posts
     values:
-      layout: post
-      future: false
+      featured_image: ""
+      hero_image: ""
+      og_image: ""
+      # Set a semantic default used everywhere if page-level fields are empty:
+      featured_image_fallback: "/assets/images/blog/default.jpg"
 
 show_drafts: false
 
