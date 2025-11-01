@@ -9,7 +9,6 @@ tags: ["AI Writing","Workflows"]
 # noindex: true
 ---
 
-
 If you've ever stared at a blank page, this is for you. **AI Writing Workshop** interviews you with quick questions, turns your answers into **tailored prompts**, and helps you draft articles, blog posts, emails, and landing pages—fast.
 
 ## What it does (in 60 seconds)
