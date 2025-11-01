@@ -8,7 +8,7 @@ featured_image: /assets/images/cover/ai-marketing-workshop/aimarketingworkshop.j
 category: Pricing
 tags: [AI, marketing, toolkit, content, automation]
 last update: 2025-11-01
-—
+---
 
 ✍️ Write Smarter, Not Harder
 
