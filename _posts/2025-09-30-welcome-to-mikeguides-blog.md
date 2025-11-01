@@ -3,8 +3,8 @@ layout: post
 title: "Welcome — what to expect here"
 description: "Short, practical posts that ship work. Pricing, marketing, and tools we actually use."
 cover_key: "welcome — what to expect here."
-image: /assets/images/posts/welcome.1280x720/welcome.1280x720jpg
-featured_image: /assets/images/posts/welcome.1280x720/welcome.1280x720.jpg
+image: /assets/images/cover/welcome.1280x720/welcome.1280x720jpg
+featured_image: /assets/images/cover/welcome.1280x720/welcome.1280x720.jpg
 category: Welcome
 tags: [welcome, greeting, expectations, showcase]
 last update: 2025-11-01
