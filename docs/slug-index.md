@@ -1,5 +1,8 @@
-visual-ai-studio,
-chatgpt-mastery,
-business-builder-bundle,
-ai-marketing-toolkit,
-business-automation-roi,
+# MikeGuides Slug Index (Descending)
+
+- business-automation-roi
+- ai-marketing-toolkit
+- business-builder-bundle
+- chatgpt-mastery
+- visual-ai-studio
+
