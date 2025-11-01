@@ -1,12 +1,10 @@
 ---
-
+layout: posts
+title: "AI Marketing Toolkit"
 _posts/2025-09-24-ai-writing-workshop.md
 assets/images/posts/ai-writing-workshop/aimarketingworkshop.jpg
-
-title: "AI Marketing Toolkit"
 description: "Prompts, templates, and workflows…"
 cover_key: "aiwritingworkshop"
-image: /assets/images/cover/aiwritingworkshop.jpg
 category: Guides
 tags: [AI, content creation, writing, productivity, entrepreneurs]
 last_modified_at: 2025-10-30
