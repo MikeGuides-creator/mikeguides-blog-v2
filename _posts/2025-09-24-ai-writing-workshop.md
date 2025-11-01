@@ -1,14 +1,14 @@
 ---
-layout: posts
-title: "AI Marketing Toolkit"
-_posts/2025-09-24-ai-writing-workshop.md
-assets/images/posts/ai-writing-workshop/aimarketingworkshop.jpg
+layout: post
+title: "AI Marketing Workshop"
 description: "Prompts, templates, and workflows…"
-cover_key: "aiwritingworkshop"
-category: Guides
-tags: [AI, content creation, writing, productivity, entrepreneurs]
-last_modified_at: 2025-10-30
----
+cover_key: "aimarketingworkshop"
+image: /assets/images/cover/ai-writing-workshop/aimarketingworkshop.jpg
+featured_image: /assets/images/cover/ai-marketing-workshop/aimarketingworkshop.jpg
+category: Pricing
+tags: [AI, marketing, toolkit, content, automation]
+last update: 2025-11-01
+—
 
 ✍️ Write Smarter, Not Harder
 
