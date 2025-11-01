@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-{%- assign featured = site.posts | where: "featured", true | first | default: site.posts | first -%}
+{%- assign featured = site.posts | where_exp: "p", "p.featured == true" | first | default: site.posts | first -%}
 
 <!-- Hero -->
 <section class="max-w-6xl mx-auto px-6 pt-10 pb-8">
