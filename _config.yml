@@ -8,6 +8,11 @@ permalink: /:year/:month/:day/:title:output_ext
 plugins:
   - jekyll-seo-tag
 
+collections:
+  slugs:
+    output: true
+    permalink: /slugs/:name/
+
 # --- Featured image defaults ---
 defaults:
   - scope:
