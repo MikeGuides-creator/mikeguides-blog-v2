@@ -1,30 +1,4 @@
-{%- comment -%}
-Resolves the best featured image for a page in this priority:
-1) page.featured_image
-2) page.hero_image
-3) first <img src=""> in content
-4) site-wide fallback from _config.yml (featured_image_fallback)
-
-Outputs a single absolute URL string (no markup).
-{%- endcomment -%}
-
-{%- assign _img = page.featured_image | default: page.hero_image -%}
-
-{%- if _img == nil or _img == "" -%}
-  {%- comment %}Try to extract first image from the rendered content{% endcomment -%}
-  {%- assign m = content | regex_find: 'src=["'']([^"'']+)["'']' -%}
-  {%- if m and m.size > 0 -%}
-    {%- assign _img = m[0] | replace: 'src="', '' | replace: "src='", '' | split: '"' | first | split: "'" | first -%}
-  {%- endif -%}
-{%- endif -%}
-
-{%- if _img == nil or _img == "" -%}
-  {%- assign _img = site.featured_image_fallback -%}
-{%- endif -%}
-
-{%- comment -%}
-Normalize to absolute URL for OG/Twitter. Works on Netlify + GitHub Pages.
-{%- endcomment -%}
+{%- assign _img = page.featured_image | default: page.hero_image | default: site.featured_image_fallback -%}
 {%- if _img contains 'http' -%}
   {{ _img }}
 {%- else -%}
