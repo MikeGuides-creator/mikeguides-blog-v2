@@ -1,0 +1,12 @@
+---
+layout: default
+title: Slug Index
+---
+
+<h1>Slug Index (Newest First)</h1>
+<ul>
+  {% assign sorted = site.slugs | sort: "date" | reverse %}
+  {% for item in sorted %}
+    <li>{{ item.slug }}</li>
+  {% endfor %}
+</ul>
