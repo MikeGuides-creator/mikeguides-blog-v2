@@ -1,5 +1,8 @@
 ---
-layout: post
+
+_posts/2025-09-24-ai-writing-workshop.md
+assets/images/posts/ai-writing-workshop/aimarketingworkshop.jpg
+
 title: "AI Marketing Toolkit"
 description: "Prompts, templates, and workflows…"
 cover_key: "aiwritingworkshop"
