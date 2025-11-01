@@ -246,6 +246,9 @@ main{ max-width:860px; margin:2.5rem auto; padding:0 1rem; background:transparen
 /* Post body cards on blue background */
 main > article,
 .post-content,
+/* ensures the hero block sits right at the top of the post body */
+.post > figure:first-child { margin-top: 0; }
+
 .page-card{
   background:#fff;
   color: var(--mg-ink);
