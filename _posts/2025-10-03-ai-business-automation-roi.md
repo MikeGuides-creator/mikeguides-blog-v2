@@ -4,7 +4,7 @@ title: "AI Business Automation"
 description: "Automation is achievable with our guide. Check for yourself. We have a free practice version."
 cover_key: "aibusinessautomation"
 image: /assets/images/cover/aibusinessautomation.jpg
-featured_image: /assets/images/posts/pricingforprofit/pricingforprofit.jpg
+featured_image: /assets/images/cover/aibusinessautomation/aibusinessautomation.jpg
 tags: [AI, automation, ROI, business, efficiency, planning]
 last_modified_at: 2025-11-01
 ---
