@@ -16,6 +16,10 @@
     <a href="https://mikeguides.co">MikeGuides</a> |
     <a href="/">Blog Home</a> |
     <a href="https://mikeguides.co/products">Shop Guides</a>
+    {%- capture _resolved_og -%}{% include featured-image.html %}{%- endcapture -%}
+<meta property="og:image" content="{{ _resolved_og | strip }}">
+<meta name="twitter:image" content="{{ _resolved_og | strip }}">
+<meta name="twitter:card" content="summary_large_image">
   </header>
   <main>{{ content }}</main>
 
