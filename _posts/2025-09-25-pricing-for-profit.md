@@ -3,8 +3,8 @@ layout: post
 title: "Pricing for profit"
 description: "Prompts, templates, and workflows…"
 cover_key: "pricingforprofit"
-image: /assets/images/cover/pricing-for-profit/pricingforprofit.jpg
-featured_image: /assets/images/cover/pricingforprofit/pricingforprofit.jpg
+image: /assets/images/cover/pricing-for-profit/pricingforprofit.1280x720.jpg
+featured_image: /assets/images/cover/pricingforprofit/pricingforprofit.1280x720.jpg
 category: Pricing
 tags: [pricing, margins, small-business, strategy]
 last update: 2025-11-01
