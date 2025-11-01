@@ -1,6 +1,12 @@
 ---
 layout: default
 ---
+{% if page.image %}
+  <div class="post-hero">
+    <img src="{{ page.image | absolute_url }}" alt="{{ page.title | escape }}">
+  </div>
+{% endif %}
+
 <article class="max-w-3xl mx-auto px-6 py-10 prose prose-slate">
   <header class="mb-6">
     <h1 class="mb-2" style="font-family:Poppins,Inter,sans-serif">{{ page.title }}</h1>
