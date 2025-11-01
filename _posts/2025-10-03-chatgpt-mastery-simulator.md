@@ -2,7 +2,6 @@
 layout: post
 title: "ChatGPT Mastery Simulator"
 description: "Practice real-world scenarios and prompts with the ChatGPT Mastery Simulator. Learn faster, build confidence, and unlock AI’s full business potential."
-description: "Prompts, templates, and workflows to plan campaigns and publish consistently."
 cover_key: "chatgptmastery"
 image: /assets/images/cover/chatgptmasterysimulator.jpg
 category: Guides
