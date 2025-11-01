@@ -3,10 +3,11 @@ layout: post
 title: "Pricing for profit"
 description: "Prompts, templates, and workflows…"
 cover_key: "pricingforprofit"
-image: /assets/images/cover/pricingforprofit.jpg
+image: /assets/images/posts/pricing-for-profit/pricingforprofit.jpg
+featured_image: /assets/images/posts/pricingforprofit/pricingforprofit.jpg
 category: Pricing
 tags: [pricing, margins, small-business, strategy]
-last update: 2025-10-30
+last update: 2025-11-01
 ---
 
 Pricing doesn’t have to be complicated. Use this quick flow:
