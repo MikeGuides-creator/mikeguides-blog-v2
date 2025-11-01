@@ -1,11 +1,12 @@
 ---
 layout: post
 title: "Business Builder Bundle"
-description: "Prompts, templates, and workflows…"
-cover_key: "bbbundle"
+description: "Consisting of 5 of our most popular guides sold as a bundle we deliver the power of change into the hands that can do the most with them."
+cover_key: "businessbuilderbundle"
 image: /assets/images/cover/bbbundle.jpg
-tags: ["Bundles","Execution"]
-Last_modified: 2025-10-29
+featured_image: /assets/images/cover/businessbuilderbundle/bbbundle.jpg
+tags: [AI, ROI, efficiency, planning, bundle]
+last_modified_at: 2025-11-01
 ---
 
 🚀 Build Smarter, Grow Faster
