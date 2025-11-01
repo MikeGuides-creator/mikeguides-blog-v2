@@ -2,10 +2,9 @@
 layout: post
 title: "Welcome — what to expect here"
 description: "Short, practical posts that ship work. Pricing, marketing, and tools we actually use."
-image: /assets/images/cover/welcome.jpg   # make sure this file exists
+image: /assets/images/cover/welcome.1280x720.jpg   # make sure this file exists
 featured: true
 ---
-
 
 Welcome! 👋
 
