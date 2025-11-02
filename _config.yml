@@ -1,7 +1,9 @@
 title: "MikeGuides Blog"
 description: "Actionable posts on pricing, marketing, and execution — plus free tools and updates."
-url: "https://blog.pricingforprofit.co"
-baseurl: ""        # exactly empty string
+# _config.yml
+url: "https://mikeguides-creator.github.io"
+baseurl: "/mikeguides-blog-v2"      # the repo name, with a leading slash
+featured_image_fallback: "/assets/images/cover/default.jpg"
 permalink: /:year/:month/:day/:title:output_ext
 
 # Optional: allowed plugin
