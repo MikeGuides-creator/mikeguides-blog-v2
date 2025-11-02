@@ -4,7 +4,7 @@ title: "Business Builder Bundle"
 description: "Consisting of 5 of our most popular guides sold as a bundle we deliver the power of change into the hands that can do the most with them."
 cover_key: "businessbuilderbundle"
 image: /assets/images/cover/bbbundle.1280x720jpg
-featured_image: /assets/images/cover/businessbuilderbundle/bbbundle.1280x720.jpg
+featured_image: /assets/images/cover/bbbundle.1280x720.jpg
 tags: [AI, ROI, efficiency, planning, bundle]
 last_modified_at: 2025-11-01
 ---
