@@ -1,4 +1,16 @@
-{%- assign _img = page.featured_image | default: page.hero_image | default: site.featured_image_fallback -%}
+{%- comment -%}
+Resolves a featured image URL for either:
+- the current page (post page), or
+- a specific post passed as include.post (listing/cards)
+
+Usage:
+  {% include featured-image.html %}                  # on a post page
+  {% include featured-image.html post=post %}        # inside a for-loop over posts
+{%- endcomment -%}
+
+{%- assign _p = include.post | default: page -%}
+{%- assign _img = _p.featured_image | default: _p.hero_image | default: site.featured_image_fallback -%}
+
 {%- if _img contains 'http' -%}
   {{ _img }}
 {%- else -%}
