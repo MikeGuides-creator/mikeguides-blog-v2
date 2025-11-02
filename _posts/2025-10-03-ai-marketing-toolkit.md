@@ -3,8 +3,8 @@ layout: post
 title: "AI Marketing Workshop"
 description: "Prompts, templates, and workflows…"
 cover_key: "aimarketingworkshop"
-image: /assets/images/posts/ai-marketing-workshop/aimarketingworkshop.1280x720jpg
-featured_image: /assets/images/posts/ai-marketing-workshop/aimarketingworkshop.1280x720.jpg
+image: /assets/images/posts/aimarketingworkshop.1280x720jpg
+featured_image: /assets/images/posts/aimarketingworkshop.1280x720.jpg
 category: Pricing
 tags: [AI, marketing, toolkit, content, automation]
 last update: 2025-11-01
