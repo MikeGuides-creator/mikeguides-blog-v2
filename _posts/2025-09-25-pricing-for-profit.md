@@ -1,14 +1,11 @@
 ---
+title: Pricing for profit
+date: 2025-10-03
+categories: [Marketing, AI]
 layout: post
-title: "Pricing for profit"
-description: "Prompts, templates, and workflows…"
-cover_key: "pricingforprofit"
-image: /assets/images/cover/pricingforprofit.1280x720.jpg
 featured_image: /assets/images/cover/pricingforprofit.1280x720.jpg
-category: Pricing
-tags: [pricing, margins, small-business, strategy]
-last update: 2025-11-01
 ---
+
 
 Pricing doesn’t have to be complicated. Use this quick flow:
 
