@@ -1,15 +1,11 @@
 ---
+title: AI Marketing Toolkit
+date: 2025-10-03
 layout: post
-title: "AI Marketing Toolkit"
-description: "Prompts, templates, and workflows…"
-cover_key: "aimarketingtoolkit"
-image: /assets/images/cover/aimarketingtoolkit.1280x720jpg
+categories: [Marketing, AI]
 featured_image: /assets/images/cover/aimarketingtoolkit.1280x720.jpg
-category: Pricing
-tags: [AI, marketing, toolkit, content, automation]
-last update: 2025-11-01
+description: Learn how to promote your brand using the AI Marketing Toolkit.
 ---
-
 
 📢 Smarter Marketing in Less Time
 
