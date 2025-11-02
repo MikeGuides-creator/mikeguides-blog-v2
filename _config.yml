@@ -23,7 +23,7 @@ defaults:
       hero_image: ""
       og_image: ""
       # Set a semantic default used everywhere if page-level fields are empty:
-      featured_image_fallback: "/assets/images/blog/default.jpg"
+      featured_image_fallback: "/assets/images/blog/welcome.1280x720.jpg"
 
 show_drafts: false
 
