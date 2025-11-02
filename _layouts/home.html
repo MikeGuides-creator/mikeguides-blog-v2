@@ -37,15 +37,15 @@ layout: default
 <section class="blog-grid">
   {%- for post in site.posts offset:1 -%}
   <article class="blog-card">
-    <a href="{{ post.url }}" class="blog-card-link">
+    <a href="{{ post.url | relative_url }}" class="blog-card-link">
       <div class="card-media">
-        {%- assign card_img = post.image -%}
-        {%- if (card_img == nil or card_img == "") and post.cover_key -%}
-          {%- assign card_img = "/assets/images/cover/" | append: post.cover_key | append: ".jpg" -%}
-        {%- endif -%}
-        {%- assign card_img = card_img | default: site.og_image | absolute_url -%}
-        <img src="{{ card_img }}" alt="{{ post.title | escape }}">
-      </div>
+  {%- capture card_img -%}{% include featured-image.html post=post %}{%- endcapture -%}
+  <img
+    src="{{ card_img | strip }}"
+    alt="{{ post.title | escape }}"
+    loading="lazy"
+    style="display:block;width:100%;height:auto;object-fit:cover;aspect-ratio:16/9;">
+</div>
       <div class="card-body">
         <div class="card-date">{{ post.date | date: "%b %d, %Y" }}</div>
         <h3 class="card-title">{{ post.title }}</h3>
