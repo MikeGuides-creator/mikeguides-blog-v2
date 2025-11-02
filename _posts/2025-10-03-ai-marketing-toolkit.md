@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "AI Marketing Workshop"
+title: "AI Marketing Toolkit"
 description: "Prompts, templates, and workflows…"
-cover_key: "aimarketingworkshop"
-image: /assets/images/cover/aimarketingworkshop.1280x720jpg
-featured_image: /assets/images/cover/aimarketingworkshop.1280x720.jpg
+cover_key: "aimarketingtoolkit"
+image: /assets/images/cover/aimarketingtoolkit.1280x720jpg
+featured_image: /assets/images/cover/aimarketingtoolkit.1280x720.jpg
 category: Pricing
 tags: [AI, marketing, toolkit, content, automation]
 last update: 2025-11-01
