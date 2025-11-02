@@ -1,5 +1,5 @@
 ---
-title: Welcome — what to expect here:
+title: Welcome — what to expect here
 date: 2025-10-03
 categories: [Marketing, AI]
 layout: post
