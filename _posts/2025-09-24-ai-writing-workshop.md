@@ -3,7 +3,7 @@ layout: post
 title: "AI Marketing Workshop"
 description: "Prompts, templates, and workflows…"
 cover_key: "aiwritingworkshop"
-![AI Writing Workshop cover]({{ '/assets/images/cover/aiwritingworkshop.1280x720.jpg' | relative_url }})
+image:/assets/images/cover/aiwritingworkshop.1280x720.jpg
 featured_image: /assets/images/cover/aiwritingworkshop.1280x720.jpg
 category: Pricing
 tags: [AI, marketing, toolkit, content, automation]
