@@ -35,6 +35,32 @@ layout: default
   </article>
 </section>
 
+{%- comment -%} Posts grid (all posts after the featured one) {%- endcomment -%}
+<section class="blog-grid">
+  {%- for post in site.posts offset:1 -%}
+  <article class="blog-card">
+    <a href="{{ post.url | relative_url }}" class="blog-card-link">
+      <div class="card-media">
+        {%- capture card_img -%}{% include featured-image.html post=post %}{%- endcapture -%}
+        <img
+          src="{{ card_img | strip }}"
+          alt="{{ post.title | escape }}"
+          loading="lazy"
+          style="display:block;width:100%;height:auto;object-fit:cover;aspect-ratio:16/9;">
+      </div>
+      <div class="card-body">
+        <div class="card-date">{{ post.date | date: "%b %d, %Y" }}</div>
+        <h3 class="card-title">{{ post.title }}</h3>
+        {%- if post.description -%}
+          <p class="card-desc">{{ post.description | strip_html | truncate: 160 }}</p>
+        {%- endif -%}
+        <span class="card-button">Read more</span>
+      </div>
+    </a>
+  </article>
+  {%- endfor -%}
+</section>
+
 <!-- Cards grid -->
 {%- if featured -%}
 <section class="featured-wrap">
