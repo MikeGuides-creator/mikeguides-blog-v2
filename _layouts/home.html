@@ -4,35 +4,22 @@ layout: default
 
 {%- assign featured = site.posts | first -%}
 
-{%- if featured -%}
 <!-- Featured -->
 <section class="featured-wrap">
   <article class="featured-card">
     <div class="featured-grid">
       <div class="featured-media">
-        {%- capture feature_img -%}{% include featured-image.html post=featured %}{%- endcapture -%}
-        <a href="{{ featured.url | relative_url }}" class="featured-link">
-          <img
-            src="{{ feature_img | strip }}"
-            alt="{{ featured.title | escape }}"
-            width="1600" height="900" loading="eager" fetchpriority="high"
-            style="display:block;width:100%;height:auto;object-fit:cover;aspect-ratio:16/9;">
-        </a>
-      </div>
+ {%- capture feature_img -%}{% include featured-image.html post=featured %}{%- endcapture -%}
 
+  
+<img
+    src="{{ feature_img | strip }}"
+    alt="{{ featured.title | escape }}"
+    width="1600" height="900" loading="eager" fetchpriority="high"
+    style="display:block;width:100%;height:auto;object-fit:cover;aspect-ratio:16/9;">
+</a>
+</div>
       <div class="card-body">
-        <div class="card-date">{{ featured.date | date: "%b %d, %Y" }}</div>
-        <h2 class="card-title-lg">
-          <a href="{{ featured.url | relative_url }}" class="card-link">{{ featured.title }}</a>
-        </h2>
-        <p class="card-desc">
-          {{ featured.description | default: featured.excerpt | strip_html | truncate: 240 }}
-        </p>
-        <div class="flex gap-2">
-          <a href="{{ featured.url | relative_url }}#content" class="card-button">Read the post</a>
-          <a href="https://mikeguides.co" class="card-button" rel="noopener">Visit MikeGuides.co</a>
-        </div>
-      </div>
     </div>
   </article>
 </section>
@@ -64,7 +51,38 @@ layout: default
   {%- endfor -%}
 </section>
 
+<!-- Cards grid -->
+{%- if featured -%}
+<section class="featured-wrap">
+  <article class="featured-card">
+    <div class="featured-grid">
+      <div class="featured-media">
+        {%- capture feature_img -%}{% include featured-image.html post=featured %}{%- endcapture -%}
+
+          <img
+            src="{{ feature_img | strip }}"
+            alt="{{ featured.title | escape }}"
+            width="1600" height="900" loading="eager" fetchpriority="high"
+            style="display:block;width:100%;height:auto;object-fit:cover;aspect-ratio:16/9;">
+        </a>
+      </div>
+	</div>
+
+      <div class="card-body">
+        <div class="card-date">{{ featured.date | date: "%b %d, %Y" }}</div>
+        <h2 class="card-title-lg">
+          <a href="{{ featured.url | relative_url }}#content" class="card-link">{{ featured.title }}</a>
+        </h2>
+        <p class="card-desc">{{ featured.description | default: site.description | truncate: 160 }}</p>
+
+      </div>
+    </div>
+  </article>
+</section>
+{%- endif -%}
+
 <!-- Fallback for any broken images -->
+
 <script>
 document.addEventListener('error', function(e){
   const el = e.target;
@@ -75,6 +93,4 @@ document.addEventListener('error', function(e){
 }, true);
 </script>
 
-}, true);
-</script>
 
