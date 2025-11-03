@@ -5,7 +5,7 @@ layout: default
 {%- assign featured = site.posts | first -%}
 
         {%- capture feature_img -%}{% include featured-image.html post=featured %}{%- endcapture -%}
-<div>
+      <div>
         <a href="{{ featured.url | relative_url }}" class="featured-link">
           <img
             src="{{ feature_img | strip }}"
@@ -24,8 +24,7 @@ layout: default
           <a href="{{ featured.url | relative_url }}#content" class="card-button">Read the post</a>
           <a href="https://mikeguides.co" class="card-button" rel="noopener">Visit MikeGuides.co</a>
         </div>
-      </div>
-
+<div>    
   <img
     src="{{ feature_img | strip }}"
     alt="{{ featured.title | escape }}"
@@ -35,9 +34,7 @@ layout: default
 </div>
       <div class="card-body">
     </div>
-  </article>
-</section>
-{%- endif -%}
+  {%- endif -%}
 
 <section class="blog-grid">
   {%- for post in site.posts offset:1 -%}
