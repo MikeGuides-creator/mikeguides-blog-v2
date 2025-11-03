@@ -637,4 +637,5 @@ body::before {
   gap: 24px;
   margin-top: 28px;
 }
+html { scroll-behavior: smooth; scroll-padding-top: 80px; } /* adjust 80px to taste */
 
