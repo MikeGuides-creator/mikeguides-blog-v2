@@ -4,8 +4,13 @@ layout: default
 
 {%- assign featured = site.posts | first -%}
 
+{%- if featured -%}
+<!-- Featured -->
+<section class="featured-wrap">
+  <article class="featured-card">
+    <div class="featured-grid">
+      <div class="featured-media">
         {%- capture feature_img -%}{% include featured-image.html post=featured %}{%- endcapture -%}
-      <div>
         <a href="{{ featured.url | relative_url }}" class="featured-link">
           <img
             src="{{ feature_img | strip }}"
@@ -14,52 +19,24 @@ layout: default
             style="display:block;width:100%;height:auto;object-fit:cover;aspect-ratio:16/9;">
         </a>
       </div>
+
       <div class="card-body">
         <div class="card-date">{{ featured.date | date: "%b %d, %Y" }}</div>
         <h2 class="card-title-lg">
           <a href="{{ featured.url | relative_url }}" class="card-link">{{ featured.title }}</a>
         </h2>
-        <p class="card-desc">{{ featured.description | default: featured.excerpt | strip_html | truncate: 240 }}</p>
+        <p class="card-desc">
+          {{ featured.description | default: featured.excerpt | strip_html | truncate: 240 }}
+        </p>
         <div class="flex gap-2">
           <a href="{{ featured.url | relative_url }}#content" class="card-button">Read the post</a>
           <a href="https://mikeguides.co" class="card-button" rel="noopener">Visit MikeGuides.co</a>
         </div>
-<div>    
-  <img
-    src="{{ feature_img | strip }}"
-    alt="{{ featured.title | escape }}"
-    width="1600" height="900" loading="eager" fetchpriority="high"
-    style="display:block;width:100%;height:auto;object-fit:cover;aspect-ratio:16/9;">
-</a>
-</div>
-      <div class="card-body">
+      </div>
     </div>
-  {%- endif -%}
-
-<section class="blog-grid">
-  {%- for post in site.posts offset:1 -%}
-  <article class="blog-card">
-    <a href="{{ post.url | relative_url }}#content" class="blog-card-link">
-      <div class="card-media">
-        {%- capture card_img -%}{% include featured-image.html post=post %}{%- endcapture -%}
-        <img
-          src="{{ card_img | strip }}"
-          alt="{{ post.title | escape }}"
-          loading="lazy"
-          style="display:block;width:100%;height:auto;object-fit:cover;aspect-ratio:16/9;">
-      </div>
-      <div class="card-body">
-        <div class="card-date">{{ post.date | date: "%b %d, %Y" }}</div>
-        <h3 class="card-title">{{ post.title }}</h3>
-        {%- if post.description -%}
-          <p class="card-desc">{{ post.description | strip_html | truncate: 160 }}</p>
-        {%- endif -%}
-        <span class="card-button">Read more</span>
-      </div>
-    </a>
   </article>
-  {%- endfor -%}
 </section>
+{%- endif -%}
 
 <!-- Cards grid -->
 <section class="blog-grid">
@@ -86,14 +63,18 @@ layout: default
   </article>
   {%- endfor -%}
 </section>
+
 <!-- Fallback for any broken images -->
 <script>
 document.addEventListener('error', function(e){
   const el = e.target;
   if (el.tagName === 'IMG' && !el.dataset.fallbackTried) {
     el.dataset.fallbackTried = "1";
-    el.src = "/assets/images/cover/default.jpg";
+    el.src = "{{ '/assets/images/cover/default.jpg' | relative_url }}";
   }
+}, true);
+</script>
+
 }, true);
 </script>
 
