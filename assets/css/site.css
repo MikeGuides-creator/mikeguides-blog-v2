@@ -607,3 +607,8 @@ section article p {
 }
 /* Hard bump the image itself above everything */
 .featured-link img { position: relative; z-index: 5; }
+/* Don't let any page-wide ::before overlays block clicks */
+html::before,
+body::before {
+  pointer-events: none !important;
+}
