@@ -15,16 +15,6 @@ layout: default
   </a>
 </figure>
 
-  <!-- Hero image block -->
-  <figure class="mx-auto mb-6 block overflow-hidden rounded-2xl shadow-[0_10px_25px_-10px_rgba(2,6,23,.1)]">
-    <a href="{{ page.url | relative_url }}">
-      {%- capture hero_img -%}{% include featured-image.html %}{%- endcapture -%}
-      <img src="{{ hero_img }}" alt="{{ page.title | escape }}"
-           width="1600" height="900" loading="eager" fetchpriority="high"
-           style="display:block;width:100%;height:auto;object-fit:cover;aspect-ratio:16/9;">
-    </a>
-  </figure>
-
   <header class="mb-4">
     <h1 class="brand text-3xl font-bold">{{ page.title }}</h1>
     {# optional subhead/date #}
