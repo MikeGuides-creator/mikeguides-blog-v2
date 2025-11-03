@@ -612,3 +612,5 @@ section article p {
 .featured-card .card-media::after {
   pointer-events: none;
 }
+/* Hard bump the image itself above everything */
+.featured-link img { position: relative; z-index: 5; }
