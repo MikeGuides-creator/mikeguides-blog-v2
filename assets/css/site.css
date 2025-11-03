@@ -146,33 +146,26 @@ main > article,
 }
 /* (intentionally NOT applying those styles to .blog-grid) */
 
-/* Card tiles */
-.blog-card{
-  display:block;
-  background:#fff;
-  border:1px solid #e5e7eb;
-  border-radius:1rem;
-  overflow:hidden;
-  text-decoration:none;
-  color:inherit;
-  box-shadow:0 10px 25px -10px rgba(2,6,23,.12);
-  transition:transform .2s ease, box-shadow .2s ease;
+/* Card media: one box, image fills it */
+.card-media {
+  position: relative;
+  overflow: hidden;
+  background: #f1f5f9;
+  border-bottom: 1px solid #eef2f7;
+  aspect-ratio: 16/9;        /* keep consistent tiles */
+  padding: 0 !important;      /* kill old padding-top hacks if any */
 }
-.blog-card:hover{
-  transform:translateY(-2px);
-  box-shadow:0 16px 40px -18px rgba(2,6,23,.20);
+
+.card-media::before { content: none !important; } /* nuke spacers */
+
+.card-media img {
+  position: absolute;
+  inset: 0;                  /* top:0 right:0 bottom:0 left:0 */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
-.blog-card img{
-  display:block;
-  width:100%; height:auto;
-  border-radius:.75rem .75rem 0 0;
-  margin:0;
-}
-.blog-card h2{
-  font-family:'Poppins',sans-serif;
-  font-size:1.25rem; margin:.75rem 1rem .25rem; color:var(--mg-ink);
-}
-.blog-card p{ margin:0 1rem 1rem; color:#64748b; font-size:.95rem; line-height:1.6; }
 
 /* Header/footer readable on gradient */
 header{ background:transparent; color:#0f172a; }
