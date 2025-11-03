@@ -5,6 +5,7 @@ layout: default
 {%- assign featured = site.posts | first -%}
 
         {%- capture feature_img -%}{% include featured-image.html post=featured %}{%- endcapture -%}
+<div>
         <a href="{{ featured.url | relative_url }}" class="featured-link">
           <img
             src="{{ feature_img | strip }}"
@@ -57,12 +58,6 @@ layout: default
           <p class="card-desc">{{ post.description | strip_html | truncate: 160 }}</p>
         {%- endif -%}
         <span class="card-button">Read more</span>
-      </div>
-    </a>
-  </article>
-  {%- endfor -%}
-</section>
-
       </div>
     </a>
   </article>
