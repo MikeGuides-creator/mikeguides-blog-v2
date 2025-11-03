@@ -24,13 +24,23 @@ layout: default
 </a>
 </div>
       <div class="card-body">
-        <div class="card-date">{{ featured.date | date: "%b %d, %Y" }}</div>
-        <h2 class="card-title-lg">
-  <a href="{{ featured.url | relative_url }}" class="card-link">{{ featured.title }}</a>
-</h2>
-        <p class="card-desc">{{ featured.description | default: site.description | truncate: 160 }}</p>
-        <a href="{{ featured.url | relative_url }}" class="card-button">Read the post</a>
-      </div>
+  <div class="card-date">{{ featured.date | date: "%b %d, %Y" }}</div>
+
+  <h2 class="card-title-lg">
+    <a href="{{ featured.url | relative_url }}" class="card-link">{{ featured.title }}</a>
+  </h2>
+
+  {%- comment -%} More text: prefer description, fallback to excerpt {%- endcomment -%}
+  <p class="card-desc">
+    {{ featured.description | default: featured.excerpt | strip_html | truncate: 240 }}
+  </p>
+
+  <div class="flex gap-2">
+    <a href="{{ featured.url | relative_url }}" class="card-button">Read the post</a>
+    <a href="https://mikeguides.co" class="card-button" rel="noopener">Visit MikeGuides.co</a>
+  </div>
+</div>
+
     </div>
   </article>
 </section>
