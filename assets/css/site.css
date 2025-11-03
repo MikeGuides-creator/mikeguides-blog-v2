@@ -601,3 +601,14 @@ section article p {
 .card-media::after {
   pointer-events: none;
 }
+/* Ensure the featured image link is above other layers */
+.featured-grid { position: relative; }
+.featured-media { position: relative; z-index: 3; }
+.featured-link { display:block; position: relative; z-index: 4; }
+
+/* Make any overlays ignore pointer events so clicks pass through */
+.featured-card .overlay,
+.featured-card .featured-overlay,
+.featured-card .card-media::after {
+  pointer-events: none;
+}
