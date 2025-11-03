@@ -607,6 +607,13 @@ section article p {
 }
 /* Hard bump the image itself above everything */
 .featured-link img { position: relative; z-index: 5; }
+.featured-wrap::before,
+.featured-card::before,
+.featured-media::before,
+.featured-media::after {
+  pointer-events: none !important;
+}
+
 /* Don't let any page-wide ::before overlays block clicks */
 html::before,
 body::before {
