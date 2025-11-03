@@ -10,7 +10,6 @@ layout: default
     <div class="featured-grid">
       <div class="featured-media">
  {%- capture feature_img -%}{% include featured-image.html post=featured %}{%- endcapture -%}
-
   
 <img
     src="{{ feature_img | strip }}"
@@ -48,8 +47,8 @@ layout: default
       </div>
     </a>
   </article>
-  {%- endfor -%}
 </section>
+{%- endif -%}
 
 <!-- Cards grid -->
 {%- if featured -%}
