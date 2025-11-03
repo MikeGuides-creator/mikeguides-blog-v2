@@ -499,20 +499,26 @@ section article p {
 .bg-\[var\(--mg-blue\)\] { background: var(--mg-blue) !important; }
 .text-white { color: #fff !important; }
 
-/* Card media with safe cropping */
-.card-media{
-  aspect-ratio: 16 / 9;
-  overflow: hidden;
-  background: #f1f5f9;
+/* Remove old aspect-ratio spacer from card-media */
+.card-media {
+  background: none;          /* if you used background-image previously */
+  padding: 0 !important;     /* kill padding-top hacks */
+  position: relative;
 }
-.card-media img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
+
+/* Kill any pseudo-element spacers */
+.card-media::before {
+  content: none !important;
 }
-.card-media{ aspect-ratio:1/1; overflow:hidden; background:#f1f5f9; border-bottom:1px solid #eef2f7; }
-.card-media img{ width:100%; height:100%; object-fit:cover; display:block; }
+
+/* Let the <img> control the ratio */
+.card-media img {
+  display:block;
+  width:100%;
+  height:auto;               /* use the natural 16:9 we set inline or here */
+  object-fit:cover;
+  aspect-ratio: 16 / 9;      /* (optional) keeps consistent tiles */
+}
 
 /* --- Blog grid & cards (no Tailwind required) --- */
 .featured-wrap{max-width:1120px;margin:0 auto;padding:0 24px;}
