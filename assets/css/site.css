@@ -586,3 +586,12 @@ section article p {
   border-radius: 16px;
   box-shadow: 0 10px 25px -10px rgba(2,6,23,.18);
 }
+/* Make featured image anchor definitely clickable */
+.featured-link { display:block; position:relative; z-index: 2; }
+
+/* If you have gradient/overlay layers, make sure they don't block clicks */
+.featured-card .overlay,
+.featured-card .featured-overlay,
+.card-media::after {
+  pointer-events: none;
+}
