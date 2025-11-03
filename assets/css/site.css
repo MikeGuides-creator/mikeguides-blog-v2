@@ -613,6 +613,10 @@ section article p {
 .featured-media::after {
   pointer-events: none !important;
 }
+.featured-grid { position: relative; }
+.featured-media { position: relative; z-index: 3; }
+.featured-link { display:block; position: relative; z-index: 4; }
+.featured-link img { position: relative; z-index: 5; } /* belt & suspenders */
 
 /* Don't let any page-wide ::before overlays block clicks */
 html::before,
