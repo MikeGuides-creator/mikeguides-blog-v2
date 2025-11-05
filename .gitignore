@@ -7,3 +7,5 @@ _layouts/*updated*home*.txt
 
 
 __backup_before_link_rewrite/
+
+_includes/cta.local-backup.html
