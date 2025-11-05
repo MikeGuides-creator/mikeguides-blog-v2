@@ -1,11 +1,18 @@
+<<<<<<< HEAD
 cd "$env:USERPROFILE\Documents\mikeguides-blog-v2-git"
 
+=======
+<<<<<<< HEAD
+>>>>>>> 59e759a (Audit/fix post links: add #content where missing; ensure relative_url)
 @'
 ---
 layout: default
 ---
 
 {%- assign featured = site.posts | first -%}
+=======
+﻿{%- assign featured = site.posts | first -%}
+>>>>>>> 5139ec7 (Audit/fix post links: add #content where missing; ensure relative_url)
 
 {%- if featured -%}
 <section class="featured-wrap">
@@ -61,6 +68,7 @@ layout: default
   </article>
   {%- endfor -%}
 </section>
+<<<<<<< HEAD
 
 <script>
 document.addEventListener('error', function(e){
@@ -71,4 +79,10 @@ document.addEventListener('error', function(e){
   }
 }, true);
 </script>
+<<<<<<< HEAD
 '@ | Set-Content .\_layouts\home.html -Encoding UTF8
+=======
+
+=======
+>>>>>>> 82bb77e (Audit/fix post links: add #content where missing; ensure relative_url)
+>>>>>>> 5139ec7 (Audit/fix post links: add #content where missing; ensure relative_url)
