@@ -1,10 +1,10 @@
-<footer class="mt-auto border-t border-slate-200 bg-white/70">
+﻿<footer class="mt-auto border-t border-slate-200 bg-white/70">
   <div class="max-w-6xl mx-auto px-6 py-8 text-sm text-slate-500 flex flex-col sm:flex-row items-center justify-between gap-2">
-     <a href="{{ '/' | relative_url }}">Blog Home</a>
-<a href="{{ '/' | relative_url }}" class="logo">MikeGuides</a>
-    <p>© {{ 'now' | date: '%Y' }} MikeGuides.</p>
+     <a href="{{ site.url }}{{ site.baseurl }}/">Blog Home</a>
+<a href="{{ site.url }}{{ site.baseurl }}/" class="logo">MikeGuides</a>
+    <p>Â© {{ 'now' | date: '%Y' }} MikeGuides.</p>
     <div class="flex items-center gap-4">
-      <a class="hover:text-[var(--mg-blue)]" href="/feed.xml">RSS</a>
+      <a class="hover:text-[var(--mg-blue)]" href="{{ '/feed.xml' | relative_url }}">RSS</a>
       <a class="hover:text-[var(--mg-blue)]" href="https://mikeguides.co" target="_blank" rel="noopener">MikeGuides.co</a>
       <a class="hover:text-[var(--mg-blue)]" href="https://mikeguides.co/toolkit/" target="_blank" rel="noopener">Toolkit</a>
       <a class="hover:text-[var(--mg-blue)]" href="https://mikeguides.co/bundle" target="_blank" rel="noopener">Bundle</a>
