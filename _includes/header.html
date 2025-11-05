@@ -1,9 +1,9 @@
 ﻿<header class="site-header">
   <nav class="mx-auto flex max-w-5xl items-center justify-between px-6 py-4">
-    <a class="brand text-xl font-bold" href="{{ '/' | relative_url }}">Blog Home</a>
+    <a class="brand text-xl font-bold" href="{{ '/' | absolute_url }}">Blog Home</a>
 
     <ul class="flex items-center gap-4">
-      <li><a href="{{ '/' | relative_url }}" class="hover:underline">Home</a></li>
+      <li><a href="{{ '/' | absolute_url }}" class="hover:underline">Home</a></li>
       <li><a href="https://mikeguides.co" class="hover:underline" rel="noopener">Main Site</a></li>
       <li><a href="{{ '/feed.xml' | relative_url }}" class="hover:underline">RSS</a></li>
     </ul>
