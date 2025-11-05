@@ -1,1 +1,7 @@
 featured_image_audit.csv
+#
+# local debug/backups
+_layouts/*.conflict-backup.html
+_layouts/*debug*.txt
+_layouts/*updated*home*.txt
+
