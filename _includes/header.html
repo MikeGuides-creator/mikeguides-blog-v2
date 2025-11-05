@@ -1,17 +1,11 @@
-﻿<header class="bg-white/80 backdrop-blur border-b border-slate-200">
-  <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-   <a href="{{ '/' | relative_url }}">Blog Home</a>
-<a href="{{ '/' | relative_url }}" class="logo">MikeGuides</a>
-    <nav class="flex items-center gap-5 text-sm font-semibold">
-      <a class="hover:text-[var(--mg-blue)]" href="{{ '/' | relative_url }}">Home</a>
-      <a class="hover:text-[var(--mg-blue)]" href="https://mikeguides.co" target="_blank" rel="noopener">Main Site</a>
-      <a class="hover:text-[var(--mg-blue)]" href="https://mikeguides.co/toolkit/" target="_blank" rel="noopener">Toolkit</a>
-      <a class="hover:text-[var(--mg-blue)]" href="https://mikeguides.co/bundle" target="_blank" rel="noopener">Bundle</a>
-      <a class="hover:text-[var(--mg-blue)]" href="https://mikeguides8.gumroad.com" target="_blank" rel="noopener">Store</a>
-      <a class="hover:text-[var(--mg-blue)]" href="/feed.xml">RSS</a>
-    </nav>
-  </div>
+﻿<header class="site-header">
+  <nav class="mx-auto flex max-w-5xl items-center justify-between px-6 py-4">
+    <a class="brand text-xl font-bold" href="{{ '/' | relative_url }}">Blog Home</a>
+
+    <ul class="flex items-center gap-4">
+      <li><a href="{{ '/' | relative_url }}" class="hover:underline">Home</a></li>
+      <li><a href="https://mikeguides.co" class="hover:underline" rel="noopener">Main Site</a></li>
+      <li><a href="{{ '/feed.xml' | relative_url }}" class="hover:underline">RSS</a></li>
+    </ul>
+  </nav>
 </header>
-
-
-
