@@ -1,13 +1,11 @@
-title: "MikeGuides Blog"
-description: "Actionable posts on pricing, marketing, and execution — plus free tools and updates."
-# _config.yml
-url: "https://mikeguides-creator.github.io"
-baseurl: "/mikeguides-blog-v2"      # the repo name, with a leading slash
-featured_image_fallback: "/assets/images/cover/default.jpg"
-permalink: /:year/:month/:day/:title:output_ext
-
-# Optional: allowed plugin
+title: MikeGuides Blog
+description: "Guides, frameworks, and playbooks for smarter pricing, marketing, and automation."
+url: "https://blog.pricingforprofit.co"
+baseurl: ""   # ← empty if site is served from root
+markdown: kramdown
+theme: minima  # or leave out if you have your own layouts
 plugins:
+  - jekyll-feed
   - jekyll-seo-tag
 
 collections:
