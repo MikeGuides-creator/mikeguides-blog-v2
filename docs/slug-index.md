@@ -1,4 +1,4 @@
-# MikeGuides Slug Index (Descending)
+﻿# MikeGuides Slug Index (Descending)
 
 - business-automation-roi
 - ai-marketing-toolkit
