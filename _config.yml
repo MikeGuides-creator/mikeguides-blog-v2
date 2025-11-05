@@ -1,9 +1,14 @@
 title: MikeGuides Blog
 description: "Guides, frameworks, and playbooks for smarter pricing, marketing, and automation."
-url: "https://blog.pricingforprofit.co"
-baseurl: ""   # ← empty if site is served from root
+# If you're serving at the project URL, set url to the GH Pages URL:
+url: "https://mikeguides-creator.github.io"
+baseurl: "/mikeguides-blog-v2"
+
 markdown: kramdown
-theme: minima  # or leave out if you have your own layouts
+
+# You have custom layouts, so 'theme' is optional. You can keep it or remove it.
+# theme: minima
+
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
@@ -12,20 +17,3 @@ collections:
   slugs:
     output: true
     permalink: /slugs/:name/
-
-# --- Featured image defaults ---
-defaults:
-  - scope:
-      path: ""   # all posts
-      type: posts
-    values:
-      featured_image: ""
-      hero_image: ""
-      og_image: ""
-      # Set a semantic default used everywhere if page-level fields are empty:
-      featured_image_fallback: "/assets/images/blog/aiwritingworkshop.1280x720.jpg"
-
-show_drafts: false
-
-# Global fallback image (your file should exist)
-og_image: "/assets/images/cover/default.jpg"
