@@ -1,37 +1,26 @@
-﻿<<<<<<< HEAD
-cd "$env:USERPROFILE\Documents\mikeguides-blog-v2-git"
-
-=======
-<<<<<<< HEAD
->>>>>>> 59e759a (Audit/fix post links: add #content where missing; ensure relative_url)
-@'
 ---
 layout: default
 ---
 
 {%- assign featured = site.posts | first -%}
-=======
-ï»¿{%- assign featured = site.posts | first -%}
->>>>>>> 5139ec7 (Audit/fix post links: add #content where missing; ensure relative_url)
-
 {%- if featured -%}
 <section class="featured-wrap">
   <article class="featured-card">
     <div class="featured-grid">
       <div class="featured-media">
         {%- capture feature_img -%}{% include featured-image.html post=featured %}{%- endcapture -%}
-        <a href="{{ featured.url | relative_url }}" class="featured-link">
+        <a href="{{ featured.url | relative_url }}#content" class="featured-link">
           <img
             src="{{ feature_img | strip }}"
             alt="{{ featured.title | escape }}"
-            width="1600" height="900" loading="eager" fetchpriority="high"
+            loading="eager" fetchpriority="high"
             style="display:block;width:100%;height:auto;object-fit:cover;aspect-ratio:16/9;">
         </a>
       </div>
       <div class="card-body">
         <div class="card-date">{{ featured.date | date: "%b %d, %Y" }}</div>
         <h2 class="card-title-lg">
-          <a href="{{ featured.url | relative_url }}" class="card-link">{{ featured.title }}</a>
+          <a href="{{ featured.url | relative_url }}#content" class="card-link">{{ featured.title }}</a>
         </h2>
         <p class="card-desc">{{ featured.description | default: featured.excerpt | strip_html | truncate: 240 }}</p>
         <div class="flex gap-2">
@@ -68,21 +57,3 @@ layout: default
   </article>
   {%- endfor -%}
 </section>
-<<<<<<< HEAD
-
-<script>
-document.addEventListener('error', function(e){
-  const el = e.target;
-  if (el.tagName === 'IMG' && !el.dataset.fallbackTried) {
-    el.dataset.fallbackTried = "1";
-    el.src = "{{ '/assets/images/cover/default.jpg' | relative_url }}";
-  }
-}, true);
-</script>
-<<<<<<< HEAD
-'@ | Set-Content .\_layouts\home.html -Encoding UTF8
-=======
-
-=======
->>>>>>> 82bb77e (Audit/fix post links: add #content where missing; ensure relative_url)
->>>>>>> 5139ec7 (Audit/fix post links: add #content where missing; ensure relative_url)
