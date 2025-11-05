@@ -5,3 +5,5 @@ _layouts/*.conflict-backup.html
 _layouts/*debug*.txt
 _layouts/*updated*home*.txt
 
+
+__backup_before_link_rewrite/
