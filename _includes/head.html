@@ -8,6 +8,8 @@
 {%- assign page_desc  = page.description | default: site.description | default: "Guides, frameworks, and playbooks for smarter pricing, marketing, and automation." -%}
 {%- assign og_image   = page.image | default: site.og_image | default: "/assets/images/og-blog-default.png" | absolute_url -%}
 {%- assign canonical  = page.canonical | default: abs_url -%}
+<!-- BUILD {{ site.time | date: "%Y-%m-%d %H:%M:%S %Z" }} -->
+
 
 <title>{{ page_title }}</title>
 <meta name="description" content="{{ page_desc }}">
