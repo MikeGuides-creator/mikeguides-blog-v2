@@ -1,36 +1,15 @@
-﻿---
----
-<!DOCTYPE html>
+@'
+<!doctype html>
 <html lang="en">
-<head>
-  {% include head.html %}
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@600&display=swap">
-  <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}">
-  <title>{{ page.title | default: site.title }}</title>
-  {%- capture _resolved_og -%}{% include featured-image.html %}{%- endcapture -%}
-<meta property="og:image" content="{{ _resolved_og | strip }}">
-<meta name="twitter:image" content="{{ _resolved_og | strip }}">
-<meta name="twitter:card" content="summary_large_image">
-</head>
-<body>
-  <header>
-    <a href="https://mikeguides.co">MikeGuides</a> |
-    <a href="{{ '/' | relative_url }}">…</a>
-    <a href="https://mikeguides.co/products">Shop Guides</a>
-  </header>
-  <main>{{ content }}</main>
-
-  <script>
-  document.addEventListener('error', function(e){
-    const el = e.target;
-    if (el.tagName === 'IMG' && !el.dataset.fallbackTried) {
-      el.dataset.fallbackTried = "1";
-      el.src = "/assets/images/cover/default.jpg";
-    }
-  }, true);
-  </script>
-</body>
+  <head>
+    {% include head.html %}
+  </head>
+  <body>
+    {% include header.html %}
+    <main id="content" class="mx-auto max-w-5xl px-6 py-10">
+      {{ content }}
+    </main>
+    {% include footer.html %}
+  </body>
 </html>
+'@ | Set-Content .\_layouts\default.html -Encoding UTF8
