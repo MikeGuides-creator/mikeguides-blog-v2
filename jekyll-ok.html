@@ -1,5 +1,13 @@
-﻿---
+@'---
 layout: default
 title: Jekyll OK?
 ---
-<p id='probe'>Rendered at: {{ site.time | date: "%Y-%m-%d %H:%M:%S %Z" }}</p>
+<p id="probe">
+  BUILDTIME: {{ site.time | date: "%Y-%m-%d %H:%M:%S %Z" }}
+</p>
+'@ | Set-Content .\jekyll-ok.html -Encoding UTF8
+
+git add jekyll-ok.html
+git commit -m "Probe: jekyll-ok page to verify Liquid render"
+git pull --rebase origin main
+git push
