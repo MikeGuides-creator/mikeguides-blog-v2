@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 name: Build and Deploy Jekyll to GitHub Pages
 
 on:
@@ -49,3 +50,6 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+=======
+﻿<<THE YAML ABOVE>>
+>>>>>>> 1ae5496 (CI: build & deploy Jekyll via GitHub Actions)
