@@ -1,0 +1,27 @@
+﻿name: Build Jekyll and publish to gh-pages
+on:
+  push:
+    branches: [ "main" ]
+  workflow_dispatch:
+permissions: { contents: write }
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ruby/setup-ruby@v1
+        with: { ruby-version: '3.3', bundler-cache: true }
+      - name: Ensure Jekyll (if no Gemfile)
+        run: |
+          if [ ! -f Gemfile ]; then
+            gem install jekyll jekyll-feed jekyll-seo-tag
+          fi
+      - name: Build with Jekyll
+        env: { JEKYLL_ENV: production }
+        run: jekyll build --trace
+      - name: Publish _site to gh-pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: _site
+          publish_branch: gh-pages
