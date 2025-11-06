@@ -1,8 +1,8 @@
-﻿name: Build and Deploy Jekyll to GitHub Pages
+﻿name: Build and deploy Jekyll to GitHub Pages
 
 on:
   push:
-    branches: [ main ]
+    branches: [ "main" ]
   workflow_dispatch:
 
 permissions:
@@ -18,35 +18,34 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
-
-      - name: Setup Ruby
-        uses: ruby/setup-ruby@v1
+      - uses: actions/checkout@v4
+      - uses: actions/configure-pages@v5
+      - uses: ruby/setup-ruby@v1
         with:
-          ruby-version: "3.3"
-
+          ruby-version: '3.3'
+          bundler-cache: true
+      - name: Ensure Jekyll available (if no Gemfile)
+        run: |
+          if [ ! -f Gemfile ]; then
+            gem install jekyll jekyll-feed jekyll-seo-tag
+          fi
       - name: Build with Jekyll
-        uses: actions/jekyll-build-pages@v1
+        env:
+          JEKYLL_ENV: production
+        run: jekyll build --trace
+      - uses: actions/upload-pages-artifact@v3
         with:
-          source: .
-          destination: ./_site
-
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: ./_site
+          path: _site
 
   deploy:
     needs: build
     runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
+      - id: deployment
         uses: actions/deploy-pages@v4
