@@ -1,0 +1,10 @@
+{
+  "name": "MikeGuides Blog",
+  "short_name": "MikeGuides",
+  "icons": [
+    { "src": "/assets/img/favicon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ],
+  "theme_color": "#2563eb",
+  "background_color": "#f9fafb",
+  "display": "standalone"
+}

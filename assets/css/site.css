@@ -1,0 +1,641 @@
+/* ===== MikeGuides Blog Visual Theme ===== */
+:root {
+  --mg-blue: #2563eb;
+  --mg-green: #22c55e;
+  --mg-bg: #f9fafb;
+  --mg-ink: #1e293b;
+  --radius-lg: 1rem;
+  --radius-md: .75rem;
+}
+
+html, body { height: 100%; }
+
+/* Headings */
+h1, h2, h3, h4 {
+  font-family: 'Poppins', sans-serif;
+  color: var(--mg-ink);
+  line-height: 1.3;
+}
+
+/* Links */
+a { color: var(--mg-blue); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* Header */
+header {
+  background: var(--mg-blue);
+  color: white;
+  text-align: center;
+  padding: 1.5rem 1rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+header a { color: white; margin: 0 .5rem; }
+header a:hover { opacity: .9; }
+
+/* Main area */
+main { max-width: 760px; margin: 2rem auto; padding: 0 1rem; }
+
+/* === MikeGuides gradient background === */
+:root{
+  --mg-blue:#2563eb;
+  --mg-ink:#1f2937;
+}
+
+/* Make content sit on clean cards so text stays crisp */
+main {
+  max-width: 860px;
+  margin: 2.5rem auto;
+  padding: 0 1rem;
+}
+main > article,
+.cta-banner,
+.post-content,
+.page-card {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 1rem;
+  padding: 1.25rem;
+  box-shadow: 0 10px 25px -10px rgba(2,6,23,.15);
+}
+/* Blog grid tweaks so the white cards pop on the gradient */
+.blog-grid { gap: 1.5rem; padding: .25rem; }
+.blog-card { border: none; box-shadow: none; padding: 0; }
+.blog-card > * { display:block; }
+.blog-card img { border-radius: .75rem .75rem 0 0; margin: 0; }
+.blog-card h2, .blog-card p { padding: .75rem 1rem; }
+.blog-card:hover { transform: translateY(-2px); box-shadow: 0 15px 35px -10px rgba(2,6,23,.18); }
+
+/* Header/footer stay readable over gradient */
+header { background: transparent; color: #0f172a; }
+header a { color: var(--mg-blue); }
+footer { background: transparent; border-top: none; }
+
+a { color: var(--mg-blue); }
+a:hover { opacity:.85; }
+
+/* CTA keeps brand look */
+.cta-banner {
+  background: linear-gradient(90deg, var(--mg-blue), var(--mg-green));
+  color: #fff;
+  border: none;
+  box-shadow: 0 12px 30px -12px rgba(2,6,23,.35);
+}
+.cta-banner a { background:#fff; color: var(--mg-blue); }
+/* Cards for home page */
+.blog-card {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: var(--radius-lg);
+  padding: 1rem;
+  box-shadow: 0 10px 25px -10px rgba(2,6,23,.1);
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+.blog-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 20px 45px -20px rgba(2,6,23,.2);
+}
+.blog-card img {
+  width: 100%;
+  border-radius: var(--radius-md);
+  margin-bottom: .75rem;
+}
+
+/* CTA banner */
+.cta-banner {
+  background: linear-gradient(90deg, var(--mg-blue), var(--mg-green));
+  color: white;
+  text-align: center;
+  padding: 1.5rem 1rem;
+  border-radius: var(--radius-lg);
+  margin: 3rem 0;
+}
+.cta-banner a {
+  background: white;
+  color: var(--mg-blue);
+  font-weight: 600;
+  border-radius: .5rem;
+  padding: .6rem 1.2rem;
+  text-decoration: none;
+}
+
+/* Footer */
+footer { text-align: center; font-size: .9rem; color: #4b5563; padding: 2rem; }
+
+/* Make the GRID an actual grid (was missing display) */
+.blog-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+  gap:1.5rem;
+  padding:.25rem;
+  background:transparent;
+  border:0;
+  box-shadow:none;
+}
+
+/* Ensure only CARDS are white, not the whole grid */
+main > article,
+.cta-banner,
+.post-content,
+.page-card{
+  background:#fff;
+  border:1px solid #e5e7eb;
+  border-radius:1rem;
+  padding:1.25rem;
+  box-shadow:0 10px 25px -10px rgba(2,6,23,.15);
+}
+/* (intentionally NOT applying those styles to .blog-grid) */
+
+/* Card media: one box, image fills it */
+.card-media {
+  position: relative;
+  overflow: hidden;
+  background: #f1f5f9;
+  border-bottom: 1px solid #eef2f7;
+  aspect-ratio: 16/9;        /* keep consistent tiles */
+  padding: 0 !important;      /* kill old padding-top hacks if any */
+}
+
+.card-media::before { content: none !important; } /* nuke spacers */
+
+.card-media img {
+  position: absolute;
+  inset: 0;                  /* top:0 right:0 bottom:0 left:0 */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Header/footer readable on gradient */
+header{ background:transparent; color:#0f172a; }
+header a{ color:var(--mg-blue); }
+footer{ background:transparent; border-top:none; }
+
+/* ==== MikeGuides Blog: cobalt background + card grid (override) ==== */
+
+/* Brand tokens */
+:root{
+  --mg-blue:#2563eb;
+  --mg-green:#22c55e;
+  --mg-ink:#1f2937;
+}
+
+/* Full-page solid cobalt background */
+html, body { height:100% }
+body{
+  margin:0;
+  background: var(--mg-blue);    /* cobalt everywhere */
+  color:#eef2ff;                  /* light text ON blue by default */
+}
+
+/* Header/Footer readable on blue */
+header{ background:transparent; color:#fff; }
+header a{ color:#fff; }
+footer{ background:transparent; color:#e5e7eb; border-top:none; }
+
+/* Main container stays transparent so the blue shows; cards add their own white */
+main{ max-width:860px; margin:2.5rem auto; padding:0 1rem; background:transparent; }
+
+/* Make the blog list a GRID again */
+.blog-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+  gap:1.5rem;
+  padding:.25rem;
+  background:transparent; /* important */
+  border:0;
+  box-shadow:none;
+}
+
+/* Ensure only CARDS are white tiles (not the whole grid) */
+.blog-card{
+  display:block;
+  background:#fff;
+  color: var(--mg-ink);           /* dark text INSIDE cards */
+  border:1px solid #e5e7eb;
+  border-radius:1rem;
+  overflow:hidden;
+  text-decoration:none;
+  box-shadow:0 10px 25px -10px rgba(2,6,23,.12);
+  transition:transform .2s ease, box-shadow .2s ease;
+}
+.blog-card:hover{
+  transform:translateY(-2px);
+  box-shadow:0 16px 40px -18px rgba(2,6,23,.20);
+}
+.blog-card img{
+  display:block; width:100%; height:auto;
+  border-radius:.75rem .75rem 0 0; margin:0;
+}
+.blog-card h2{
+  font-family:'Poppins',sans-serif;
+  font-size:1.25rem; margin:.75rem 1rem .25rem; color:var(--mg-ink);
+}
+.blog-card p{
+  margin:0 1rem 1rem; color:#64748b; font-size:.95rem; line-height:1.6;
+}
+
+/* Post body cards on blue background */
+main > article,
+.post-content,
+/* ensures the hero block sits right at the top of the post body */
+.post > figure:first-child { margin-top: 0; }
+
+.page-card{
+  background:#fff;
+  color: var(--mg-ink);
+  border:1px solid #e5e7eb;
+  border-radius:1rem;
+  padding:1.25rem;
+  box-shadow:0 10px 25px -10px rgba(2,6,23,.15);
+}
+
+/* CTA band: white card to pop off blue bg */
+.cta-banner{
+  background:#fff;
+  color: var(--mg-ink);
+  border:1px solid #e5e7eb;
+  border-radius:1rem;
+  box-shadow:0 12px 30px -12px rgba(2,6,23,.25);
+}
+.cta-banner a{
+  background: var(--mg-blue);
+  color:#fff;
+  font-weight:600;
+  border-radius:.5rem;
+  padding:.6rem 1.2rem;
+  text-decoration:none;
+}
+.cta-banner a:hover{ opacity:.9 }
+
+/* Links outside cards (on blue bg) should be light */
+a{ color:#fff; }
+a:hover{ opacity:.85; text-decoration:none; }
+
+/* Inside cards, keep link color brand-blue */
+.blog-card a, .post-content a{ color: var(--mg-blue); }
+.blog-card a:hover, .post-content a:hover{ opacity:.85; text-decoration:underline; }
+
+/* 1) Make the entire page cobalt (no white layers on top) */
+html{ background:#2563eb !important; }
+body{
+  background: transparent !important;   /* let html's cobalt show everywhere */
+  color:#eef2ff;                         /* light default text on blue */
+}
+
+/* 2) Ensure the main container is transparent (so blue shows) */
+main{ background: transparent !important; }
+
+/* 3) Force the posts container to be a GRID */
+.blog-grid{
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)) !important;
+  gap: 1.5rem !important;
+  padding: .25rem !important;
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  list-style: none !important;   /* just in case it ended up as a <ul> */
+  margin: 0 !important;
+}
+
+/* 4) Make each item a white CARD tile */
+.blog-grid > *{
+  /* the anchor itself is the card in our layout */
+  display: block !important;
+  background: #fff !important;
+  color: #1f2937 !important;
+  border: 1px solid #e5e7eb !important;
+  border-radius: 1rem !important;
+  overflow: hidden !important;
+  text-decoration: none !important;
+  box-shadow: 0 10px 25px -10px rgba(2,6,23,.12) !important;
+  transition: transform .2s ease, box-shadow .2s ease !important;
+}
+.blog-grid > *:hover{
+  transform: translateY(-2px) !important;
+  box-shadow: 0 16px 40px -18px rgba(2,6,23,.20) !important;
+}
+
+/* 5) Image + text inside cards */
+.blog-grid img{
+  display:block !important; width:100% !important; height:auto !important;
+  border-radius: .75rem .75rem 0 0 !important; margin:0 !important;
+}
+.blog-grid h2{
+  font-family:'Poppins',sans-serif !important;
+  font-size:1.25rem !important; margin:.75rem 1rem .25rem !important; color:#1f2937 !important;
+}
+.blog-grid p{
+  margin:0 1rem 1rem !important; color:#64748b !important; font-size:.95rem !important; line-height:1.6 !important;
+}
+
+/* 6) Header/Footer readable on cobalt */
+header{ background: transparent !important; color:#fff !important; }
+header a{ color:#fff !important; }
+footer{ background: transparent !important; color:#e5e7eb !important; border-top:none !important; }
+
+/* 7) CTA band: white card to pop off blue */
+.cta-banner{
+  background:#fff !important; color:#1f2937 !important;
+  border:1px solid #e5e7eb !important; border-radius:1rem !important;
+  box-shadow:0 12px 30px -12px rgba(2,6,23,.25) !important;
+}
+.cta-banner a{
+  background:#2563eb !important; color:#fff !important;
+  font-weight:600 !important; border-radius:.5rem !important;
+  padding:.6rem 1.2rem !important; text-decoration:none !important;
+}
+
+/* 8) Links outside cards (on blue) should be light */
+a{ color:#fff; }
+a:hover{ opacity:.85; text-decoration:none; }
+
+/* Inside cards, keep brand blue */
+.post-content a{ color:#2563eb !important; }
+.post-content a:hover{ opacity:.85 !important; text-decoration:underline !important; }
+
+html::before{
+  content:""; position:fixed; inset:0; pointer-events:none;
+  background: radial-gradient(80% 80% at 50% 20%, rgba(0,0,0,0) 60%, rgba(0,0,0,.08) 100%);
+}
+/* ===== FINAL OVERRIDES (use an ID so nothing can override it) ===== */
+html { background:#2563eb !important; }
+body { background:transparent !important; color:#eef2ff !important; }
+main { background:transparent !important; }
+
+/* Grid container (ID wins over any class rules) */
+#mg-posts{
+  display:grid !important;
+  grid-template-columns:repeat(auto-fit,minmax(320px,1fr)) !important;
+  gap:1.5rem !important;
+  padding:.25rem !important;
+  list-style:none !important;
+  margin:0 !important;
+  background:transparent !important;
+  border:0 !important;
+  box-shadow:none !important;
+}
+
+/* Card tiles */
+#mg-posts > a.mg-card{
+  display:block !important;
+  background:#fff !important;
+  color:#1f2937 !important;
+  border:1px solid #e5e7eb !important;
+  border-radius:1rem !important;
+  overflow:hidden !important;
+  text-decoration:none !important;
+  box-shadow:0 10px 25px -10px rgba(2,6,23,.12) !important;
+  transition:transform .2s ease, box-shadow .2s ease !important;
+}
+#mg-posts > a.mg-card:hover{
+  transform:translateY(-2px) !important;
+  box-shadow:0 16px 40px -18px rgba(2,6,23,.20) !important;
+}
+
+/* Card contents */
+#mg-posts img{ display:block !important; width:100% !important; height:auto !important; border-radius:.75rem .75rem 0 0 !important; margin:0 !important; }
+#mg-posts h2{ font-family:'Poppins',sans-serif !important; font-size:1.25rem !important; margin:.75rem 1rem .25rem !important; color:#1f2937 !important; }
+#mg-posts p{ margin:0 1rem 1rem !important; color:#64748b !important; font-size:.95rem !important; line-height:1.6 !important; }
+
+/* CTA band as white card */
+.cta-banner{
+  background:#fff !important; color:#1f2937 !important;
+  border:1px solid #e5e7eb !important; border-radius:1rem !important;
+  box-shadow:0 12px 30px -12px rgba(2,6,23,.25) !important;
+}
+.cta-banner a{ background:#2563eb !important; color:#fff !important; font-weight:600 !important; border-radius:.5rem !important; padding:.6rem 1.2rem !important; text-decoration:none !important; }
+
+/* Header/Footer on cobalt */
+header{ background:transparent !important; color:#fff !important; position:relative !important; }
+header a{ color:#fff !important; }
+footer{ background:transparent !important; color:#e5e7eb !important; border-top:none !important; }
+
+/* base grid + gaps */
+.grid { display: grid !important; }
+.gap-6 { gap: 1.5rem !important; }
+
+/* responsive column utilities used on your page */
+@media (min-width: 640px){        /* sm: */
+  .sm\:grid-cols-2 { grid-template-columns: repeat(2, minmax(0,1fr)) !important; }
+}
+@media (min-width: 768px){        /* md: */
+  .md\:grid-cols-2 { grid-template-columns: repeat(2, minmax(0,1fr)) !important; }
+}
+@media (min-width: 1024px){       /* lg: */
+  .lg\:grid-cols-3 { grid-template-columns: repeat(3, minmax(0,1fr)) !important; }
+}
+
+/* container helpers you're using (for consistent spacing) */
+.max-w-6xl { max-width: 72rem !important; }  /* 1152px */
+.mx-auto { margin-left: auto !important; margin-right: auto !important; }
+.px-6 { padding-left: 1.5rem !important; padding-right: 1.5rem !important; }
+.py-10 { padding-top: 2.5rem !important; padding-bottom: 2.5rem !important; }
+.pt-10 { padding-top: 2.5rem !important; }
+.pb-8 { padding-bottom: 2rem !important; }
+
+/* text colors used in the snippet */
+.text-slate-600 { color: #475569 !important; }
+.text-slate-500 { color: #64748b !important; }
+
+/* buttons (so your blue CTA looks right on cobalt bg) */
+.bg-\[var\(--mg-blue\)\] { background: var(--mg-blue) !important; }
+.text-white { color: #fff !important; }
+
+/* Keep the page cobalt everywhere */
+html { background: #2563eb !important; min-height: 100%; }
+body { background: transparent !important; min-height: 100%; color: #eef2ff; }
+main { background: transparent !important; }
+
+/* Make sure only the post "cards" are white, not entire sections */
+section article {
+  background:#fff;
+  color:#1f2937;
+  border:1px solid #e5e7eb;
+  border-radius: 1rem;
+  box-shadow: 0 10px 25px -10px rgba(2,6,23,.12);
+}
+
+/* ===== Typography utilities shim (no Tailwind, but same class names) ===== */
+.font-extrabold { font-weight: 800 !important; }
+.text-2xl { font-size: 1.5rem !important; line-height: 2rem !important; }
+.text-3xl { font-size: 1.875rem !important; line-height: 2.25rem !important; }
+.text-4xl { font-size: 2.25rem !important; line-height: 2.5rem !important; }
+@media (min-width: 640px){ /* sm: */
+  .sm\:text-5xl { font-size: 3rem !important; line-height: 1.1 !important; }
+}
+
+/* Headings use Poppins by brand */
+.brand, h1, h2, h3 { font-family: 'Poppins', Inter, system-ui, -apple-system, Segoe UI, sans-serif !important; }
+
+/* Hero/intro section (the first <section> block) → white on cobalt */
+main > section:first-of-type h1,
+main > section:first-of-type p {
+  color: #fff !important;
+}
+
+/* Post cards: readable, clean typography inside white tiles */
+section article h2, section article h3 {
+  font-family: 'Poppins', Inter, sans-serif !important;
+  margin: .25rem 0 .25rem 0 !important;
+  color: #1f2937 !important;
+}
+section article p { 
+  color: #475569 !important; 
+  font-size: 1rem !important; 
+  line-height: 1.7 !important;
+}
+
+/* Ensure buttons stay white text on brand blue */
+.bg-\[var\(--mg-blue\)\] { background: var(--mg-blue) !important; }
+.text-white { color: #fff !important; }
+
+/* Remove old aspect-ratio spacer from card-media */
+.card-media {
+  background: none;          /* if you used background-image previously */
+  padding: 0 !important;     /* kill padding-top hacks */
+  position: relative;
+}
+
+/* Kill any pseudo-element spacers */
+.card-media::before {
+  content: none !important;
+}
+
+/* Let the <img> control the ratio */
+.card-media img {
+  display:block;
+  width:100%;
+  height:auto;               /* use the natural 16:9 we set inline or here */
+  object-fit:cover;
+  aspect-ratio: 16 / 9;      /* (optional) keeps consistent tiles */
+}
+
+/* --- Blog grid & cards (no Tailwind required) --- */
+.featured-wrap{max-width:1120px;margin:0 auto;padding:0 24px;}
+.featured-card{
+  background:#fff;border:1px solid #e5e7eb;border-radius:16px;overflow:hidden;
+  box-shadow:0 10px 25px -10px rgba(2,6,23,.15);margin:16px 0;
+}
+.featured-grid{display:grid;grid-template-columns:1fr;gap:0;}
+@media(min-width:900px){.featured-grid{grid-template-columns:1fr 1fr;}}
+
+.blog-grid{
+  max-width:1120px;margin:40px auto;padding:0 24px;
+  display:grid;grid-template-columns:1fr;gap:24px;
+}
+@media(min-width:700px){.blog-grid{grid-template-columns:1fr 1fr;}}
+@media(min-width:1024px){.blog-grid{grid-template-columns:1fr 1fr 1fr;}}
+
+.blog-card{
+  background:#fff;border:1px solid #e5e7eb;border-radius:16px;overflow:hidden;
+  box-shadow:0 10px 25px -10px rgba(2,6,23,.12);
+  transition:transform .18s ease, box-shadow .18s ease;
+}
+.blog-card:hover{transform:translateY(-3px);box-shadow:0 20px 45px -20px rgba(2,6,23,.22);}
+.blog-card-link{display:block;color:inherit;text-decoration:none}
+
+/* Card media: image fills the box; no extra spacer */
+.card-media {
+  position: relative;
+  overflow: hidden;
+  background: #f1f5f9;
+  border-bottom: 1px solid #eef2f7;
+  aspect-ratio: 16/9;
+  padding: 0 !important;
+}
+.card-media::before { content: none !important; }
+
+.card-media img {
+  position: absolute;
+  inset: 0;            /* top/right/bottom/left: 0 */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.card-cta:hover,.card-button:hover{opacity:.92}
+
+/* Featured block keeps the full 1200x630 without cropping */
+.featured-media {
+  background: #f8fafc;           /* light backdrop behind image */
+  overflow: hidden;
+}
+.featured-media img {
+  width: 100%;
+  height: auto;                   /* preserve 1200x630 aspect */
+  display: block;
+}
+
+/* Optional: nicer proportions on wide screens */
+@media (min-width: 900px) {
+  .featured-grid { grid-template-columns: 1.2fr 0.8fr; }
+}
+
+.featured-media { aspect-ratio: 1200 / 630; background:#0b1b4a; }
+.featured-media img { width:100%; height:100%; object-fit: contain; }
+
+/* Post hero (keeps full 16:9 without cropping) */
+.post-hero{
+  max-width: 1120px;
+  margin: 24px auto 0;
+  padding: 0 24px;
+}
+.post-hero img{
+  width: 100%;
+  height: auto;           /* preserves 1280x720 aspect */
+  display: block;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px -10px rgba(2,6,23,.18);
+}
+/* Make featured image anchor definitely clickable */
+.featured-link { display:block; position:relative; z-index: 2; }
+
+/* If you have gradient/overlay layers, make sure they don't block clicks */
+.featured-card .overlay,
+.featured-card .featured-overlay,
+.card-media::after {
+  pointer-events: none;
+}
+/* Ensure the featured image link is above other layers */
+.featured-grid { position: relative; }
+.featured-media { position: relative; z-index: 3; }
+.featured-link { display:block; position: relative; z-index: 4; }
+
+/* Make any overlays ignore pointer events so clicks pass through */
+.featured-card .overlay,
+.featured-card .featured-overlay,
+.featured-card .card-media::after {
+  pointer-events: none;
+}
+/* Hard bump the image itself above everything */
+.featured-link img { position: relative; z-index: 5; }
+.featured-wrap::before,
+.featured-card::before,
+.featured-media::before,
+.featured-media::after {
+  pointer-events: none !important;
+}
+.featured-grid { position: relative; }
+.featured-media { position: relative; z-index: 3; }
+.featured-link { display:block; position: relative; z-index: 4; }
+.featured-link img { position: relative; z-index: 5; } /* belt & suspenders */
+
+/* Don't let any page-wide ::before overlays block clicks */
+html::before,
+body::before {
+  pointer-events: none !important;
+}
+/* Make sure the featured link is clickable */
+.featured-link { pointer-events: auto !important; cursor: pointer; position: relative; z-index: 5; }
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 24px;
+  margin-top: 28px;
+}
+html { scroll-behavior: smooth; scroll-padding-top: 80px; } /* adjust 80px to taste */
+
