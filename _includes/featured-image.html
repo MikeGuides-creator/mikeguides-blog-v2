@@ -1,14 +1,19 @@
 {%- comment -%}
-Featured image partial
+Featured image helper
 
-Rules:
-- Only show an image if the page explicitly defines one:
-  image: /path/to/image.jpg
-- No default hero, no fallback. Clean and predictable.
+Usage:
+- Home page:
+  {%- capture feature_img -%}{% include featured-image.html post=featured %}{%- endcapture -%}
+- Post card:
+  {%- capture card_img -%}{% include featured-image.html post=post %}{%- endcapture -%}
+- Single post:
+  {%- capture hero_img -%}{% include featured-image.html %}{%- endcapture -%}
+
+This include returns ONLY the image URL (or blank if none).
 {%- endcomment -%}
 
-{%- if page.image %}
-  <figure class="post-featured-image">
-    <img src="{{ page.image | relative_url }}" alt="{{ page.image_alt | default: page.title | escape }}">
-  </figure>
-{%- endif %}
+{%- assign target = include.post | default: page -%}
+
+{%- if target.image %}
+{{ target.image | relative_url }}
+{%- endif -%}
