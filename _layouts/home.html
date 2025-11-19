@@ -2,58 +2,28 @@
 layout: default
 ---
 
-{%- assign featured = site.posts | first -%}
-{%- if featured -%}
-<section class="featured-wrap">
-  <article class="featured-card">
-    <div class="featured-grid">
-      <div class="featured-media">
-        {%- capture feature_img -%}{% include featured-image.html post=featured %}{%- endcapture -%}
-        <a href="{{ featured.url | relative_url }}#content" class="featured-link">
-          <img
-            src="{{ feature_img | strip }}"
-            alt="{{ featured.title | escape }}"
-            loading="eager" fetchpriority="high"
-            style="display:block;width:100%;height:auto;object-fit:cover;aspect-ratio:16/9;">
-        </a>
-      </div>
-      <div class="card-body">
-        <div class="card-date">{{ featured.date | date: "%b %d, %Y" }}</div>
-        <h2 class="card-title-lg">
-          <a href="{{ featured.url | relative_url }}#content" class="card-link">{{ featured.title }}</a>
-        </h2>
-        <p class="card-desc">{{ featured.description | default: featured.excerpt | strip_html | truncate: 240 }}</p>
-        <div class="flex gap-2">
-          <a href="{{ featured.url | relative_url }}#content" class="card-button">Read the post</a>
-          <a href="https://mikeguides.co" class="card-button" rel="noopener">Visit MikeGuides.co</a>
-        </div>
-      </div>
-    </div>
-  </article>
-</section>
-{%- endif -%}
+<div class="home">
+  <header class="page-header">
+    <h1 class="page-title">{{ site.title }}</h1>
+    {% if site.description %}
+      <p class="page-subtitle">{{ site.description }}</p>
+    {% endif %}
+  </header>
 
-<section class="blog-grid">
-  {%- for post in site.posts offset:1 -%}
-  <article class="blog-card">
-    <a href="{{ post.url | relative_url }}#content" class="blog-card-link">
-      <div class="card-media">
-        {%- capture card_img -%}{% include featured-image.html post=post %}{%- endcapture -%}
-        <img
-          src="{{ card_img | strip }}"
-          alt="{{ post.title | escape }}"
-          loading="lazy"
-          style="display:block;width:100%;height:auto;object-fit:cover;aspect-ratio:16/9;">
-      </div>
-      <div class="card-body">
-        <div class="card-date">{{ post.date | date: "%b %d, %Y" }}</div>
-        <h3 class="card-title">{{ post.title }}</h3>
-        {%- if post.description -%}
-          <p class="card-desc">{{ post.description | strip_html | truncate: 160 }}</p>
-        {%- endif -%}
-        <span class="card-button">Read more</span>
-      </div>
-    </a>
-  </article>
-  {%- endfor -%}
-</section>
+  <section class="post-list">
+    {%- for post in site.posts %}
+      <article class="post-card">
+        <h2 class="post-title">
+          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        </a>
+        </h2>
+        <p class="post-meta">
+          {{ post.date | date: "%b %-d, %Y" }}
+        </p>
+        <p class="post-excerpt">
+          {{ post.excerpt | strip_html | truncate: 160 }}
+        </p>
+      </article>
+    {%- endfor %}
+  </section>
+</div>
