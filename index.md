@@ -1,4 +1,0 @@
-﻿---
-layout: home
-title: Home
----
