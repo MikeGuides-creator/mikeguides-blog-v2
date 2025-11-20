@@ -2,7 +2,7 @@
 layout: post
 ---
 
-title: "AI Marketing Workshop"
+title: "AI Writing Workshop"
 description: "Prompts, templates, and workflows"
 cover_key: "aiwritingworkshop"
 image: /assets/images/cover/aiwritingworkshop.1280x720.jpg
