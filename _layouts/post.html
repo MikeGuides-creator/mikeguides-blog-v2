@@ -11,6 +11,14 @@ layout: default
       {{ page.date | date: "%b %-d, %Y" }}
     </p>
   </header>
+<body class="bg-[var(--mg-bg)] text-slate-800">
+  {% include header.html %} {# if you already use this site-wide #}
+  {% include post-header.html %}
+  
+  <main class="post-main">
+    <!-- post title, meta, content, etc. -->
+  </main>
+</body>
 
   <section class="post-body" style="color:#0f172a; font-size:1rem; line-height:1.7;">
   {{ content }}
