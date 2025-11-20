@@ -9,7 +9,7 @@ description: Learn how to promote your brand using the AI Marketing Toolkit.
 
 Smarter Marketing in Less Time.
 
-Marketing shouldnâ€™t feel like a guessing game. Yet many entrepreneurs spend endless hours brainstorming ideas, juggling campaigns, and trying to stay consistent online. The AI Marketing Toolkit changes that. It's a hands-on system that helps you automate campaign planning, generate content ideas, and streamline workflows so you can focus on results, not busywork.
+Marketing shouldn't feel like a guessing game. Yet many entrepreneurs spend endless hours brainstorming ideas, juggling campaigns, and trying to stay consistent online. The AI Marketing Toolkit changes that. It's a hands-on system that helps you automate campaign planning, generate content ideas, and streamline workflows so you can focus on results, not busywork.
 
 What's Inside?
 
@@ -23,11 +23,11 @@ Keyword & SEO Assistant. Discover keywords (short-tail + long-tail) to boost sea
 
 Ad & Social Prompt Generator. Produce high-converting ad copy and social posts on demand.
 
-Performance Tracker Templates â€“ Keep campaigns measurable and improve over time.
+Performance Tracker Templates. Keep campaigns measurable and improve over time.
 
 Why It Works?
 
-The AI Marketing Toolkit isnâ€™t just a set of prompts. It's a guided workflow built for business owners who need results quickly.
+The AI Marketing Toolkit isn't just a set of prompts. It's a guided workflow built for business owners who need results quickly.
 
 Structured workflow.No more blank-page paralysis.
 
