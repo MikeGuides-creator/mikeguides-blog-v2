@@ -27,4 +27,4 @@ Grab a free starter to see how we work:
 - **Read a featured post** â†’ pick anything from the grid below
 - **Say hi and add a contact link or email if you want (optional)
 
-Short posts. Practical wins. Letâ€™s get to work.
+Short posts. Practical wins. Let's get to work!!
