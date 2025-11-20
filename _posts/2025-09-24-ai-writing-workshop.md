@@ -1,5 +1,7 @@
 ﻿---
 layout: post
+---
+
 title: "AI Marketing Workshop"
 description: "Prompts, templates, and workflows"
 cover_key: "aiwritingworkshop"
@@ -8,7 +10,7 @@ featured_image: /assets/images/cover/aiwritingworkshop.1280x720.jpg
 category: Pricing
 tags: [AI, marketing, toolkit, content, automation]
 last update: 2025-11-01
----
+
 
 Write Smarter, Not Harder
 
