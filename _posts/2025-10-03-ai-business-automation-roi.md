@@ -1,11 +1,9 @@
-﻿---
-title: Welcome - what to expect hereâ€
-date: 2025-10-03
-categories: [Marketing, AI]
-layout: post
-featured_image: /assets/images/cover/aibusinessautomation.1280x720.jpg
 ---
-
+layout: post
+title: "AI Business Automation ROI"
+date: 2025-10-03
+categories: [ai-business-automation-roi]
+---
 
 Automate Smarter, Scale Faster!
 
