@@ -759,3 +759,19 @@ body::before {
 }
 html { scroll-behavior: smooth; scroll-padding-top: 80px; } /* adjust 80px to taste */
 
+/* === Post content link styling === */
+.post-main a,
+.post-main a:visited {
+  color: #2563eb;          /* brand blue */
+  text-decoration: underline;
+}
+
+.post-main a:hover {
+  text-decoration: none;
+}
+
+.post-main a:focus {
+  outline: 2px solid #2563eb;
+  outline-offset: 2px;
+}
+
