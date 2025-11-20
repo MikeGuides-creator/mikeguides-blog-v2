@@ -18,7 +18,7 @@ Every entrepreneur, freelancer, and content creator knows the feeling: staring a
 
 What Makes It Different
 
-The AI Writing Workshop isn't a template library or a set of pre-written promptsâ€”itâ€™s an interactive system that adapts to you.
+The AI Writing Workshop isn't a template library or a set of pre-written prompts, it's an interactive system that adapts to you.
 
 Interview-style workflow. It asks you smart questions about your project.
 
