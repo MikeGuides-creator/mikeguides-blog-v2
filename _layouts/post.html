@@ -3,6 +3,8 @@ layout: default
 ---
 
 <article class="post mx-auto max-w-3xl">
+  {% include post-header.html %}
+
   <header class="mb-6">
     <h1 class="text-3xl font-bold mb-2">
       {{ page.title }}
@@ -11,17 +13,10 @@ layout: default
       {{ page.date | date: "%b %-d, %Y" }}
     </p>
   </header>
-<body class="bg-[var(--mg-bg)] text-slate-800">
-    {% include post-header.html %}
-  
-  <main class="post-main">
-    <!-- post title, meta, content, etc. -->
-  </main>
-</body>
 
-  <section class="post-body" style="color:#0f172a; font-size:1rem; line-height:1.7;">
-  {{ content }}
-</section>
+  <section class="post-main" style="color:#0f172a; font-size:1rem; line-height:1.7;">
+    {{ content }}
+  </section>
 
   <div class="mt-8">
     <a href="{{ "/" | relative_url }}" class="text-sm text-[var(--mg-blue)] hover:underline">
