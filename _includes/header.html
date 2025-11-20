@@ -1,13 +1,14 @@
-﻿<header class="site-header">
-  <nav class="mx-auto flex max-w-5xl items-center justify-between px-6 py-4">
-    <!-- HEADER LIVE MARKER -->
-<a href="{{ '/' | absolute_url }}">Blog Home</a>
-    <!-- BLOGHOME_HREF: {{ site.baseurl | default: '' }}/ -->
-    <ul style="list-style:none; padding-left:0; margin:0; display:flex; gap:1rem; justify-content:center;">
-      <li><a href="https://mikeguides-creator.github.io/mikeguides-blog-v2/" class="hover:underline">Home</a></li>
-      <li><a href="https://mikeguides.co" class="hover:underline" rel="noopener">Main Site</a></li>
-      <li><a href="{{ '/feed.xml' | relative_url }}" class="hover:underline">RSS</a></li>
-    </ul>
-  </nav>
+﻿<header class="post-header-wrapper">
+  <div class="post-header-inner">
+    <a href="{{ "/" | relative_url }}" class="post-logo-link">
+      <img src="{{ "/assets/images/logo-blog.png" | relative_url }}" alt="Pricing for Profit" class="post-logo">
+    </a>
+    <div class="post-title-block">
+      <div class="post-site-name">Pricing for Profit Blog</div>
+      <div class="post-site-tagline">Simple guides for smarter pricing & profit.</div>
+    </div>
+  </div>
+  <hr class="post-header-divider">
 </header>
+
 
