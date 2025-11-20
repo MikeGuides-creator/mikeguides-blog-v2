@@ -11,26 +11,19 @@ layout: default
 
 <main>
   <ul style="list-style: none; padding: 0; margin: 0;">
-    {%- for post in site.posts %}
-      <li style="margin-bottom: 2rem; padding-bottom: 1.5rem; border-bottom: 1px solid #e2e8f0;">
-        <h2 style="margin: 0 0 0.25rem 0; font-size: 1.25rem;">
-  <a href="{{ post.url | relative_url }}" style="text-decoration: none; color: #f9fafb;">
-    {{ post.title }}
-  </a>
-</h2>
-<p style="margin: 0 0 0.5rem 0; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; color: #e5e7eb;">
-  {{ post.date | date: "%b %-d, %Y" }}
-</p>
-<p style="margin: 0; font-size: 0.95rem; color: #e5e7eb;">
-  {{ post.excerpt | strip_html | truncate: 160 }}
-</p>
-        <p style="margin: 0 0 0.5rem 0; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; color: #64748b;">
-          {{ post.date | date: "%b %-d, %Y" }}
-        </p>
-        <p style="margin: 0; font-size: 0.95rem; color: #1e293b;">
-          {{ post.excerpt | strip_html | truncate: 160 }}
-        </p>
-      </li>
-    {%- endfor %}
+    {%- for post in site.posts -%}
+      {%- unless post.title == nil or post.title == "" -%}
+        <li style="margin-bottom: 2rem; padding-bottom: 1.5rem; border-bottom: 1px solid #e2e8f0;">
+          <h2 style="margin: 0 0 0.25rem 0; font-size: 1.25rem;">
+            <a href="{{ post.url | relative_url }}" style="text-decoration: none; color: #f9fafb;">
+              {{ post.title }}
+            </a>
+          </h2>
+          <p style="margin: 0; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; color: #e5e7eb;">
+            {{ post.date | date: "%b %-d, %Y" }}
+          </p>
+        </li>
+      {%- endunless -%}
+    {%- endfor -%}
   </ul>
 </main>
