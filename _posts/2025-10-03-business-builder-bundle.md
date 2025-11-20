@@ -1,5 +1,5 @@
 ﻿---
-title: â€œBusiness Builder Bundleâ€
+title: "Business Builder Bundle"
 date: 2025-10-03
 categories: [Marketing, AI]
 layout: post
