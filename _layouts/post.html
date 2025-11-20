@@ -1,26 +1,24 @@
-﻿---
+---
 layout: default
 ---
 
-{%- capture hero_img -%}{% include featured-image.html %}{%- endcapture -%}
-<figure class="mx-auto mb-6 overflow-hidden rounded-2xl shadow-[0_10px_25px_-10px_rgba(2,6,23,.1)]">
-  <a href="{{ page.url | relative_url }}" class="block">
-    <img
-      src="{{ hero_img | strip }}"
-      alt="{{ page.title | escape }}"
-      decoding="async"
-      loading="eager"
-      style="display:block;width:100%;height:auto;object-fit:cover;aspect-ratio:16/9;"
-      sizes="(min-width:1024px) 960px, 100vw">
-  </a>
-</figure>
+<article class="post mx-auto max-w-3xl">
+  <header class="mb-6">
+    <h1 class="text-3xl font-bold mb-2">
+      {{ page.title }}
+    </h1>
+    <p class="text-xs uppercase tracking-wide text-slate-500">
+      {{ page.date | date: "%b %-d, %Y" }}
+    </p>
+  </header>
 
-  <header class="mb-4">
-  <h1 class="brand text-3xl font-bold">{{ page.title }}</h1>
-</header>
+  <section class="post-body prose prose-slate max-w-none">
+    {{ content }}
+  </section>
 
-<main id="content" class="prose max-w-none">
-  {{ content }}
-</main>
-
-
+  <div class="mt-8">
+    <a href="{{ "/" | relative_url }}" class="text-sm text-[var(--mg-blue)] hover:underline">
+      ← Back to the blog home
+    </a>
+  </div>
+</article>
