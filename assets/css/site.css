@@ -635,6 +635,126 @@ body::before {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 24px;
+
+  /* === Blog post layout + header + CTA (custom) === */
+
+.post-main {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 1.5rem 1.25rem 3rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Inter", sans-serif;
+}
+
+.post-main h1 {
+  font-size: 2rem;
+  line-height: 1.2;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+.post-main h2 {
+  font-size: 1.35rem;
+  line-height: 1.35;
+  font-weight: 600;
+  margin-top: 1.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.post-main p {
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+.post-main ul,
+.post-main ol {
+  padding-left: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.post-main li {
+  margin-bottom: 0.35rem;
+}
+
+.post-header-wrapper {
+  max-width: 720px;
+  margin: 1rem auto 0.75rem;
+  padding: 0 1.25rem;
+}
+
+.post-header-inner {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.post-logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+}
+
+.post-title-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.post-site-name {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.post-site-tagline {
+  font-size: 0.75rem;
+  color: #6b7280; /* slate-500-ish */
+}
+
+.post-header-divider {
+  margin-top: 0.75rem;
+  border: none;
+  border-top: 1px solid #e5e7eb;
+}
+
+.post-cta {
+  margin-top: 2.5rem;
+}
+
+.post-cta-inner {
+  border-radius: 1rem;
+  padding: 1.5rem;
+  background: #eff6ff;
+  border: 1px solid #dbeafe;
+}
+
+.post-cta-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.35rem;
+}
+
+.post-cta-text {
+  font-size: 0.95rem;
+  color: #4b5563;
+  margin-bottom: 0.75rem;
+}
+
+.post-cta-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.55rem 1.1rem;
+  border-radius: 999px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
+  background: #2563eb;
+  color: #ffffff;
+}
+
+.post-cta-button:hover {
+  filter: brightness(1.05);
+}
+
   margin-top: 28px;
 }
 html { scroll-behavior: smooth; scroll-padding-top: 80px; } /* adjust 80px to taste */
