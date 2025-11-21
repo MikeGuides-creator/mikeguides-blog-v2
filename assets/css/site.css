@@ -1021,3 +1021,25 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; } /* adjust 80px to ta
 .post-footer-back-link:hover {
   text-decoration: underline;
 }
+
+/* === Ensure post body text is never washed out === */
+
+/* Strong default for paragraphs and list items */
+.post-main p,
+.post-main li {
+  color: #0f172a; /* deep readable slate */
+}
+
+/* Make any "muted" utility classes darker inside posts */
+.post-main .text-slate-500,
+.post-main .text-slate-400,
+.post-main .text-gray-500,
+.post-main .text-gray-400 {
+  color: #374151; /* darker than before, still a tiny bit softer than pure body text */
+}
+
+/* Small explanatory text inside posts should still be readable */
+.post-main small {
+  color: #0f172a;
+  font-size: 0.85rem;
+}
