@@ -775,6 +775,249 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; } /* adjust 80px to ta
   outline-offset: 2px;
 }
 
-git add _layouts/post.html
-git commit -m "Use global header on post pages"
-git push
+/* === Post body visual polish === */
+
+.post {
+  padding: 1.5rem 1.25rem 3rem;
+}
+
+@media (min-width: 768px) {
+  .post {
+    padding: 2.5rem 0 4rem;
+  }
+}
+
+.post-main {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 1.75rem 1.5rem 2.5rem;
+  background: #ffffff;
+  border-radius: 1.25rem;
+  box-shadow: 0 18px 45px -22px rgba(15, 23, 42, 0.35);
+  border: 1px solid #e5e7eb;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Inter", sans-serif;
+}
+
+.post-main p {
+  font-size: 1rem;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+  color: #0f172a;
+}
+
+.post-main h2,
+.post-main h3 {
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.post-main h2 {
+  font-size: 1.4rem;
+}
+
+.post-main h3 {
+  font-size: 1.15rem;
+}
+
+.post-main ul,
+.post-main ol {
+  padding-left: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.post-main li {
+  margin-bottom: 0.4rem;
+}
+
+/* Links inside posts */
+.post-main a,
+.post-main a:visited {
+  color: #2563eb;
+  text-decoration: underline;
+}
+
+.post-main a:hover {
+  text-decoration: none;
+}
+
+/* Blockquotes / callouts */
+.post-main blockquote {
+  margin: 1.5rem 0;
+  padding: 1rem 1.25rem;
+  border-left: 4px solid #2563eb;
+  background: #f1f5f9;
+  border-radius: 0.75rem;
+  font-style: italic;
+  color: #1e293b;
+}
+
+/* Inline code / code blocks */
+.post-main code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 0.9rem;
+  background: #0f172a;
+  color: #e5e7eb;
+  padding: 0.2rem 0.4rem;
+  border-radius: 0.25rem;
+}
+
+/* Header wrapper tweaks so the logo + title breathe */
+.post-header-wrapper {
+  max-width: 720px;
+  margin: 0 auto 1rem;
+  padding: 0 1.5rem;
+}
+
+.post-header-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  text-align: center;
+}
+
+.post-logo {
+  width: 52px;
+  height: 52px;
+  border-radius: 999px;
+}
+
+.post-site-name {
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.post-site-tagline {
+  font-size: 0.8rem;
+  color: #6b7280;
+}
+
+.post-header-divider {
+  margin-top: 0.75rem;
+  border: none;
+  border-top: 1px solid #e5e7eb;
+}
+
+/* Post title / meta spacing */
+.post h1 {
+  max-width: 720px;
+  margin: 1.5rem auto 0.25rem;
+  padding: 0 1.5rem;
+}
+
+.post .post-meta-date {
+  max-width: 720px;
+  margin: 0.25rem auto 0;
+  padding: 0 1.5rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #6b7280;
+}
+
+/* === Sponsor / collab slot === */
+
+.post-sponsor-slot {
+  max-width: 720px;
+  margin: 1.5rem auto 0;
+  padding: 0 1.5rem;
+}
+
+.post-sponsor-inner {
+  border-radius: 1rem;
+  border: 1px dashed #cbd5f5;
+  background: #eff6ff;
+  padding: 1.25rem 1.5rem;
+}
+
+.post-sponsor-title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.35rem;
+}
+
+.post-sponsor-copy {
+  font-size: 0.9rem;
+  color: #475569;
+  margin: 0;
+}
+
+/* === Post footer === */
+
+.post-footer {
+  max-width: 720px;
+  margin: 2.5rem auto 0;
+  padding: 0 1.5rem 0.75rem;
+}
+
+.post-footer-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1.25rem 1.5rem;
+  border-radius: 1rem;
+  border: 1px solid #e5e7eb;
+  background: #f9fafb;
+}
+
+@media (min-width: 768px) {
+  .post-footer-inner {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.post-footer-section {
+  flex: 1;
+}
+
+.post-footer-heading {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #0f172a;
+}
+
+.post-footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.post-footer-links li {
+  margin-bottom: 0.35rem;
+}
+
+.post-footer-links a {
+  font-size: 0.9rem;
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.post-footer-links a:hover {
+  text-decoration: underline;
+}
+
+.post-footer-text {
+  font-size: 0.9rem;
+  color: #4b5563;
+  margin: 0;
+}
+
+.post-footer-bottom {
+  margin-top: 0.75rem;
+  text-align: left;
+  padding: 0 1.5rem;
+}
+
+.post-footer-back-link {
+  font-size: 0.85rem;
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.post-footer-back-link:hover {
+  text-decoration: underline;
+}
