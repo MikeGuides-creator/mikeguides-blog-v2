@@ -775,3 +775,6 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; } /* adjust 80px to ta
   outline-offset: 2px;
 }
 
+git add _layouts/post.html
+git commit -m "Use global header on post pages"
+git push
