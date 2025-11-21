@@ -705,8 +705,8 @@ body::before {
 }
 
 .post-site-tagline {
-  font-size: 0.75rem;
-  color: #6b7280; /* slate-500-ish */
+  font-size: 0.8rem;
+  color: #374151; /* darker slate for better contrast */
 }
 
 .post-header-divider {
