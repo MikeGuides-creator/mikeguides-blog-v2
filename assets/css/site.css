@@ -775,3 +775,26 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; } /* adjust 80px to ta
   outline-offset: 2px;
 }
 
+/* === Post body visual polish === */
+.post {
+  padding: 1.5rem 1.25rem 3rem;
+}
+
+@media (min-width: 768px) {
+  .post {
+    padding: 2.5rem 0 4rem;
+  }
+}
+
+.post-main {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 1.75rem 1.5rem 2.5rem;
+  background: #ffffff;
+  border-radius: 1.25rem;
+  box-shadow: 0 18px 45px -22px rgba(15, 23, 42, 0.35);
+  border: 1px solid #e5e7eb;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Inter", sans-serif;
+}
+
+/* …plus the rest of the .post-main / .post-sponsor-* / .post-footer-* styles we added… */
