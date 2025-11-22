@@ -896,7 +896,12 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; } /* adjust 80px to ta
 
 .post-site-tagline {
   font-size: 0.8rem;
-  color: #6b7280;
+  color: #374151; /* darker for posts so it's readable */
+}
+
+/* Homepage header tagline: bright white for max contrast */
+.is-home-header .post-site-tagline {
+  color: #ffffff;
 }
 
 .post-header-divider {
