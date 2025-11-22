@@ -1,10 +1,11 @@
 ﻿---
-title: "Welcome!” What you can expect here."
+title: "Welcome! What you can expect here."
 date: 2025-10-03
 categories: [Marketing, AI]
 layout: post
 featured_image: /assets/images/cover/welcome.1280x720.jpg
 ---
+
 
 Welcome!
 
@@ -23,8 +24,8 @@ Grab a free starter to see how we work:
 - **Execution** Checklists, templates, tiny scripts that save hours.
 
 ## Next steps
-- **Browse the guides** â†’ [mikeguides.co/products](https://mikeguides.co/products)
-- **Read a featured post** â†’ pick anything from the grid below
+- **Browse the guides** [mikeguides.co/products](https://mikeguides.co/products)
+- **Read a featured post** pick anything from the grid below
 - **Say hi and add a contact link or email if you want (optional)
 
 Short posts. Practical wins. Let's get to work!!

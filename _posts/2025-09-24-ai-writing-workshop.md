@@ -1,15 +1,9 @@
 ﻿---
 layout: post
----
-
 title: "AI Writing Workshop"
-description: "Prompts, templates, and workflows"
-cover_key: "aiwritingworkshop"
-image: /assets/images/cover/aiwritingworkshop.1280x720.jpg
-featured_image: /assets/images/cover/aiwritingworkshop.1280x720.jpg
-category: Pricing
-tags: [AI, marketing, toolkit, content, automation]
-last update: 2025-11-01
+date: 2025-10-03
+categories: [ai-writing-workshop]
+---
 
 
 Write Smarter, Not Harder
