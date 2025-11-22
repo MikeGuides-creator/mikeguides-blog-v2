@@ -1,10 +1,9 @@
 ﻿---
+layout: post
 title: AI Marketing Toolkit
 date: 2025-10-03
-layout: post
 categories: [Marketing, AI]
 featured_image: /assets/images/cover/aimarketingtoolkit.1280x720.jpg
-description: Learn how to promote your brand using the AI Marketing Toolkit.
 ---
 
 Smarter Marketing in Less Time.

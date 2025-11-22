@@ -1,8 +1,8 @@
 ﻿---
+layout: post
 title: "Visual AI Studio"
 date: 2025-10-03
 categories: [Marketing, AI]
-layout: post
 featured_image: /assets/images/cover/visualaistudio.1280x720.jpg
 ---
 

@@ -1,8 +1,8 @@
 ﻿---
+layout: post
 title: "ChatGPT Mastery Simulator"
 date: 2025-10-03
 categories: [Marketing, AI]
-layout: post
 featured_image: /assets/images/cover/chatgptmasterysimulator.1280x720.jpg
 ---
 

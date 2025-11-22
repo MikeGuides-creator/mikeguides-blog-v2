@@ -3,6 +3,7 @@ layout: post
 title: "AI Business Automation ROI"
 date: 2025-10-03
 categories: [ai-business-automation-roi]
+featured_image: /assets/images/cover/aibusinessautomation.1280x720.jpg
 ---
 
 Automate Smarter, Scale Faster!

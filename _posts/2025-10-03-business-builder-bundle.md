@@ -1,8 +1,8 @@
 ﻿---
+layout: post
 title: "Business Builder Bundle"
 date: 2025-10-03
 categories: [Marketing, AI]
-layout: post
 featured_image: /assets/images/cover/bbbundle.1280x720.jpg
 ---
 
