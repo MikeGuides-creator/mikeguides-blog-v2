@@ -1151,3 +1151,77 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; } /* adjust 80px to ta
   font-size: 0.8rem;
   color: #6b7280;
 }
+/* === Free Resources page === */
+
+.free-page {
+  max-width: 960px;
+  margin: 0 auto 3rem;
+  padding: 1.5rem 1.5rem 3rem;
+}
+
+.free-page-inner {
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.free-page-title {
+  font-size: 1.75rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+  color: #0f172a;
+}
+
+.free-page-intro {
+  font-size: 0.95rem;
+  color: #4b5563;
+  margin-bottom: 1.5rem;
+}
+
+.free-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+@media (min-width: 900px) {
+  .free-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.free-card {
+  border-radius: 1rem;
+  border: 1px solid #e5e7eb;
+  background: #ffffff;
+  padding: 1.25rem 1.25rem 1.1rem;
+  box-shadow: 0 14px 35px -20px rgba(15, 23, 42, 0.4);
+}
+
+.free-card-title {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+}
+
+.free-card-text {
+  font-size: 0.9rem;
+  color: #4b5563;
+  margin-bottom: 0.75rem;
+}
+
+.free-card-link {
+  font-size: 0.9rem;
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.free-card-link:hover {
+  text-decoration: underline;
+}
+
+.free-page-note {
+  font-size: 0.9rem;
+  color: #6b7280;
+  margin-top: 1.75rem;
+}
