@@ -1096,3 +1096,58 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; } /* adjust 80px to ta
   color: #0f172a;
   font-size: 0.85rem;
 }
+/* === Related posts section === */
+
+.post-related {
+  max-width: 720px;
+  margin: 2rem auto 0;
+  padding: 0 1.5rem;
+}
+
+.post-related-inner {
+  border-radius: 1rem;
+  border: 1px solid #e5e7eb;
+  background: #f9fafb;
+  padding: 1.25rem 1.5rem;
+}
+
+.post-related-title {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  color: #0f172a;
+}
+
+.post-related-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.post-related-item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.25rem 0.75rem;
+  padding: 0.35rem 0;
+  border-top: 1px solid #e5e7eb;
+}
+
+.post-related-item:first-child {
+  border-top: none;
+}
+
+.post-related-item a {
+  font-size: 0.9rem;
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.post-related-item a:hover {
+  text-decoration: underline;
+}
+
+.post-related-date {
+  font-size: 0.8rem;
+  color: #6b7280;
+}
