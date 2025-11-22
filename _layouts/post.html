@@ -24,11 +24,37 @@ layout: default
     <h2 class="post-downloads-title">Free downloads</h2>
     <ul class="post-downloads-list">
 
+  <!-- Related posts section -->
+  {% assign primary_category = page.categories | first %}
+  {% if primary_category %}
+    {% assign related = site.posts
+      | where_exp: "p", "p.url != page.url"
+      | where_exp: "p", "p.categories contains primary_category"
+      | slice: 0, 3 %}
+    {% if related.size > 0 %}
+      <section class="post-related">
+        <div class="post-related-inner">
+          <h2 class="post-related-title">Related posts</h2>
+          <ul class="post-related-list">
+            {% for rel in related %}
+              <li class="post-related-item">
+                <a href="{{ rel.url | relative_url }}">{{ rel.title }}</a>
+                <span class="post-related-date">
+                  {{ rel.date | date: "%b %-d, %Y" }}
+                </span>
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </section>
+    {% endif %}
+  {% endif %}
+
       <!-- Add your real free links here -->
       <li>
-        <a href="https://mikeguides.co/free" target="_blank" rel="noopener">
-          MikeGuides Free Resources
-        </a>
+        <a href="{{ "/free/" | relative_url }}" target="_blank" rel="noopener">
+  MikeGuides Free Resources
+</a>
       </li>
       <li>
         <a href="https://mikeguides8.gumroad.com/l/pricing-mistakes-checklist" target="_blank" rel="noopener">

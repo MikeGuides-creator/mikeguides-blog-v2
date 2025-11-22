@@ -2,28 +2,35 @@
 layout: default
 ---
 
-<header class="mb-6">
-  <h1 style="color:#f9fafb;">MikeGuides Blog</h1>
-  <p style="color:#e5e7eb;">
-    Simple, practical posts that go with the Pricing for Profit System and my MikeGuides tools.
-  </p>
-</header>
+<section class="home-header">
+  <div class="home-header-inner">
+    <h1 class="home-title">MikeGuides Blog</h1>
+    <p class="home-tagline">
+      Simple, practical posts that go with the Pricing for Profit System and my MikeGuides tools.
+    </p>
+  </div>
+</section>
 
-<main>
-  <ul style="list-style: none; padding: 0; margin: 0;">
-    {%- for post in site.posts -%}
-      {%- unless post.title == nil or post.title == "" -%}
-        <li style="margin-bottom: 2rem; padding-bottom: 1.5rem; border-bottom: 1px solid #e2e8f0;">
-          <h2 style="margin: 0 0 0.25rem 0; font-size: 1.25rem;">
-            <a href="{{ post.url | relative_url }}" style="text-decoration: none; color: #f9fafb;">
-              {{ post.title }}
-            </a>
+<div class="home-layout">
+  <main class="home-main">
+    <div class="home-posts">
+      {% for post in site.posts %}
+        <article class="home-post-card">
+          <h2 class="home-post-title">
+            <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
           </h2>
-          <p style="margin: 0; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; color: #e5e7eb;">
+          <p class="home-post-meta">
             {{ post.date | date: "%b %-d, %Y" }}
           </p>
-        </li>
-      {%- endunless -%}
-    {%- endfor -%}
-  </ul>
-</main>
+          <p class="home-post-excerpt">
+            {{ post.excerpt | strip_html | truncate: 140 }}
+          </p>
+        </article>
+      {% endfor %}
+    </div>
+  </main>
+
+  <aside class="home-sidebar">
+    {% include sidebar-products.html %}
+  </aside>
+</div>
