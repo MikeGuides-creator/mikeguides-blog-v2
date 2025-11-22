@@ -1,5 +1,4 @@
-<header class="post-header-wrapper">
-  <div class="post-header-inner">
+<header class="post-header-wrapper{% if page.url == "/" %} is-home-header{% endif %}">
     <a href="{{ "/" | relative_url }}" class="post-logo-link">
       <img src="{{ "/assets/images/blog/logo-mikeguides.png" | relative_url }}" alt="MikeGuides logo" class="post-logo">
     </a>
