@@ -78,6 +78,7 @@ layout: default
   </div>
 </section>
 
+    {% comment %}
   <!-- Future collabs / sponsors slot -->
   <section class="post-sponsor-slot">
     <div class="post-sponsor-inner">
@@ -86,15 +87,11 @@ layout: default
         This space is reserved for future collaborations, tools I trust, or sponsor messages.
         For now it’s just a placeholder so I remember to use this area later.
       </p>
-      <!--
-        TODO: When you're ready, replace this paragraph with real sponsor content,
-        an image, or a short CTA for partners.
-      -->
     </div>
   </section>
+  {% endcomment %}
 
-  <!-- Post footer with key links -->
-  <footer class="post-footer">
+    <footer class="post-footer">
     <div class="post-footer-inner">
       <div class="post-footer-section">
         <h3 class="post-footer-heading">Explore more</h3>
@@ -104,14 +101,6 @@ layout: default
           <li><a href="https://pricingforprofit.co" target="_blank" rel="noopener">Pricing For Profit</a></li>
         </ul>
       </div>
-
-      <div class="post-footer-section">
-        <h3 class="post-footer-heading">More coming soon</h3>
-        <p class="post-footer-text">
-          I’m leaving room here for extra links, collabs, or a short “about this blog” blurb.
-          You can edit this text anytime in <code>_layouts/post.html</code>.
-        </p>
-      </div>
     </div>
 
     <div class="post-footer-bottom">
@@ -120,4 +109,5 @@ layout: default
       </a>
     </div>
   </footer>
+
 </article>
