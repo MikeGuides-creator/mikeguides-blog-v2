@@ -3,6 +3,7 @@ layout: post
 title: "AI Writing Workshop"
 date: 2025-10-03
 categories: [ai-writing-workshop]
+featured_image: /assets/images/cover/aiwritingworkshop.1280x720.jpg
 ---
 
 ## Write Smarter, Not Harder
@@ -68,4 +69,17 @@ This Workshop is ideal for:
 
 ## Benefits at a Glance
 
-- **Save**
+- **Save Time** — Go from idea to publish-ready draft in a fraction of the time  
+- **Boost Quality** — Improve clarity, tone, structure, and SEO  
+- **Stay Consistent** — No more hit-or-miss writing sessions  
+- **Beat Writer’s Block** — Always have a strong starting point  
+
+---
+
+## Get Started
+
+Content doesn’t have to be painful or time-consuming.
+
+With the **AI Writing Workshop**, you’ll have a system that works with you — whether you’re brainstorming your first blog post or scaling content production across an entire business.
+
+[**Get the AI Writing Workshop on Gumroad →**](https://mikeguides8.gumroad.com/l/ai-writing-workshop)
