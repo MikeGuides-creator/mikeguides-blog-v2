@@ -1096,132 +1096,156 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; } /* adjust 80px to ta
   color: #0f172a;
   font-size: 0.85rem;
 }
-/* === Related posts section === */
 
-.post-related {
-  max-width: 720px;
-  margin: 2rem auto 0;
+/* === Home layout with sidebar === */
+
+.home-header {
+  max-width: 960px;
+  margin: 0 auto 1.5rem;
   padding: 0 1.5rem;
 }
 
-.post-related-inner {
-  border-radius: 1rem;
-  border: 1px solid #e5e7eb;
-  background: #f9fafb;
-  padding: 1.25rem 1.5rem;
+.home-header-inner {
+  padding-top: 1.5rem;
 }
 
-.post-related-title {
-  font-size: 1rem;
-  font-weight: 700;
-  margin-bottom: 0.75rem;
-  color: #0f172a;
-}
-
-.post-related-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.post-related-item {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 0.25rem 0.75rem;
-  padding: 0.35rem 0;
-  border-top: 1px solid #e5e7eb;
-}
-
-.post-related-item:first-child {
-  border-top: none;
-}
-
-.post-related-item a {
-  font-size: 0.9rem;
-  color: #2563eb;
-  text-decoration: none;
-}
-
-.post-related-item a:hover {
-  text-decoration: underline;
-}
-
-.post-related-date {
-  font-size: 0.8rem;
-  color: #6b7280;
-}
-/* === Free Resources page === */
-
-.free-page {
-  max-width: 960px;
-  margin: 0 auto 3rem;
-  padding: 1.5rem 1.5rem 3rem;
-}
-
-.free-page-inner {
-  max-width: 860px;
-  margin: 0 auto;
-}
-
-.free-page-title {
+.home-title {
   font-size: 1.75rem;
   font-weight: 800;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.35rem;
   color: #0f172a;
 }
 
-.free-page-intro {
+.home-tagline {
   font-size: 0.95rem;
   color: #4b5563;
-  margin-bottom: 1.5rem;
 }
 
-.free-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1rem;
+.home-layout {
+  max-width: 960px;
+  margin: 0 auto 3rem;
+  padding: 0 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
-@media (min-width: 900px) {
-  .free-grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+@media (min-width: 960px) {
+  .home-layout {
+    flex-direction: row;
+    align-items: flex-start;
   }
 }
 
-.free-card {
+.home-main {
+  flex: 3;
+}
+
+.home-sidebar {
+  flex: 2;
+}
+
+/* Home post cards */
+
+.home-posts {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.home-post-card {
+  padding: 1.25rem 1.5rem;
   border-radius: 1rem;
-  border: 1px solid #e5e7eb;
   background: #ffffff;
-  padding: 1.25rem 1.25rem 1.1rem;
+  border: 1px solid #e5e7eb;
   box-shadow: 0 14px 35px -20px rgba(15, 23, 42, 0.4);
 }
 
-.free-card-title {
-  font-size: 1rem;
+.home-post-title {
+  font-size: 1.15rem;
   font-weight: 700;
-  margin-bottom: 0.4rem;
+  margin: 0 0 0.35rem;
 }
 
-.free-card-text {
-  font-size: 0.9rem;
-  color: #4b5563;
-  margin-bottom: 0.75rem;
-}
-
-.free-card-link {
-  font-size: 0.9rem;
-  color: #2563eb;
+.home-post-title a {
+  color: #0f172a;
   text-decoration: none;
-  font-weight: 500;
 }
 
-.free-card-link:hover {
+.home-post-title a:hover {
   text-decoration: underline;
 }
 
-.free-page-note {
-  font-size: 0.9rem;
+.home-post-meta {
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
   color: #6b7280;
-  margin-top: 1.75rem;
+  margin: 0 0 0.5rem;
+}
+
+.home-post-excerpt {
+  font-size: 0.95rem;
+  color: #4b5563;
+  margin: 0;
+}
+
+/* Sidebar product badges */
+
+.sidebar-products {
+  padding: 1.25rem 1.5rem;
+  border-radius: 1rem;
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+}
+
+.sidebar-heading {
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  color: #0f172a;
+}
+
+.sidebar-products-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.sidebar-product-card {
+  display: block;
+  padding: 0.75rem 0.9rem;
+  border-radius: 0.8rem;
+  border: 1px solid #e5e7eb;
+  background: #ffffff;
+  text-decoration: none;
+}
+
+.sidebar-product-card:hover {
+  border-color: #2563eb;
+}
+
+.sidebar-product-title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #0f172a;
+  margin-bottom: 0.1rem;
+}
+
+.sidebar-product-tagline {
+  font-size: 0.8rem;
+  color: #4b5563;
+}
+
+.sidebar-view-all {
+  display: inline-block;
+  font-size: 0.85rem;
+  color: #2563eb;
+  text-decoration: none;
+  margin-top: 0.25rem;
+}
+
+.sidebar-view-all:hover {
+  text-decoration: underline;
 }
