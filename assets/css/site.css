@@ -1268,3 +1268,28 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; } /* adjust 80px to ta
 .post-related-date {
   color: #4b5563;
 }
+
+/* Force high-contrast text in Related posts */
+.post-related-inner {
+  background: #f9fafb;
+}
+
+.post-related-item,
+.post-related-item a,
+.post-related-item a:visited {
+  color: #111827 !important;  /* very dark slate */
+}
+
+.post-related-item a {
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.post-related-item a:hover {
+  text-decoration: underline;
+}
+
+.post-related-date {
+  color: #4b5563 !important;
+}
+
