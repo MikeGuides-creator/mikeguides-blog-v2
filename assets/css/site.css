@@ -1249,3 +1249,22 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; } /* adjust 80px to ta
 .sidebar-view-all:hover {
   text-decoration: underline;
 }
+
+/* Make Related posts text more readable */
+.post-related-item {
+  color: #0f172a;
+}
+
+.post-related-item a {
+  color: #0f172a;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.post-related-item a:hover {
+  text-decoration: underline;
+}
+
+.post-related-date {
+  color: #4b5563;
+}
