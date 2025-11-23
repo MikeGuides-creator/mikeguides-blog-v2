@@ -1,8 +1,9 @@
-title: MikeGuides Blog
-description: "Guides, frameworks, and playbooks for smarter pricing, marketing, and automation."
-# If you're serving at the project URL, set url to the GH Pages URL:
-url: "https://mikeguides-creator.github.io"
-baseurl: ""
+title: "MikeGuides Blog"
+description: "Practical posts on pricing, profit, and AI systems for small businesses and solo founders."
+url: "https://blog.pricingforprofit.co"
+
+# Optional but recommended: default social image for posts without featured_image
+og_image: "/assets/images/cover/welcome.1280x720.jpg"
 
 markdown: kramdown
 
