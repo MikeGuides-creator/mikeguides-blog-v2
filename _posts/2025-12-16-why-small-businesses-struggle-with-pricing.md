@@ -90,8 +90,7 @@ They’re not about maximizing revenue or finding the “perfect” price. They�
 
 If pricing has been a constant source of doubt for you, clarity — not math — is usually the missing piece.
 
-If you want tools that help you think through these decisions with less stress, you can take a look at the Business Builder Bundle.
-\[Business Builder Bundle](https://mikeguides8.gumroad.com/l/business\_bundle\_builder)
+If you want tools that help you think through these decisions with less stress, you can take a look at the [Business Builder Bundle](https://mikeguides8.gumroad.com/l/business_bundle_builder).
 
 
 
